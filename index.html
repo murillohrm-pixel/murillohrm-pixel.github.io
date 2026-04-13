@@ -66,14 +66,15 @@ td {
   border-bottom: 1px solid #ddd;
 }
 
-/* TEXTO DO MUNICÍPIO */
+/* TOOLTIP */
 .leaflet-tooltip {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.7);
   border: none;
   box-shadow: none;
-  font-size: 12px;
-  font-weight: bold;
-  color: #2c3e50;
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-size: 10px;
+  color: #222;
 }
 </style>
 </head>
@@ -115,7 +116,10 @@ td {
       <thead>
         <tr>
           <th>Data</th>
+          <th>Andar</th>
+          <th>Sala</th>
           <th>Descrição</th>
+          <th>Ano</th>
         </tr>
       </thead>
       <tbody id="tabela"></tbody>
@@ -132,7 +136,7 @@ let unidades = [];
 let mapa;
 let unidadeSelecionada = "";
 
-// 🔥 CARREGAR TUDO JUNTO
+// 🔥 CARREGAR DADOS
 Promise.all([
   fetch('manutencoes.json').then(r => r.json()),
   fetch('unidades.json').then(r => r.json())
@@ -145,7 +149,7 @@ Promise.all([
   iniciarMapa();
 });
 
-// 🔹 EXTRAI MUNICÍPIO DO NOME
+// 🔹 EXTRAI MUNICÍPIO
 function extrairMunicipio(nome) {
   const partes = nome.split("DE ");
 
@@ -156,6 +160,12 @@ function extrairMunicipio(nome) {
   return nome;
 }
 
+// 🔹 EXTRAI ANO
+function extrairAno(texto) {
+  const match = texto.match(/\d{4}/);
+  return match ? match[0] : "";
+}
+
 // 🔹 FILTROS
 function carregarFiltros() {
   const unidadeSelect = document.getElementById('unidadeSelect');
@@ -164,10 +174,7 @@ function carregarFiltros() {
   const unidadesUnicas = [...new Set(manutencoes.map(d => d.unidade))];
 
   const anos = [...new Set(
-    manutencoes.map(d => {
-      const match = d.ano_origem.match(/\d{4}/);
-      return match ? match[0] : d.ano_origem;
-    })
+    manutencoes.map(d => extrairAno(d.ano_origem))
   )];
 
   unidadesUnicas.forEach(u => {
@@ -178,6 +185,7 @@ function carregarFiltros() {
   });
 
   anos.forEach(a => {
+    if (!a) return;
     const opt = document.createElement('option');
     opt.value = a;
     opt.textContent = a;
@@ -204,10 +212,7 @@ function filtrar() {
   }
 
   if (ano) {
-    lista = lista.filter(d => {
-      const match = d.ano_origem.match(/\d{4}/);
-      return match && match[0] === ano;
-    });
+    lista = lista.filter(d => extrairAno(d.ano_origem) === ano);
   }
 
   renderTabela(lista);
@@ -221,8 +226,11 @@ function renderTabela(lista) {
   lista.forEach(item => {
     tabela.innerHTML += `
       <tr>
-        <td>${item.data}</td>
-        <td>${item.descricao}</td>
+        <td>${item.data || '-'}</td>
+        <td>${item.andar || '-'}</td>
+        <td>${item.sala || '-'}</td>
+        <td>${item.descricao || '-'}</td>
+        <td>${extrairAno(item.ano_origem)}</td>
       </tr>
     `;
   });
@@ -252,14 +260,13 @@ function iniciarMapa() {
 
     const municipio = extrairMunicipio(u.unidade);
 
-    // 🔹 TEXTO FIXO AO LADO
     marker.bindTooltip(municipio, {
       permanent: true,
       direction: 'right',
-      offset: [10, 0]
+      offset: [3, 0],
+      opacity: 0.8
     });
 
-    // 🔹 POPUP
     marker.bindPopup(`
       <b>${u.unidade}</b><br><br>
       <button onclick="abrirManutencao('${u.unidade}')">
@@ -268,7 +275,6 @@ function iniciarMapa() {
     `);
   });
 
-  // 🔹 AJUSTA PARA O ESTADO
   if (bounds.length > 0) {
     mapa.fitBounds(bounds, { padding: [50, 50] });
   } else {
