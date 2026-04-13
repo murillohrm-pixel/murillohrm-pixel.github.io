@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>Manutenções - Defensoria</title>
 
-<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
 
 <style>
 body {
@@ -13,36 +13,21 @@ body {
   background: #f4f6f8;
 }
 
-h1 {
-  text-align: center;
-}
-
 .container {
   display: flex;
   gap: 20px;
 }
 
-.esquerda {
-  width: 50%;
-}
+.esquerda { width: 50%; }
+.direita { width: 50%; }
 
-.direita {
-  width: 50%;
-}
-
-.filtros {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
+#map {
+  height: 500px;
+  background: #ddd;
 }
 
 select {
   padding: 8px;
-}
-
-#map {
-  height: 500px;
-  border-radius: 10px;
 }
 
 table {
@@ -66,37 +51,28 @@ td {
 
 <body>
 
-<h1>Manutenções por Unidade</h1>
+<h2>Manutenções por Unidade</h2>
 
 <div class="container">
 
-  <!-- ESQUERDA -->
   <div class="esquerda">
+    <select id="unidadeSelect">
+      <option value="">Selecione a Unidade</option>
+    </select>
 
-    <div class="filtros">
-      <select id="unidadeSelect">
-        <option value="">Selecione a Unidade</option>
-      </select>
+    <select id="anoSelect">
+      <option value="">Todos os anos</option>
+    </select>
 
-      <select id="anoSelect">
-        <option value="">Todos os anos</option>
-      </select>
-    </div>
-
+    <br><br>
     <div id="map"></div>
-
   </div>
 
-  <!-- DIREITA -->
   <div class="direita">
     <table>
       <thead>
         <tr>
           <th>Data</th>
-          <th>Início</th>
-          <th>Fim</th>
-          <th>Andar</th>
-          <th>Sala</th>
           <th>Descrição</th>
         </tr>
       </thead>
@@ -114,68 +90,54 @@ let unidades = [];
 let mapa;
 let unidadeSelecionada = "";
 
-// 🔹 MANUTENÇÕES
-fetch('manutencoes.json')
-  .then(res => res.json())
-  .then(json => {
-    manutencoes = json;
-    carregarFiltros();
-  });
+// 🔥 CARREGAR TUDO JUNTO (IMPORTANTE)
+Promise.all([
+  fetch('manutencoes.json').then(r => r.json()),
+  fetch('unidades.json').then(r => r.json())
+])
+.then(([m, u]) => {
+  console.log("MANUTENCOES:", m.length);
+  console.log("UNIDADES:", u.length);
 
-// 🔹 UNIDADES (SEU ARQUIVO REAL)
-fetch('unidades.json')
-  .then(res => res.json())
-  .then(json => {
-    unidades = json;
-    iniciarMapa();
-  });
+  manutencoes = m;
+  unidades = u;
+
+  carregarFiltros();
+  iniciarMapa();
+})
+.catch(err => {
+  console.error("ERRO AO CARREGAR JSON:", err);
+  alert("Erro ao carregar JSON. Veja o console (F12)");
+});
 
 // 🔹 FILTROS
 function carregarFiltros() {
   const unidadeSelect = document.getElementById('unidadeSelect');
-  const anoSelect = document.getElementById('anoSelect');
 
-  const unidadesUnicas = [...new Set(manutencoes.map(d => d.unidade))];
-  const anos = [...new Set(manutencoes.map(d => d.ano_origem))];
+  const lista = [...new Set(manutencoes.map(d => d.unidade))];
 
-  unidadesUnicas.forEach(u => {
-    const option = document.createElement('option');
-    option.value = u;
-    option.textContent = u;
-    unidadeSelect.appendChild(option);
-  });
-
-  anos.forEach(a => {
-    const option = document.createElement('option');
-    option.value = a;
-    option.textContent = a;
-    anoSelect.appendChild(option);
+  lista.forEach(u => {
+    const opt = document.createElement('option');
+    opt.value = u;
+    opt.textContent = u;
+    unidadeSelect.appendChild(opt);
   });
 }
 
-// 🔹 EVENTOS
 document.getElementById('unidadeSelect').addEventListener('change', () => {
   unidadeSelecionada = document.getElementById('unidadeSelect').value;
   filtrar();
 });
 
-document.getElementById('anoSelect').addEventListener('change', filtrar);
-
-// 🔹 FILTRAR
+// 🔹 FILTRO
 function filtrar() {
-  const ano = document.getElementById('anoSelect').value;
-
-  let filtrados = manutencoes;
+  let lista = manutencoes;
 
   if (unidadeSelecionada) {
-    filtrados = filtrados.filter(d => d.unidade === unidadeSelecionada);
+    lista = lista.filter(d => d.unidade === unidadeSelecionada);
   }
 
-  if (ano) {
-    filtrados = filtrados.filter(d => d.ano_origem === ano);
-  }
-
-  renderTabela(filtrados);
+  renderTabela(lista);
 }
 
 // 🔹 TABELA
@@ -187,35 +149,36 @@ function renderTabela(lista) {
     tabela.innerHTML += `
       <tr>
         <td>${item.data}</td>
-        <td>${item.hora_inicio || '-'}</td>
-        <td>${item.hora_fim || '-'}</td>
-        <td>${item.andar}</td>
-        <td>${item.sala}</td>
         <td>${item.descricao}</td>
       </tr>
     `;
   });
 }
 
-// 🔥 MAPA FUNCIONANDO COM SEU JSON
+// 🔥 MAPA (COM DEBUG)
 function iniciarMapa() {
-  mapa = L.map('map');
 
-  const bounds = [];
+  mapa = L.map('map').setView([-20.5, -54.5], 7);
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap'
   }).addTo(mapa);
 
-  unidades.forEach(u => {
-    const lat = parseFloat(u.latitude);
-    const lng = parseFloat(u.longitude);
+  console.log("Criando marcadores...");
 
-    if (isNaN(lat) || isNaN(lng)) return;
+  unidades.forEach((u, i) => {
+
+    console.log("UNIDADE:", u);
+
+    const lat = Number(u.latitude);
+    const lng = Number(u.longitude);
+
+    if (!lat || !lng) {
+      console.warn("Coordenada inválida:", u);
+      return;
+    }
 
     const marker = L.marker([lat, lng]).addTo(mapa);
-
-    bounds.push([lat, lng]);
 
     marker.bindPopup(`
       <b>${u.unidade}</b><br><br>
@@ -225,20 +188,13 @@ function iniciarMapa() {
     `);
   });
 
-  // 🔥 Ajusta automaticamente para o estado inteiro
-  if (bounds.length > 0) {
-    mapa.fitBounds(bounds, { padding: [50, 50] });
-  } else {
-    mapa.setView([-20.5, -54.5], 7);
-  }
+  console.log("Marcadores criados.");
 }
 
 // 🔹 CLIQUE NO MAPA
 function abrirManutencao(unidade) {
   unidadeSelecionada = unidade;
-
   document.getElementById('unidadeSelect').value = unidade;
-
   filtrar();
 }
 </script>
