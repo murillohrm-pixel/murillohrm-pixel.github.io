@@ -1,100 +1,147 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Manutenções - Defensoria</title>
+<meta charset="UTF-8">
+<title>Manutenções - Defensoria</title>
 
-  <style>
-    body {
-      font-family: Arial;
-      margin: 20px;
-      background: #f4f6f8;
-    }
+<!-- Leaflet -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 
-    h1 {
-      text-align: center;
-    }
+<style>
+body {
+  font-family: Arial;
+  margin: 20px;
+  background: #f4f6f8;
+}
 
-    .filtros {
-      display: flex;
-      gap: 10px;
-      margin-bottom: 20px;
-    }
+h1 {
+  text-align: center;
+}
 
-    select {
-      padding: 8px;
-      font-size: 14px;
-    }
+.container {
+  display: flex;
+  gap: 20px;
+}
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      background: white;
-    }
+.esquerda {
+  width: 50%;
+}
 
-    th {
-      background: #2c3e50;
-      color: white;
-      padding: 10px;
-    }
+.direita {
+  width: 50%;
+}
 
-    td {
-      padding: 8px;
-      border-bottom: 1px solid #ddd;
-    }
+.filtros {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
 
-    tr:hover {
-      background: #f1f1f1;
-    }
-  </style>
+select {
+  padding: 8px;
+}
+
+/* Mapa */
+#map {
+  height: 400px;
+  border-radius: 10px;
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+th {
+  background: #2c3e50;
+  color: white;
+  padding: 10px;
+}
+
+td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+</style>
 </head>
 
 <body>
 
 <h1>Manutenções por Unidade</h1>
 
-<div class="filtros">
-  <select id="unidadeSelect">
-    <option value="">Selecione a Unidade</option>
-  </select>
+<div class="container">
 
-  <select id="anoSelect">
-    <option value="">Todos os anos</option>
-  </select>
+  <!-- ESQUERDA -->
+  <div class="esquerda">
+
+    <div class="filtros">
+      <select id="unidadeSelect">
+        <option value="">Selecione a Unidade</option>
+      </select>
+
+      <select id="anoSelect">
+        <option value="">Todos os anos</option>
+      </select>
+    </div>
+
+    <div id="map"></div>
+
+  </div>
+
+  <!-- DIREITA -->
+  <div class="direita">
+    <table>
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Início</th>
+          <th>Fim</th>
+          <th>Andar</th>
+          <th>Sala</th>
+          <th>Descrição</th>
+        </tr>
+      </thead>
+      <tbody id="tabela"></tbody>
+    </table>
+  </div>
+
 </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Data</th>
-      <th>Início</th>
-      <th>Fim</th>
-      <th>Andar</th>
-      <th>Sala</th>
-      <th>Descrição</th>
-    </tr>
-  </thead>
-  <tbody id="tabela"></tbody>
-</table>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
 <script>
-let dados = [];
+let manutencoes = [];
+let unidades = [];
+let mapa;
+let unidadeSelecionada = "";
 
-fetch('dados.json')
+// 🔹 CARREGAR MANUTENÇÕES
+fetch('manutencoes.json')
   .then(res => res.json())
   .then(json => {
-    dados = json;
+    manutencoes = json;
     carregarFiltros();
   });
 
+// 🔹 CARREGAR UNIDADES (COORDENADAS)
+fetch('unidades.json')
+  .then(res => res.json())
+  .then(json => {
+    unidades = json;
+    iniciarMapa();
+  });
+
+// 🔹 FILTROS
 function carregarFiltros() {
   const unidadeSelect = document.getElementById('unidadeSelect');
   const anoSelect = document.getElementById('anoSelect');
 
-  const unidades = [...new Set(dados.map(d => d.unidade))];
-  const anos = [...new Set(dados.map(d => d.ano_origem))];
+  const unidadesUnicas = [...new Set(manutencoes.map(d => d.unidade))];
+  const anos = [...new Set(manutencoes.map(d => d.ano_origem))];
 
-  unidades.forEach(u => {
+  unidadesUnicas.forEach(u => {
     const option = document.createElement('option');
     option.value = u;
     option.textContent = u;
@@ -109,17 +156,22 @@ function carregarFiltros() {
   });
 }
 
-document.getElementById('unidadeSelect').addEventListener('change', filtrar);
+// 🔹 EVENTOS
+document.getElementById('unidadeSelect').addEventListener('change', () => {
+  unidadeSelecionada = document.getElementById('unidadeSelect').value;
+  filtrar();
+});
+
 document.getElementById('anoSelect').addEventListener('change', filtrar);
 
+// 🔹 FILTRAR
 function filtrar() {
-  const unidade = document.getElementById('unidadeSelect').value;
   const ano = document.getElementById('anoSelect').value;
 
-  let filtrados = dados;
+  let filtrados = manutencoes;
 
-  if (unidade) {
-    filtrados = filtrados.filter(d => d.unidade === unidade);
+  if (unidadeSelecionada) {
+    filtrados = filtrados.filter(d => d.unidade === unidadeSelecionada);
   }
 
   if (ano) {
@@ -129,6 +181,7 @@ function filtrar() {
   renderTabela(filtrados);
 }
 
+// 🔹 TABELA
 function renderTabela(lista) {
   const tabela = document.getElementById('tabela');
   tabela.innerHTML = '';
@@ -145,6 +198,35 @@ function renderTabela(lista) {
       </tr>
     `;
   });
+}
+
+// 🔹 MAPA
+function iniciarMapa() {
+  mapa = L.map('map').setView([-20.47, -54.62], 12);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap'
+  }).addTo(mapa);
+
+  unidades.forEach(u => {
+    const marker = L.marker([u.lat, u.lng]).addTo(mapa);
+
+    marker.bindPopup(`
+      <b>${u.unidade}</b><br><br>
+      <button onclick="abrirManutencao('${u.unidade}')">
+        Manutenção
+      </button>
+    `);
+  });
+}
+
+// 🔹 CLIQUE NO MAPA
+function abrirManutencao(unidade) {
+  unidadeSelecionada = unidade;
+
+  document.getElementById('unidadeSelect').value = unidade;
+
+  filtrar();
 }
 </script>
 
