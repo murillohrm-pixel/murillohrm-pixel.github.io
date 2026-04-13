@@ -13,6 +13,10 @@ body {
   background: #f4f6f8;
 }
 
+h2 {
+  text-align: center;
+}
+
 .container {
   display: flex;
   gap: 20px;
@@ -21,15 +25,30 @@ body {
 .esquerda { width: 50%; }
 .direita { width: 50%; }
 
-#map {
-  height: 500px;
-  background: #ddd;
+/* FILTROS */
+.filtros {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.filtros div {
+  display: flex;
+  flex-direction: column;
 }
 
 select {
   padding: 8px;
 }
 
+/* MAPA */
+#map {
+  height: 500px;
+  background: #ddd;
+  border-radius: 10px;
+}
+
+/* TABELA */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -46,6 +65,16 @@ td {
   padding: 8px;
   border-bottom: 1px solid #ddd;
 }
+
+/* TEXTO DO MUNICÍPIO */
+.leaflet-tooltip {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  font-size: 12px;
+  font-weight: bold;
+  color: #2c3e50;
+}
 </style>
 </head>
 
@@ -55,19 +84,32 @@ td {
 
 <div class="container">
 
+  <!-- ESQUERDA -->
   <div class="esquerda">
-    <select id="unidadeSelect">
-      <option value="">Selecione a Unidade</option>
-    </select>
 
-    <select id="anoSelect">
-      <option value="">Todos os anos</option>
-    </select>
+    <div class="filtros">
 
-    <br><br>
+      <div>
+        <label>Unidade</label>
+        <select id="unidadeSelect">
+          <option value="">Todas</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Ano</label>
+        <select id="anoSelect">
+          <option value="">Todos</option>
+        </select>
+      </div>
+
+    </div>
+
     <div id="map"></div>
+
   </div>
 
+  <!-- DIREITA -->
   <div class="direita">
     <table>
       <thead>
@@ -90,51 +132,82 @@ let unidades = [];
 let mapa;
 let unidadeSelecionada = "";
 
-// 🔥 CARREGAR TUDO JUNTO (IMPORTANTE)
+// 🔥 CARREGAR TUDO JUNTO
 Promise.all([
   fetch('manutencoes.json').then(r => r.json()),
   fetch('unidades.json').then(r => r.json())
 ])
 .then(([m, u]) => {
-  console.log("MANUTENCOES:", m.length);
-  console.log("UNIDADES:", u.length);
-
   manutencoes = m;
   unidades = u;
 
   carregarFiltros();
   iniciarMapa();
-})
-.catch(err => {
-  console.error("ERRO AO CARREGAR JSON:", err);
-  alert("Erro ao carregar JSON. Veja o console (F12)");
 });
+
+// 🔹 EXTRAI MUNICÍPIO DO NOME
+function extrairMunicipio(nome) {
+  const partes = nome.split("DE ");
+
+  if (partes.length > 1) {
+    return partes[1].split(" -")[0];
+  }
+
+  return nome;
+}
 
 // 🔹 FILTROS
 function carregarFiltros() {
   const unidadeSelect = document.getElementById('unidadeSelect');
+  const anoSelect = document.getElementById('anoSelect');
 
-  const lista = [...new Set(manutencoes.map(d => d.unidade))];
+  const unidadesUnicas = [...new Set(manutencoes.map(d => d.unidade))];
 
-  lista.forEach(u => {
+  const anos = [...new Set(
+    manutencoes.map(d => {
+      const match = d.ano_origem.match(/\d{4}/);
+      return match ? match[0] : d.ano_origem;
+    })
+  )];
+
+  unidadesUnicas.forEach(u => {
     const opt = document.createElement('option');
     opt.value = u;
     opt.textContent = u;
     unidadeSelect.appendChild(opt);
   });
+
+  anos.forEach(a => {
+    const opt = document.createElement('option');
+    opt.value = a;
+    opt.textContent = a;
+    anoSelect.appendChild(opt);
+  });
 }
 
+// 🔹 EVENTOS
 document.getElementById('unidadeSelect').addEventListener('change', () => {
   unidadeSelecionada = document.getElementById('unidadeSelect').value;
   filtrar();
 });
 
-// 🔹 FILTRO
+document.getElementById('anoSelect').addEventListener('change', filtrar);
+
+// 🔹 FILTRAR
 function filtrar() {
+  const ano = document.getElementById('anoSelect').value;
+
   let lista = manutencoes;
 
   if (unidadeSelecionada) {
     lista = lista.filter(d => d.unidade === unidadeSelecionada);
+  }
+
+  if (ano) {
+    lista = lista.filter(d => {
+      const match = d.ano_origem.match(/\d{4}/);
+      return match && match[0] === ano;
+    });
   }
 
   renderTabela(lista);
@@ -155,31 +228,38 @@ function renderTabela(lista) {
   });
 }
 
-// 🔥 MAPA (COM DEBUG)
+// 🔥 MAPA
 function iniciarMapa() {
 
-  mapa = L.map('map').setView([-20.5, -54.5], 7);
+  mapa = L.map('map');
+
+  const bounds = [];
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap'
   }).addTo(mapa);
 
-  console.log("Criando marcadores...");
-
-  unidades.forEach((u, i) => {
-
-    console.log("UNIDADE:", u);
+  unidades.forEach(u => {
 
     const lat = Number(u.latitude);
     const lng = Number(u.longitude);
 
-    if (!lat || !lng) {
-      console.warn("Coordenada inválida:", u);
-      return;
-    }
+    if (!lat || !lng) return;
 
     const marker = L.marker([lat, lng]).addTo(mapa);
 
+    bounds.push([lat, lng]);
+
+    const municipio = extrairMunicipio(u.unidade);
+
+    // 🔹 TEXTO FIXO AO LADO
+    marker.bindTooltip(municipio, {
+      permanent: true,
+      direction: 'right',
+      offset: [10, 0]
+    });
+
+    // 🔹 POPUP
     marker.bindPopup(`
       <b>${u.unidade}</b><br><br>
       <button onclick="abrirManutencao('${u.unidade}')">
@@ -188,7 +268,12 @@ function iniciarMapa() {
     `);
   });
 
-  console.log("Marcadores criados.");
+  // 🔹 AJUSTA PARA O ESTADO
+  if (bounds.length > 0) {
+    mapa.fitBounds(bounds, { padding: [50, 50] });
+  } else {
+    mapa.setView([-20.5, -54.5], 7);
+  }
 }
 
 // 🔹 CLIQUE NO MAPA
