@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Manutenções - Defensoria</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      margin: 20px;
+      background: #f4f6f8;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .filtros {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    select {
+      padding: 8px;
+      font-size: 14px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+    }
+
+    th {
+      background: #2c3e50;
+      color: white;
+      padding: 10px;
+    }
+
+    td {
+      padding: 8px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    tr:hover {
+      background: #f1f1f1;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Manutenções por Unidade</h1>
+
+<div class="filtros">
+  <select id="unidadeSelect">
+    <option value="">Selecione a Unidade</option>
+  </select>
+
+  <select id="anoSelect">
+    <option value="">Todos os anos</option>
+  </select>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data</th>
+      <th>Início</th>
+      <th>Fim</th>
+      <th>Andar</th>
+      <th>Sala</th>
+      <th>Descrição</th>
+    </tr>
+  </thead>
+  <tbody id="tabela"></tbody>
+</table>
+
+<script>
+let dados = [];
+
+fetch('dados.json')
+  .then(res => res.json())
+  .then(json => {
+    dados = json;
+    carregarFiltros();
+  });
+
+function carregarFiltros() {
+  const unidadeSelect = document.getElementById('unidadeSelect');
+  const anoSelect = document.getElementById('anoSelect');
+
+  const unidades = [...new Set(dados.map(d => d.unidade))];
+  const anos = [...new Set(dados.map(d => d.ano_origem))];
+
+  unidades.forEach(u => {
+    const option = document.createElement('option');
+    option.value = u;
+    option.textContent = u;
+    unidadeSelect.appendChild(option);
+  });
+
+  anos.forEach(a => {
+    const option = document.createElement('option');
+    option.value = a;
+    option.textContent = a;
+    anoSelect.appendChild(option);
+  });
+}
+
+document.getElementById('unidadeSelect').addEventListener('change', filtrar);
+document.getElementById('anoSelect').addEventListener('change', filtrar);
+
+function filtrar() {
+  const unidade = document.getElementById('unidadeSelect').value;
+  const ano = document.getElementById('anoSelect').value;
+
+  let filtrados = dados;
+
+  if (unidade) {
+    filtrados = filtrados.filter(d => d.unidade === unidade);
+  }
+
+  if (ano) {
+    filtrados = filtrados.filter(d => d.ano_origem === ano);
+  }
+
+  renderTabela(filtrados);
+}
+
+function renderTabela(lista) {
+  const tabela = document.getElementById('tabela');
+  tabela.innerHTML = '';
+
+  lista.forEach(item => {
+    tabela.innerHTML += `
+      <tr>
+        <td>${item.data}</td>
+        <td>${item.hora_inicio || '-'}</td>
+        <td>${item.hora_fim || '-'}</td>
+        <td>${item.andar}</td>
+        <td>${item.sala}</td>
+        <td>${item.descricao}</td>
+      </tr>
+    `;
+  });
+}
+</script>
+
+</body>
+</html>
