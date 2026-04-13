@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <title>Manutenções - Defensoria</title>
 
-<!-- Leaflet -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 
 <style>
@@ -41,13 +40,11 @@ select {
   padding: 8px;
 }
 
-/* Mapa */
 #map {
-  height: 400px;
+  height: 500px;
   border-radius: 10px;
 }
 
-/* Tabela */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -117,7 +114,7 @@ let unidades = [];
 let mapa;
 let unidadeSelecionada = "";
 
-// 🔹 CARREGAR MANUTENÇÕES
+// 🔹 MANUTENÇÕES
 fetch('manutencoes.json')
   .then(res => res.json())
   .then(json => {
@@ -125,7 +122,7 @@ fetch('manutencoes.json')
     carregarFiltros();
   });
 
-// 🔹 CARREGAR UNIDADES (COORDENADAS)
+// 🔹 UNIDADES (SEU ARQUIVO REAL)
 fetch('unidades.json')
   .then(res => res.json())
   .then(json => {
@@ -200,16 +197,25 @@ function renderTabela(lista) {
   });
 }
 
-// 🔹 MAPA
+// 🔥 MAPA FUNCIONANDO COM SEU JSON
 function iniciarMapa() {
-  mapa = L.map('map').setView([-20.47, -54.62], 12);
+  mapa = L.map('map');
+
+  const bounds = [];
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap'
   }).addTo(mapa);
 
   unidades.forEach(u => {
-    const marker = L.marker([u.lat, u.lng]).addTo(mapa);
+    const lat = parseFloat(u.latitude);
+    const lng = parseFloat(u.longitude);
+
+    if (isNaN(lat) || isNaN(lng)) return;
+
+    const marker = L.marker([lat, lng]).addTo(mapa);
+
+    bounds.push([lat, lng]);
 
     marker.bindPopup(`
       <b>${u.unidade}</b><br><br>
@@ -218,6 +224,13 @@ function iniciarMapa() {
       </button>
     `);
   });
+
+  // 🔥 Ajusta automaticamente para o estado inteiro
+  if (bounds.length > 0) {
+    mapa.fitBounds(bounds, { padding: [50, 50] });
+  } else {
+    mapa.setView([-20.5, -54.5], 7);
+  }
 }
 
 // 🔹 CLIQUE NO MAPA
