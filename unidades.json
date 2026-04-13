@@ -1,0 +1,347 @@
+[
+  {
+    "unidade": "SEDE DO PARQUE DOS PODERES",
+    "latitude": -20.45364,
+    "longitude": -54.553395
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "latitude": -20.463351,
+    "longitude": -54.577672
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - AFONSO PENA - NUDEM/NUDECA",
+    "latitude": -20.461482,
+    "longitude": -54.599825
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BARÃO DE MELGAÇO - NAS/NUSPEN",
+    "latitude": -20.467438,
+    "longitude": -54.611996
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BELMAR FIDALGO - NUFAM",
+    "latitude": -20.458767,
+    "longitude": -54.606768
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CENTRO - NUCCON/NUFAMD",
+    "latitude": -20.456974,
+    "longitude": -54.614095
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - FÓRUM - NUCRIM",
+    "latitude": -20.459835,
+    "longitude": -54.604634
+  },
+  {
+    "unidade": "DEFENSORIA DE ÁGUA CLARA - FÓRUM",
+    "latitude": -20.436909,
+    "longitude": -52.881941
+  },
+  {
+    "unidade": "DEFENSORIA DE AMAMBAI - CENTRO",
+    "latitude": -23.103209,
+    "longitude": -55.229681
+  },
+  {
+    "unidade": "DEFENSORIA DE ANASTÁCIO - FÓRUM",
+    "latitude": -20.490401,
+    "longitude": -55.807976
+  },
+  {
+    "unidade": "DEFENSORIA DE ANAURILÂNDIA - FÓRUM",
+    "latitude": -22.183246,
+    "longitude": -52.720506
+  },
+  {
+    "unidade": "DEFENSORIA DE ANGÉLICA - FÓRUM",
+    "latitude": -22.160798,
+    "longitude": -53.77592
+  },
+  {
+    "unidade": "DEFENSORIA DE APARECIDA DO TABOADO - CENTRO",
+    "latitude": -20.086782,
+    "longitude": -51.099564
+  },
+  {
+    "unidade": "DEFENSORIA DE AQUIDAUANA - ALTO",
+    "latitude": -20.473274,
+    "longitude": -55.791964
+  },
+  {
+    "unidade": "DEFENSORIA DE BANDEIRANTES - FÓRUM",
+    "latitude": -19.91875,
+    "longitude": -54.366215
+  },
+  {
+    "unidade": "DEFENSORIA DE BATAGUASSU - CENTRO",
+    "latitude": -21.717052,
+    "longitude": -52.427932
+  },
+  {
+    "unidade": "DEFENSORIA DE BATAYPORÃ - FÓRUM",
+    "latitude": -22.297954,
+    "longitude": -53.276622
+  },
+  {
+    "unidade": "DEFENSORIA DE BELA VISTA - FÓRUM",
+    "latitude": -22.105466,
+    "longitude": -56.534344
+  },
+  {
+    "unidade": "DEFENSORIA DE BONITO - FÓRUM",
+    "latitude": -21.12417,
+    "longitude": -56.500378
+  },
+  {
+    "unidade": "DEFENSORIA DE BRASILÂNDIA - FÓRUM",
+    "latitude": -21.248875,
+    "longitude": -52.03362
+  },
+  {
+    "unidade": "DEFENSORIA DE CAARAPÓ - FÓRUM",
+    "latitude": -22.62783,
+    "longitude": -54.831609
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMAPUÃ",
+    "latitude": -19.53478,
+    "longitude": -54.038306
+  },
+  {
+    "unidade": "DEFENSORIA DE CASSILÂNDIA - CENTRO",
+    "latitude": -19.115728,
+    "longitude": -51.73275
+  },
+  {
+    "unidade": "DEFENSORIA DE CHAPADÃO DO SUL - FÓRUM",
+    "latitude": -18.791602,
+    "longitude": -52.617918
+  },
+  {
+    "unidade": "DEFENSORIA DE CORONEL SAPUCAIA - FÓRUM",
+    "latitude": -23.275973,
+    "longitude": -55.534732
+  },
+  {
+    "unidade": "DEFENSORIA DE CORUMBÁ - CENTRO",
+    "latitude": -19.018357,
+    "longitude": -57.655178
+  },
+  {
+    "unidade": "DEFENSORIA DE COSTA RICA - FÓRUM",
+    "latitude": -18.542927,
+    "longitude": -53.124038
+  },
+  {
+    "unidade": "DEFENSORIA DE COXIM",
+    "latitude": -18.503662,
+    "longitude": -54.756849
+  },
+  {
+    "unidade": "DEFENSORIA DE DEODÁPOLIS - FÓRUM",
+    "latitude": -22.272082,
+    "longitude": -54.162999
+  },
+  {
+    "unidade": "DEFENSORIA DE DOIS IRMÃOS DO BURITI - FÓRUM",
+    "latitude": -20.685868,
+    "longitude": -55.278625
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CIVEL I",
+    "latitude": -22.230996,
+    "longitude": -54.81176
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CÍVEL II",
+    "latitude": -22.22151,
+    "longitude": -54.817974
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CRIMINAL",
+    "latitude": -22.221155,
+    "longitude": -54.81546
+  },
+  {
+    "unidade": "DEFENSORIA DE ELDORADO - FÓRUM",
+    "latitude": -23.784973,
+    "longitude": -54.29008
+  },
+  {
+    "unidade": "DEFENSORIA DE FÁTIMA DO SUL - FÓRUM",
+    "latitude": -22.38879,
+    "longitude": -54.515625
+  },
+  {
+    "unidade": "DEFENSORIA DE GLÓRIA DE DOURADOS - FÓRUM",
+    "latitude": -22.407964,
+    "longitude": -54.233659
+  },
+  {
+    "unidade": "DEFENSORIA DE IGUATEMI - FÓRUM",
+    "latitude": -23.674572,
+    "longitude": -54.563566
+  },
+  {
+    "unidade": "DEFENSORIA DE INOCÊNCIA - FÓRUM",
+    "latitude": -19.735484,
+    "longitude": -51.927449
+  },
+  {
+    "unidade": "DEFENSORIA DE ITAPORÃ - FÓRUM",
+    "latitude": -22.088754,
+    "longitude": -54.78938
+  },
+  {
+    "unidade": "DEFENSORIA DE ITAQUIRAÍ - FÓRUM",
+    "latitude": -23.47453,
+    "longitude": -54.174903
+  },
+  {
+    "unidade": "DEFENSORIA DE IVINHEMA - CENTRO",
+    "latitude": -22.305048,
+    "longitude": -53.828883
+  },
+  {
+    "unidade": "DEFENSORIA DE JARDIM - FÓRUM",
+    "latitude": -21.481872,
+    "longitude": -56.148744
+  },
+  {
+    "unidade": "DEFENSORIA DE MARACAJU - CENTRO",
+    "latitude": -21.62144,
+    "longitude": -55.154837
+  },
+  {
+    "unidade": "DEFENSORIA DE MIRANDA - FÓRUM",
+    "latitude": -20.23851,
+    "longitude": -56.377021
+  },
+  {
+    "unidade": "DEFENSORIA DE MUNDO NOVO - FÓRUM",
+    "latitude": -23.938172,
+    "longitude": -54.277426
+  },
+  {
+    "unidade": "DEFENSORIA DE NAVIRAÍ - FÓRUM",
+    "latitude": -23.059902,
+    "longitude": -54.200279
+  },
+  {
+    "unidade": "DEFENSORIA DE NIOAQUE - FÓRUM",
+    "latitude": -21.157782,
+    "longitude": -55.829492
+  },
+  {
+    "unidade": "DEFENSORIA DE NOVA ALVORADA DO SUL - FÓRUM",
+    "latitude": -21.463191,
+    "longitude": -54.380023
+  },
+  {
+    "unidade": "DEFENSORIA DE NOVA ANDRADINA - CENTRO",
+    "latitude": -22.247948,
+    "longitude": -53.353268
+  },
+  {
+    "unidade": "DEFENSORIA DE PARANAÍBA - YPÊ BRANCO",
+    "latitude": -19.681461,
+    "longitude": -51.198481
+  },
+  {
+    "unidade": "DEFENSORIA DE PEDRO GOMES - FÓRUM",
+    "latitude": -18.099109,
+    "longitude": -54.55709
+  },
+  {
+    "unidade": "DEFENSORIA DE PONTA PORÃ - VILA LUIZ CORVO",
+    "latitude": -22.527328,
+    "longitude": -55.715922
+  },
+  {
+    "unidade": "DEFENSORIA DE PORTO MURTINHO - FÓRUM",
+    "latitude": -21.698405,
+    "longitude": -57.883973
+  },
+  {
+    "unidade": "DEFENSORIA DE RIBAS DO RIO PARDO - FÓRUM",
+    "latitude": -20.447403,
+    "longitude": -53.755519
+  },
+  {
+    "unidade": "DEFENSORIA DE RIO BRILHANTE - FÓRUM",
+    "latitude": -21.807844,
+    "longitude": -54.547926
+  },
+  {
+    "unidade": "DEFENSORIA DE RIO NEGRO - FÓRUM",
+    "latitude": -19.450622,
+    "longitude": -54.991573
+  },
+  {
+    "unidade": "DEFENSORIA DE RIO VERDE DE MATO GROSSO - FÓRUM",
+    "latitude": -18.920581,
+    "longitude": -54.841913
+  },
+  {
+    "unidade": "DEFENSORIA DE SÃO GABRIEL DO OESTE - FÓRUM",
+    "latitude": -19.391845,
+    "longitude": -54.576766
+  },
+  {
+    "unidade": "DEFENSORIA DE SETE QUEDAS - FÓRUM",
+    "latitude": -23.97862,
+    "longitude": -55.040929
+  },
+  {
+    "unidade": "DEFENSORIA DE SIDROLÂNDIA - CENTRO",
+    "latitude": -20.928235,
+    "longitude": -54.964
+  },
+  {
+    "unidade": "DEFENSORIA DE SONORA - FÓRUM",
+    "latitude": -17.587994,
+    "longitude": -54.752347
+  },
+  {
+    "unidade": "DEFENSORIA DE TERENOS - FÓRUM",
+    "latitude": -20.439358,
+    "longitude": -54.870336
+  },
+  {
+    "unidade": "DEFENSORIA DE TRÊS LAGOAS - PRAÇA DA JUSTIÇA",
+    "latitude": -20.78729,
+    "longitude": -51.700306
+  },
+  {
+    "unidade": "SEINFRA DA DEFENSORIA",
+    "latitude": -20.440634,
+    "longitude": -54.549688
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - PRÁTICO GUAICURUS",
+    "latitude": -20.52647,
+    "longitude": -54.598511
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - PRÁTICO GENERAL OSÓRIO",
+    "latitude": -20.433478,
+    "longitude": -54.594752
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - FÁCIL AERO RANCHO",
+    "latitude": -20.515201,
+    "longitude": -54.655642
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CASA DA MULHER BRASILEIRA",
+    "latitude": -20.456232,
+    "longitude": -54.663453
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - POUPATEMPO",
+    "latitude": -22.248507,
+    "longitude": -54.807839
+  }
+]
