@@ -114,6 +114,15 @@ td {
   border-radius: 8px;
   font-size: 14px;
 }
+
+.detalhes-unidade {
+  margin-top: 10px;
+  padding: 10px;
+  background: #fdfdfd;
+  border-left: 4px solid #2c3e50;
+  border-radius: 6px;
+  font-size: 14px;
+}
 </style>
 </head>
 
@@ -145,6 +154,8 @@ td {
     </div>
 
     <div id="map"></div>
+
+    <div id="detalhesUnidade" class="detalhes-unidade"></div>
 
     <div id="resumoMapa" class="resumo-mapa"></div>
 
@@ -273,13 +284,16 @@ document.getElementById('unidadeSelect').addEventListener('change', () => {
   // 👉 SE FOR "TODAS"
   if (!unidadeSelecionada) {
 
-    // limpar seleção
+    // 🔄 limpar marcador selecionado
     if (marcadorSelecionado) {
       marcadorSelecionado.setIcon(iconeNormal);
       marcadorSelecionado = null;
     }
 
-    // zoom geral
+    // 🧹 limpar painel de detalhes
+    document.getElementById('detalhesUnidade').innerHTML = '';
+
+    // 🌍 zoom geral
     if (limitesMapa.length > 0) {
       mapa.fitBounds(limitesMapa, { padding: [50, 50] });
     }
@@ -357,24 +371,27 @@ const iconeSelecionado = L.icon({
 
 function selecionarUnidade(unidade, lat, lng, marker) {
 
-  // resetar anterior
+  // 🔄 resetar marcador anterior
   if (marcadorSelecionado) {
     marcadorSelecionado.setIcon(iconeNormal);
   }
 
-  // definir novo
+  // 🎯 definir novo selecionado
   marcadorSelecionado = marker;
   marker.setIcon(iconeSelecionado);
 
-  // atualizar select
+  // 📋 atualizar select
   unidadeSelecionada = unidade;
   document.getElementById('unidadeSelect').value = unidade;
 
-  // zoom no ponto
+  // 🗺️ zoom no ponto
   mapa.setView([lat, lng], 15);
 
-  // filtrar tabela
+  // 📊 atualizar tabela (manutenção)
   filtrar();
+
+  // 📍 mostrar detalhes abaixo do mapa
+  mostrarDetalhesUnidade(unidade);
 }
 
 function iniciarMapa() {
@@ -570,6 +587,27 @@ function formatarDataBR(data) {
   const ano = data.getFullYear();
 
   return `${dia}-${mes}-${ano}`;
+}
+
+function mostrarDetalhesUnidade(unidadeNome) {
+
+  const unidade = unidades.find(u => u.unidade === unidadeNome);
+
+  if (!unidade) {
+    document.getElementById('detalhesUnidade').innerHTML = '';
+    return;
+  }
+
+  const texto = `
+    <b>Endereço:</b> ${unidade.rua || '-'}, ${unidade.numero || '-'}<br>
+    <b>Bairro:</b> ${unidade.bairro || '-'}<br>
+    <b>Tipo de prédio:</b> ${unidade.predio || '-'}<br>
+    <b>Coordenadas (GMS):</b><br>
+    Lat: ${unidade.latitude_gms || '-'}<br>
+    Lon: ${unidade.longitude_gms || '-'}
+  `;
+
+  document.getElementById('detalhesUnidade').innerHTML = texto;
 }
 </script>
 

@@ -3,420 +3,840 @@
     "unidade": "SEDE DO PARQUE DOS PODERES",
     "municipio": "Campo Grande",
     "latitude": -20.45364,
-    "longitude": -54.553395
+    "longitude": -54.553395,
+    "latitude_gms": "-20°27′13,10″",
+    "longitude_gms": "-54°33′12,22″",
+    "rua": "Avenida Desembargador José Nunes da Cunha",
+    "numero": "",
+    "bairro": "Parque dos Poderes",
+    "predio": "Próprio"
   },
   {
     "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
     "municipio": "Campo Grande",
     "latitude": -20.463351,
-    "longitude": -54.577672
+    "longitude": -54.577672,
+    "latitude_gms": "-20°27′48,06″",
+    "longitude_gms": "-54°34′39,62″",
+    "rua": "Rua Raul Pires Barbosa",
+    "numero": "1464",
+    "bairro": "Chácara Cachoeira",
+    "predio": "Alugado"
   },
   {
     "unidade": "DEFENSORIA DE CAMPO GRANDE - AFONSO PENA - NUDEM/NUDECA",
     "municipio": "Campo Grande",
     "latitude": -20.461482,
-    "longitude": -54.599825
+    "longitude": -54.599825,
+    "latitude_gms": "-20°27′41,33″",
+    "longitude_gms": "-54°35′59,37″",
+    "rua": "Avenida Afonso Pena",
+    "numero": "3850",
+    "bairro": "Jardim dos Estados",
+    "predio": "Alugado"
   },
   {
     "unidade": "DEFENSORIA DE CAMPO GRANDE - BARÃO DE MELGAÇO - NAS/NUSPEN",
     "municipio": "Campo Grande",
     "latitude": -20.467438,
-    "longitude": -54.611996
+    "longitude": -54.611996,
+    "latitude_gms": "-20°28′2,78″",
+    "longitude_gms": "-54°36′43,19″",
+    "rua": "Rua Barão do Melgaço",
+    "numero": "128",
+    "bairro": "Centro",
+    "predio": "Alugado"
   },
   {
     "unidade": "DEFENSORIA DE CAMPO GRANDE - BELMAR FIDALGO - NUFAM",
     "municipio": "Campo Grande",
     "latitude": -20.458767,
-    "longitude": -54.606768
+    "longitude": -54.606768,
+    "latitude_gms": "-20°27′31,56″",
+    "longitude_gms": "-54°36′24,37″",
+    "rua": "Rua Arthur Jorge",
+    "numero": "779",
+    "bairro": "Centro",
+    "predio": "Alugado"
   },
   {
     "unidade": "DEFENSORIA DE CAMPO GRANDE - CENTRO/AMC - NUCCON/NUFAMD",
     "municipio": "Campo Grande",
     "latitude": -20.456974,
-    "longitude": -54.614095
+    "longitude": -54.614095,
+    "latitude_gms": "-20°27′25,11″",
+    "longitude_gms": "-54°36′50,74″",
+    "rua": "Rua Antônio Maria Coelho",
+    "numero": "1668",
+    "bairro": "Centro",
+    "predio": "Alugado"
   },
   {
     "unidade": "DEFENSORIA DE CAMPO GRANDE - FÓRUM - NUCRIM",
     "municipio": "Campo Grande",
     "latitude": -20.459835,
-    "longitude": -54.604634
+    "longitude": -54.604634,
+    "latitude_gms": "-20°27′35,41″",
+    "longitude_gms": "-54°36′16,68″",
+    "rua": "Rua da Paz",
+    "numero": "14",
+    "bairro": "Jardim dos Estados",
+    "predio": "Próprio"
   },
   {
     "unidade": "DEFENSORIA DE CAMPO GRANDE - SEMI ABERTO FEMININO",
     "municipio": "Campo Grande",
     "latitude": -20.500472,
-    "longitude": -54.607830
+    "longitude": -54.60783,
+    "latitude_gms": "-20°30′1,70″",
+    "longitude_gms": "-54°36′28,19″",
+    "rua": "Rua Portuguesa",
+    "numero": "63",
+    "bairro": "Vila Maciel",
+    "predio": "Estabelecimento penal"
   },
   {
     "unidade": "DEFENSORIA DE ÁGUA CLARA - FÓRUM",
     "municipio": "Água Clara",
     "latitude": -20.436909,
-    "longitude": -52.881941
+    "longitude": -52.881941,
+    "latitude_gms": "-20°26′12,87″",
+    "longitude_gms": "-52°52′54,99″",
+    "rua": "Rua Francisco Vieira",
+    "numero": "",
+    "bairro": "Centro",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE AMAMBAI - CENTRO",
     "municipio": "Amambai",
     "latitude": -23.103209,
-    "longitude": -55.229681
+    "longitude": -55.229681,
+    "latitude_gms": "-23°6′11,55″",
+    "longitude_gms": "-55°13′46,85″",
+    "rua": "Rua da República",
+    "numero": "3223",
+    "bairro": "Centro",
+    "predio": "Alugado"
   },
   {
     "unidade": "DEFENSORIA DE ANASTÁCIO - FÓRUM",
     "municipio": "Anastácio",
     "latitude": -20.490401,
-    "longitude": -55.807976
+    "longitude": -55.807976,
+    "latitude_gms": "-20°29′25,44″",
+    "longitude_gms": "-55°48′28,71″",
+    "rua": "Avenida Juscelino Kubitschek de Oliveira",
+    "numero": "",
+    "bairro": "Centro",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE ANAURILÂNDIA - FÓRUM",
     "municipio": "Anaurilândia",
     "latitude": -22.183246,
-    "longitude": -52.720506
+    "longitude": -52.720506,
+    "latitude_gms": "-22°10′59,69″",
+    "longitude_gms": "-52°43′13,82″",
+    "rua": "Rua Floriano Peixoto",
+    "numero": "1001",
+    "bairro": "Centro",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE ANGÉLICA - FÓRUM",
     "municipio": "Angélica",
     "latitude": -22.160798,
-    "longitude": -53.77592
+    "longitude": -53.77592,
+    "latitude_gms": "-22°9′38,87″",
+    "longitude_gms": "-53°46′33,31″",
+    "rua": "Avenida Antônio Basílio de Lima",
+    "numero": "258",
+    "bairro": "Imperial",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE APARECIDA DO TABOADO - CENTRO",
     "municipio": "Aparecida do Taboado",
     "latitude": -20.086782,
-    "longitude": -51.099564
+    "longitude": -51.099564,
+    "latitude_gms": "-20°5′12,41″",
+    "longitude_gms": "-51°5′58,43″",
+    "rua": "Rua José Antonio de Carvalho",
+    "numero": "4091",
+    "bairro": "Centro",
+    "predio": "Próprio"
   },
   {
     "unidade": "DEFENSORIA DE AQUIDAUANA - ALTO",
     "municipio": "Aquidauana",
     "latitude": -20.473274,
-    "longitude": -55.791964
+    "longitude": -55.791964,
+    "latitude_gms": "-20°28′23,79″",
+    "longitude_gms": "-55°47′31,07″",
+    "rua": "Rua Assis Ribeiro",
+    "numero": "711",
+    "bairro": "Alto",
+    "predio": "Alugado"
   },
   {
     "unidade": "DEFENSORIA DE BANDEIRANTES - FÓRUM",
     "municipio": "Bandeirantes",
     "latitude": -19.91875,
-    "longitude": -54.366215
+    "longitude": -54.366215,
+    "latitude_gms": "-19°55′7,50″",
+    "longitude_gms": "-54°21′58,38″",
+    "rua": "Rua Pedro Celestino",
+    "numero": "1460",
+    "bairro": "Centro",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE BATAGUASSU - CENTRO",
     "municipio": "Bataguassu",
     "latitude": -21.717052,
-    "longitude": -52.427932
+    "longitude": -52.427932,
+    "latitude_gms": "-21°43′1,39″",
+    "longitude_gms": "-52°25′40,56″",
+    "rua": "Rua Ribas do Rio Pardo",
+    "numero": "263",
+    "bairro": "Centro",
+    "predio": "Alugado"
   },
   {
     "unidade": "DEFENSORIA DE BATAYPORÃ - FÓRUM",
     "municipio": "Batayporã",
     "latitude": -22.297954,
-    "longitude": -53.276622
+    "longitude": -53.276622,
+    "latitude_gms": "-22°17′52,63″",
+    "longitude_gms": "-53°16′35,84″",
+    "rua": "Avenida Brasil",
+    "numero": "633",
+    "bairro": "Centro",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE BELA VISTA - FÓRUM",
     "municipio": "Bela Vista",
     "latitude": -22.105466,
-    "longitude": -56.534344
+    "longitude": -56.534344,
+    "latitude_gms": "-22°6′19,68″",
+    "longitude_gms": "-56°32′3,64″",
+    "rua": "Rua Barão de Ladário",
+    "numero": "1595",
+    "bairro": "Centro",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE BONITO - FÓRUM",
     "municipio": "Bonito",
     "latitude": -21.12417,
-    "longitude": -56.500378
+    "longitude": -56.500378,
+    "latitude_gms": "-21°7′27,01″",
+    "longitude_gms": "-56°30′1,36″",
+    "rua": "Rua Clóvis Cintra",
+    "numero": "1035",
+    "bairro": "Formoso",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE BRASILÂNDIA - FÓRUM",
     "municipio": "Brasilândia",
     "latitude": -21.248875,
-    "longitude": -52.03362
+    "longitude": -52.03362,
+    "latitude_gms": "-21°14′55,95″",
+    "longitude_gms": "-52°2′1,03″",
+    "rua": "Avenida Manoel Vicente",
+    "numero": "1390",
+    "bairro": "Centro",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE CAARAPÓ - FÓRUM",
     "municipio": "Caarapó",
     "latitude": -22.62783,
-    "longitude": -54.831609
+    "longitude": -54.831609,
+    "latitude_gms": "-22°37′40,19″",
+    "longitude_gms": "-54°49′53,79″",
+    "rua": "Rua Dom Pedro II",
+    "numero": "1700",
+    "bairro": "Vila Planalto",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE CAMAPUÃ",
     "municipio": "Camapuã",
     "latitude": -19.53478,
-    "longitude": -54.038306
+    "longitude": -54.038306,
+    "latitude_gms": "-19°32′5,21″",
+    "longitude_gms": "-54°2′17,90″",
+    "rua": "Rua Ferreira da Cunha",
+    "numero": "415",
+    "bairro": "Diamantina",
+    "predio": "Próprio"
   },
   {
     "unidade": "DEFENSORIA DE CASSILÂNDIA - CENTRO",
     "municipio": "Cassilândia",
     "latitude": -19.115728,
-    "longitude": -51.73275
+    "longitude": -51.73275,
+    "latitude_gms": "-19°6′56,62″",
+    "longitude_gms": "-51°43′57,90″",
+    "rua": "Rua Laudemiro de Freitas",
+    "numero": "137",
+    "bairro": "Centro",
+    "predio": "Alugado"
   },
   {
     "unidade": "DEFENSORIA DE CHAPADÃO DO SUL - FÓRUM",
     "municipio": "Chapadão do Sul",
     "latitude": -18.791602,
-    "longitude": -52.617918
+    "longitude": -52.617918,
+    "latitude_gms": "-18°47′29,77″",
+    "longitude_gms": "-52°37′4,50″",
+    "rua": "Avenida Mato Grosso do Sul",
+    "numero": "311",
+    "bairro": "Parque União",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE CORONEL SAPUCAIA - FÓRUM",
     "municipio": "Coronel Sapucaia",
     "latitude": -23.275973,
-    "longitude": -55.534732
+    "longitude": -55.534732,
+    "latitude_gms": "-23°16′33,50″",
+    "longitude_gms": "-55°32′5,03″",
+    "rua": "Rua José Amâncio da Silva",
+    "numero": "1866",
+    "bairro": "Jardim Ypê",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE CORUMBÁ - CENTRO",
     "municipio": "Corumbá",
     "latitude": -19.018357,
-    "longitude": -57.655178
+    "longitude": -57.655178,
+    "latitude_gms": "-19°1′6,09″",
+    "longitude_gms": "-57°39′18,64″",
+    "rua": "Rua Luís Feitosa Rodrigues",
+    "numero": "2094",
+    "bairro": "Conjunto Guatos",
+    "predio": "Próprio"
   },
   {
     "unidade": "DEFENSORIA DE COSTA RICA - FÓRUM",
     "municipio": "Costa Rica",
     "latitude": -18.542927,
-    "longitude": -53.124038
+    "longitude": -53.124038,
+    "latitude_gms": "-18°32′34,54″",
+    "longitude_gms": "-53°7′26,54″",
+    "rua": "Rua José Pereira da Silva",
+    "numero": "405",
+    "bairro": "Jardim Santos Dumont",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE COXIM",
     "municipio": "Coxim",
     "latitude": -18.503662,
-    "longitude": -54.756849
+    "longitude": -54.756849,
+    "latitude_gms": "-18°30′13,18″",
+    "longitude_gms": "-54°45′24,66″",
+    "rua": "Rua Barão do Rio Branco",
+    "numero": "170",
+    "bairro": "Centro",
+    "predio": "Próprio"
   },
   {
     "unidade": "DEFENSORIA DE DEODÁPOLIS - FÓRUM",
     "municipio": "Deodápolis",
     "latitude": -22.272082,
-    "longitude": -54.162999
+    "longitude": -54.162999,
+    "latitude_gms": "-22°16′19,49″",
+    "longitude_gms": "-54°9′46,80″",
+    "rua": "Avenida Francisco Alves da Silva",
+    "numero": "1",
+    "bairro": NaN,
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE DOIS IRMÃOS DO BURITI - FÓRUM",
     "municipio": "Dois Irmãos do Buriti",
     "latitude": -20.685868,
-    "longitude": -55.278625
+    "longitude": -55.278625,
+    "latitude_gms": "-20°41′9,12″",
+    "longitude_gms": "-55°16′43,05″",
+    "rua": "Avenida Reginaldo Lemes da Silva",
+    "numero": "763",
+    "bairro": "Centro",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE DOURADOS - CIVEL I",
     "municipio": "Dourados",
     "latitude": -22.230996,
-    "longitude": -54.81176
+    "longitude": -54.81176,
+    "latitude_gms": "-22°13′51,59″",
+    "longitude_gms": "-54°48′42,34″",
+    "rua": "Avenida Presidente Vargas",
+    "numero": "177",
+    "bairro": "Centro",
+    "predio": "Alugado"
   },
   {
     "unidade": "DEFENSORIA DE DOURADOS - CÍVEL II",
     "municipio": "Dourados",
     "latitude": -22.22151,
-    "longitude": -54.817974
+    "longitude": -54.817974,
+    "latitude_gms": "-22°13′17,43″",
+    "longitude_gms": "-54°49′4,71″",
+    "rua": "Rua Albino Torraca",
+    "numero": "1255",
+    "bairro": "Vila Progresso",
+    "predio": "Alugado"
   },
   {
     "unidade": "DEFENSORIA DE DOURADOS - CRIMINAL",
     "municipio": "Dourados",
     "latitude": -22.221155,
-    "longitude": -54.81546
+    "longitude": -54.81546,
+    "latitude_gms": "-22°13′16,16″",
+    "longitude_gms": "-54°48′55,65″",
+    "rua": "Rua Firmino Vieira de Matos",
+    "numero": "1297",
+    "bairro": "Vila Progresso",
+    "predio": "Alugado"
   },
   {
     "unidade": "DEFENSORIA DE ELDORADO - FÓRUM",
     "municipio": "Eldorado",
     "latitude": -23.784973,
-    "longitude": -54.29008
+    "longitude": -54.29008,
+    "latitude_gms": "-23°47′5,90″",
+    "longitude_gms": "-54°17′24,29″",
+    "rua": "Rua Assis Chateaubriand",
+    "numero": "1555",
+    "bairro": "Jardim das Palmeiras",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE FÁTIMA DO SUL - FÓRUM",
     "municipio": "Fátima do Sul",
     "latitude": -22.38879,
-    "longitude": -54.515625
+    "longitude": -54.515625,
+    "latitude_gms": "-22°23′19,64″",
+    "longitude_gms": "-54°30′56,25″",
+    "rua": "Rua Antônio Barbosa",
+    "numero": "800",
+    "bairro": "Jardim Universitário",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE GLÓRIA DE DOURADOS - FÓRUM",
     "municipio": "Glória de Dourados",
     "latitude": -22.407964,
-    "longitude": -54.233659
+    "longitude": -54.233659,
+    "latitude_gms": "-22°24′28,67″",
+    "longitude_gms": "-54°14′1,17″",
+    "rua": "Rua Rogério Luiz Rodrigues",
+    "numero": "",
+    "bairro": "Centro",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE IGUATEMI - FÓRUM",
     "municipio": "Iguatemi",
     "latitude": -23.674572,
-    "longitude": -54.563566
+    "longitude": -54.563566,
+    "latitude_gms": "-23°40′28,46″",
+    "longitude_gms": "-54°33′48,84″",
+    "rua": "Rua Presidente Costa e Silva",
+    "numero": "",
+    "bairro": "Centro",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE INOCÊNCIA - FÓRUM",
     "municipio": "Inocência",
     "latitude": -19.735484,
-    "longitude": -51.927449
+    "longitude": -51.927449,
+    "latitude_gms": "-19°44′7,74″",
+    "longitude_gms": "-51°55′38,82″",
+    "rua": "Rua Albertina Garcia Dias",
+    "numero": "377",
+    "bairro": "Jardim Bom Jesus",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE ITAPORÃ - FÓRUM",
     "municipio": "Itaporã",
     "latitude": -22.088754,
-    "longitude": -54.78938
+    "longitude": -54.78938,
+    "latitude_gms": "-22°5′19,51″",
+    "longitude_gms": "-54°47′21,77″",
+    "rua": "Avenida São José",
+    "numero": "2",
+    "bairro": "Vila Pedra Bonita",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE ITAQUIRAÍ - FÓRUM",
     "municipio": "Itaquiraí",
     "latitude": -23.47453,
-    "longitude": -54.174903
+    "longitude": -54.174903,
+    "latitude_gms": "-23°28′28,31″",
+    "longitude_gms": "-54°10′29,65″",
+    "rua": "Avenida Mato Grosso",
+    "numero": "350",
+    "bairro": "Centro",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE IVINHEMA - CENTRO",
     "municipio": "Ivinhema",
     "latitude": -22.305048,
-    "longitude": -53.828883
+    "longitude": -53.828883,
+    "latitude_gms": "-22°18′18,17″",
+    "longitude_gms": "-53°49′43,98″",
+    "rua": "Rua Joaquim Saraiva de Freitas",
+    "numero": "284",
+    "bairro": "Centro",
+    "predio": "Alugado"
   },
   {
     "unidade": "DEFENSORIA DE JARDIM - FÓRUM",
     "municipio": "Jardim",
     "latitude": -21.481872,
-    "longitude": -56.148744
+    "longitude": -56.148744,
+    "latitude_gms": "-21°28′54,74″",
+    "longitude_gms": "-56°8′55,48″",
+    "rua": "Rua Campo Grande",
+    "numero": "",
+    "bairro": "Vila Angélica",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE MARACAJU - CENTRO",
     "municipio": "Maracaju",
     "latitude": -21.62144,
-    "longitude": -55.154837
+    "longitude": -55.154837,
+    "latitude_gms": "-21°37′17,18″",
+    "longitude_gms": "-55°9′17,41″",
+    "rua": "Rua Luiz Porto Soares",
+    "numero": "441",
+    "bairro": "Centro",
+    "predio": "Alugado"
   },
   {
     "unidade": "DEFENSORIA DE MIRANDA - FÓRUM",
     "municipio": "Miranda",
     "latitude": -20.23851,
-    "longitude": -56.377021
+    "longitude": -56.377021,
+    "latitude_gms": "-20°14′18,64″",
+    "longitude_gms": "-56°22′37,28″",
+    "rua": "Rua General Amaro Bitencourt",
+    "numero": "875",
+    "bairro": "Nossa Senhora Aparecida",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE MUNDO NOVO - FÓRUM",
     "municipio": "Mundo Novo",
     "latitude": -23.938172,
-    "longitude": -54.277426
+    "longitude": -54.277426,
+    "latitude_gms": "-23°56′17,42″",
+    "longitude_gms": "-54°16′38,73″",
+    "rua": "Avenida Campo Grande",
+    "numero": "375",
+    "bairro": "Berneck",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE NAVIRAÍ - FÓRUM",
     "municipio": "Naviraí",
     "latitude": -23.059902,
-    "longitude": -54.200279
+    "longitude": -54.200279,
+    "latitude_gms": "-23°3′35,65″",
+    "longitude_gms": "-54°12′1,00″",
+    "rua": "Rua Higino Gomes Duarte",
+    "numero": "155",
+    "bairro": "Centro",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE NIOAQUE - FÓRUM",
     "municipio": "Nioaque",
     "latitude": -21.157782,
-    "longitude": -55.829492
+    "longitude": -55.829492,
+    "latitude_gms": "-21°9′28,02″",
+    "longitude_gms": "-55°49′46,17″",
+    "rua": "Rua Coronel Juvêncio",
+    "numero": "262",
+    "bairro": "Centro",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE NOVA ALVORADA DO SUL - FÓRUM",
     "municipio": "Nova Alvorada do Sul",
     "latitude": -21.463191,
-    "longitude": -54.380023
+    "longitude": -54.380023,
+    "latitude_gms": "-21°27′47,49″",
+    "longitude_gms": "-54°22′48,08″",
+    "rua": "Rua Marcelino Risdem",
+    "numero": "1040",
+    "bairro": "Centro",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE NOVA ANDRADINA - CENTRO",
     "municipio": "Nova Andradina",
     "latitude": -22.247948,
-    "longitude": -53.353268
+    "longitude": -53.353268,
+    "latitude_gms": "-22°14′52,61″",
+    "longitude_gms": "-53°21′11,77″",
+    "rua": "Rua Luiz Antonio da Silva",
+    "numero": "1482",
+    "bairro": "Centro",
+    "predio": "Alugado"
   },
   {
     "unidade": "DEFENSORIA DE PARANAÍBA - YPÊ BRANCO",
     "municipio": "Paranaíba",
     "latitude": -19.681461,
-    "longitude": -51.198481
+    "longitude": -51.198481,
+    "latitude_gms": "-19°40′53,26″",
+    "longitude_gms": "-51°11′54,53″",
+    "rua": "Rua Ermindo Leal",
+    "numero": "555",
+    "bairro": "Ypê Branco",
+    "predio": "Próprio"
   },
   {
     "unidade": "DEFENSORIA DE PEDRO GOMES - FÓRUM",
     "municipio": "Pedro Gomes",
     "latitude": -18.099109,
-    "longitude": -54.55709
+    "longitude": -54.55709,
+    "latitude_gms": "-18°5′56,79″",
+    "longitude_gms": "-54°33′25,52″",
+    "rua": "Rua Professora Diva Araújo Azambuja",
+    "numero": "395",
+    "bairro": "Centro",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE PONTA PORÃ - VILA LUIZ CORVO",
     "municipio": "Ponta Porã",
     "latitude": -22.527328,
-    "longitude": -55.715922
+    "longitude": -55.715922,
+    "latitude_gms": "-22°31′38,38″",
+    "longitude_gms": "-55°42′57,32″",
+    "rua": "Avenida Presidente Vargas",
+    "numero": "1850",
+    "bairro": "Vila Luiz Curvo",
+    "predio": "Próprio"
   },
   {
     "unidade": "DEFENSORIA DE PORTO MURTINHO - FÓRUM",
     "municipio": "Porto Murtinho",
     "latitude": -21.698405,
-    "longitude": -57.883973
+    "longitude": -57.883973,
+    "latitude_gms": "-21°41′54,26″",
+    "longitude_gms": "-57°53′2,30″",
+    "rua": "Rua 13 de Maio",
+    "numero": "444",
+    "bairro": "Centro",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE RIBAS DO RIO PARDO - FÓRUM",
     "municipio": "Ribas do Rio Pardo",
     "latitude": -20.447403,
-    "longitude": -53.755519
+    "longitude": -53.755519,
+    "latitude_gms": "-20°26′50,65″",
+    "longitude_gms": "-53°45′19,87″",
+    "rua": "Rua Waldemar Francisco da Silva",
+    "numero": "1017",
+    "bairro": "Vila Nossa Senhora da Conceição",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE RIO BRILHANTE - FÓRUM",
     "municipio": "Rio Brilhante",
     "latitude": -21.807844,
-    "longitude": -54.547926
+    "longitude": -54.547926,
+    "latitude_gms": "-21°48′28,24″",
+    "longitude_gms": "-54°32′52,53″",
+    "rua": "Rua Rio Brilhante",
+    "numero": "1060",
+    "bairro": "Vila Maria",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE RIO NEGRO - FÓRUM",
     "municipio": "Rio Negro",
     "latitude": -19.450622,
-    "longitude": -54.991573
+    "longitude": -54.991573,
+    "latitude_gms": "-19°27′2,24″",
+    "longitude_gms": "-54°59′29,66″",
+    "rua": "Rua 9 de maio",
+    "numero": "305",
+    "bairro": "Centro",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE RIO VERDE DE MATO GROSSO - FÓRUM",
     "municipio": "Rio Verde de Mato Grosso",
     "latitude": -18.920581,
-    "longitude": -54.841913
+    "longitude": -54.841913,
+    "latitude_gms": "-18°55′14,09″",
+    "longitude_gms": "-54°50′30,89″",
+    "rua": "Rua Eurico Sebastião Ferreira",
+    "numero": "640",
+    "bairro": "Centro",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE SÃO GABRIEL DO OESTE - FÓRUM",
     "municipio": "São Gabriel do Oeste",
     "latitude": -19.391845,
-    "longitude": -54.576766
+    "longitude": -54.576766,
+    "latitude_gms": "-19°23′30,64″",
+    "longitude_gms": "-54°34′36,36″",
+    "rua": "Avenida Mato Grosso do Sul",
+    "numero": "2130",
+    "bairro": "Centro",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE SETE QUEDAS - FÓRUM",
     "municipio": "Sete Quedas",
     "latitude": -23.97862,
-    "longitude": -55.040929
+    "longitude": -55.040929,
+    "latitude_gms": "-23°58′43,03″",
+    "longitude_gms": "-55°2′27,34″",
+    "rua": "Rua Rui Barbosa",
+    "numero": "780",
+    "bairro": "Centro",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE SIDROLÂNDIA - CENTRO",
     "municipio": "Sidrolândia",
     "latitude": -20.928235,
-    "longitude": -54.964
+    "longitude": -54.964,
+    "latitude_gms": "-20°55′41,65″",
+    "longitude_gms": "-54°57′50,40″",
+    "rua": "Rua Distrito Federal",
+    "numero": "986",
+    "bairro": "Centro",
+    "predio": "Alugado"
   },
   {
     "unidade": "DEFENSORIA DE SONORA - FÓRUM",
     "municipio": "Sonora",
     "latitude": -17.587994,
-    "longitude": -54.752347
+    "longitude": -54.752347,
+    "latitude_gms": "-17°35′16,78″",
+    "longitude_gms": "-54°45′8,45″",
+    "rua": "Rua 3 de julho",
+    "numero": "90",
+    "bairro": "Centro",
+    "predio": NaN
   },
   {
     "unidade": "DEFENSORIA DE TERENOS - FÓRUM",
     "municipio": "Terenos",
     "latitude": -20.439358,
-    "longitude": -54.870336
+    "longitude": -54.870336,
+    "latitude_gms": "-20°26′21,69″",
+    "longitude_gms": "-54°52′13,21″",
+    "rua": "Rua Pedro Celestino",
+    "numero": "",
+    "bairro": "Centro",
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE TRÊS LAGOAS - PRAÇA DA JUSTIÇA",
     "municipio": "Três Lagoas",
     "latitude": -20.78729,
-    "longitude": -51.700306
+    "longitude": -51.700306,
+    "latitude_gms": "-20°47′14,24″",
+    "longitude_gms": "-51°42′1,10″",
+    "rua": "Rua Alfredo Justino",
+    "numero": "1108",
+    "bairro": "Centro",
+    "predio": "Próprio"
   },
   {
     "unidade": "SEINFRA DA DEFENSORIA",
     "municipio": "Campo Grande",
     "latitude": -20.440634,
-    "longitude": -54.549688
+    "longitude": -54.549688,
+    "latitude_gms": "-20°26′26,28″",
+    "longitude_gms": "-54°32′58,88″",
+    "rua": "Avenida Carlinda Pereira Contar",
+    "numero": "1800",
+    "bairro": "Jardim Veraneio",
+    "predio": "Alugado"
   },
   {
     "unidade": "DEFENSORIA DE CAMPO GRANDE - PRÁTICO GUAICURUS",
     "municipio": "Campo Grande",
     "latitude": -20.52647,
-    "longitude": -54.598511
+    "longitude": -54.598511,
+    "latitude_gms": "-20°31′35,29″",
+    "longitude_gms": "-54°35′54,64″",
+    "rua": "Av. Gury Marques",
+    "numero": "5111",
+    "bairro": "Jardim Monumento",
+    "predio": "Facil"
   },
   {
     "unidade": "DEFENSORIA DE CAMPO GRANDE - PRÁTICO GENERAL OSÓRIO",
     "municipio": "Campo Grande",
     "latitude": -20.433478,
-    "longitude": -54.594752
+    "longitude": -54.594752,
+    "latitude_gms": "-20°26′0,52″",
+    "longitude_gms": "-54°35′41,11″",
+    "rua": "Rua Santo Ângelo",
+    "numero": "51",
+    "bairro": "Coronel Antonino",
+    "predio": "Facil"
   },
   {
     "unidade": "DEFENSORIA DE CAMPO GRANDE - FÁCIL AERO RANCHO",
     "municipio": "Campo Grande",
     "latitude": -20.515201,
-    "longitude": -54.655642
+    "longitude": -54.655642,
+    "latitude_gms": "-20°30′54,72″",
+    "longitude_gms": "-54°39′20,31″",
+    "rua": "Avenida Marechal Deodoro",
+    "numero": "2603",
+    "bairro": "Aero Rancho",
+    "predio": "Facil"
   },
   {
     "unidade": "DEFENSORIA DE CAMPO GRANDE - CASA DA MULHER BRASILEIRA",
     "municipio": "Campo Grande",
     "latitude": -20.456232,
-    "longitude": -54.663453
+    "longitude": -54.663453,
+    "latitude_gms": "-20°27′22,43″",
+    "longitude_gms": "-54°39′48,43″",
+    "rua": "Rua Brasilia, Lote A, Quadra 2",
+    "numero": "",
+    "bairro": "Jardim Ima",
+    "predio": "Próprio"
   },
   {
     "unidade": "DEFENSORIA DE DOURADOS - POUPATEMPO",
     "municipio": "Dourados",
     "latitude": -22.248507,
-    "longitude": -54.807839
+    "longitude": -54.807839,
+    "latitude_gms": "-22°14′54,63″",
+    "longitude_gms": "-54°48′28,22″",
+    "rua": "Rua Salviano Pedroso",
+    "numero": "1050",
+    "bairro": "Jardim Água Boa",
+    "predio": "Poupatempo"
   }
 ]
