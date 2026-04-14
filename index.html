@@ -146,6 +146,7 @@ td {
     <table>
       <thead>
         <tr>
+          <th>Município</th>
           <th>Data</th>
           <th>Andar</th>
           <th>Sala</th>
@@ -171,6 +172,7 @@ let marcadorSelecionado = null;
 let marcadores = {};
 let limitesMapa = [];
 let modoAtual = 'manutencao';
+let mapaMunicipios = {};
 
 // 🔥 CARREGAR DADOS
 Promise.all([
@@ -299,6 +301,7 @@ function renderTabela(lista) {
   lista.forEach(item => {
     tabela.innerHTML += `
       <tr>
+        <td>${mapaMunicipios[item.unidade] || '-'}</td>
         <td>${item.data || '-'}</td>
         <td>${item.andar || '-'}</td>
         <td>${item.sala || '-'}</td>
@@ -381,6 +384,8 @@ function iniciarMapa() {
       offset: [3, 0],
       opacity: 0.8
     });
+
+    mapaMunicipios[u.unidade] = u.municipio;
   });
 
   if (limitesMapa.length > 0) {
