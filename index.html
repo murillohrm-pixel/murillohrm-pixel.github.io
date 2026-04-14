@@ -160,23 +160,36 @@ td {
       <button onclick="mudarModo('residuos', this)">Resíduos</button>
     </div>
 
-    <!-- RESUMO -->
-    <div id="resumoTabela" class="resumo-tabela"></div>
+    <!-- 🔧 MANUTENÇÃO -->
+    <div id="painel-manutencao">
 
-    <!-- TABELA -->
-    <table>
-      <thead>
-        <tr>
-          <th>Município</th>
-          <th>Data</th>
-          <th>Andar</th>
-          <th>Sala</th>
-          <th>Descrição</th>
-          <th>Ano</th>
-        </tr>
-      </thead>
-      <tbody id="tabela"></tbody>
-    </table>
+      <div id="resumoTabela" class="resumo-tabela"></div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Município</th>
+            <th>Data</th>
+            <th>Andar</th>
+            <th>Sala</th>
+            <th>Descrição</th>
+            <th>Ano</th>
+          </tr>
+        </thead>
+        <tbody id="tabela"></tbody>
+      </table>
+
+    </div>
+
+    <!-- 🏗️ OBRAS -->
+    <div id="painel-obras" style="display:none;">
+      <p>Em breve: painel de obras</p>
+    </div>
+
+    <!-- ♻️ RESÍDUOS -->
+    <div id="painel-residuos" style="display:none;">
+      <p>Em breve: painel de resíduos</p>
+    </div>
 
   </div>
 
@@ -290,18 +303,12 @@ document.getElementById('anoSelect').addEventListener('change', filtrar);
 
 // 🔹 FILTRAR
 function filtrar() {
+
+  if (modoAtual !== 'manutencao') return;
+
   const ano = document.getElementById('anoSelect').value;
 
-  let lista = [];
-
-  // 👉 ESCOLHE A BASE DE DADOS
-  if (modoAtual === 'manutencao') {
-    lista = manutencoes;
-  }
-
-  // FUTURO:
-  // if (modoAtual === 'obras') lista = obras;
-  // if (modoAtual === 'residuos') lista = residuos;
+  let lista = manutencoes;
 
   if (unidadeSelecionada) {
     lista = lista.filter(d => d.unidade === unidadeSelecionada);
@@ -423,14 +430,30 @@ function mudarModo(modo, botaoClicado) {
 
   modoAtual = modo;
 
-  // remover ativo de todos
+  // botão ativo
   document.querySelectorAll('.botoes button')
     .forEach(btn => btn.classList.remove('ativo'));
 
-  // ativar o clicado
   botaoClicado.classList.add('ativo');
 
-  filtrar();
+  // esconder todos os painéis
+  document.getElementById('painel-manutencao').style.display = 'none';
+  document.getElementById('painel-obras').style.display = 'none';
+  document.getElementById('painel-residuos').style.display = 'none';
+
+  // mostrar o painel correto
+  if (modo === 'manutencao') {
+    document.getElementById('painel-manutencao').style.display = 'block';
+    filtrar();
+  }
+
+  if (modo === 'obras') {
+    document.getElementById('painel-obras').style.display = 'block';
+  }
+
+  if (modo === 'residuos') {
+    document.getElementById('painel-residuos').style.display = 'block';
+  }
 }
 
 // 🔹 CLIQUE NO MAPA
