@@ -135,6 +135,8 @@ let manutencoes = [];
 let unidades = [];
 let mapa;
 let unidadeSelecionada = "";
+let marcadorSelecionado = null;
+let marcadores = {};
 
 // 🔥 CARREGAR DADOS
 Promise.all([
@@ -196,7 +198,15 @@ function carregarFiltros() {
 // 🔹 EVENTOS
 document.getElementById('unidadeSelect').addEventListener('change', () => {
   unidadeSelecionada = document.getElementById('unidadeSelect').value;
-  filtrar();
+
+  const marker = marcadores[unidadeSelecionada];
+
+  if (marker) {
+    const latlng = marker.getLatLng();
+    selecionarUnidade(unidadeSelecionada, latlng.lat, latlng.lng, marker);
+  } else {
+    filtrar();
+  }
 });
 
 document.getElementById('anoSelect').addEventListener('change', filtrar);
@@ -237,6 +247,41 @@ function renderTabela(lista) {
 }
 
 // 🔥 MAPA
+
+const iconeNormal = L.icon({
+  iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41]
+});
+
+const iconeSelecionado = L.icon({
+  iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41]
+});
+
+function selecionarUnidade(unidade, lat, lng, marker) {
+
+  // resetar anterior
+  if (marcadorSelecionado) {
+    marcadorSelecionado.setIcon(iconeNormal);
+  }
+
+  // definir novo
+  marcadorSelecionado = marker;
+  marker.setIcon(iconeSelecionado);
+
+  // atualizar select
+  unidadeSelecionada = unidade;
+  document.getElementById('unidadeSelect').value = unidade;
+
+  // zoom no ponto
+  mapa.setView([lat, lng], 15);
+
+  // filtrar tabela
+  filtrar();
+}
+
 function iniciarMapa() {
 
   mapa = L.map('map');
@@ -254,7 +299,14 @@ function iniciarMapa() {
 
     if (!lat || !lng) return;
 
-    const marker = L.marker([lat, lng]).addTo(mapa);
+    const marker = L.marker([lat, lng], { icon: iconeNormal }).addTo(mapa);
+
+    // salvar referência
+    marcadores[u.unidade] = marker;
+
+    marker.on('click', () => {
+      selecionarUnidade(u.unidade, lat, lng, marker);
+    });
 
     bounds.push([lat, lng]);
 
