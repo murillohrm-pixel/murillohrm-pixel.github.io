@@ -137,6 +137,7 @@ let mapa;
 let unidadeSelecionada = "";
 let marcadorSelecionado = null;
 let marcadores = {};
+let limitesMapa = [];
 
 // 🔥 CARREGAR DADOS
 Promise.all([
@@ -197,8 +198,28 @@ function carregarFiltros() {
 
 // 🔹 EVENTOS
 document.getElementById('unidadeSelect').addEventListener('change', () => {
+
   unidadeSelecionada = document.getElementById('unidadeSelect').value;
 
+  // 👉 SE FOR "TODAS"
+  if (!unidadeSelecionada) {
+
+    // limpar seleção
+    if (marcadorSelecionado) {
+      marcadorSelecionado.setIcon(iconeNormal);
+      marcadorSelecionado = null;
+    }
+
+    // zoom geral
+    if (limitesMapa.length > 0) {
+      mapa.fitBounds(limitesMapa, { padding: [50, 50] });
+    }
+
+    filtrar();
+    return;
+  }
+
+  // 👉 SE FOR UMA UNIDADE
   const marker = marcadores[unidadeSelecionada];
 
   if (marker) {
@@ -286,7 +307,7 @@ function iniciarMapa() {
 
   mapa = L.map('map');
 
-  const bounds = [];
+  limitesMapa = [];;
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap'
@@ -308,7 +329,7 @@ function iniciarMapa() {
       selecionarUnidade(u.unidade, lat, lng, marker);
     });
 
-    bounds.push([lat, lng]);
+    limitesMapa.push([lat, lng]);
 
     const municipio = extrairMunicipio(u.unidade);
 
@@ -327,9 +348,9 @@ function iniciarMapa() {
     `);
   });
 
-  if (bounds.length > 0) {
-    mapa.fitBounds(bounds, { padding: [50, 50] });
-  } else {
+  if (limitesMapa.length > 0) {
+  mapa.fitBounds(limitesMapa, { padding: [50, 50] });
+  }
     mapa.setView([-20.5, -54.5], 7);
   }
 }
