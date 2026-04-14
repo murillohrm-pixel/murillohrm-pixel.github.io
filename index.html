@@ -605,10 +605,11 @@ function mostrarDetalhesUnidade(unidadeNome) {
   const texto = `
     <b>Endereço:</b> ${unidade.rua || '-'}, ${unidade.numero || '-'}<br>
     <b>Bairro:</b> ${unidade.bairro || '-'}<br>
-    <b>Tipo de prédio:</b> ${formatarPredio(unidade.predio)}
+    <b>Tipo de prédio:</b> ${formatarPredio(unidade.predio)}<br>
     <b>Coordenadas (GMS):</b><br>
-    Lat: ${unidade.latitude_gms || '-'}<br>
-    Lon: ${unidade.longitude_gms || '-'}
+    <span>Lat: ${unidade.latitude_gms || '-'}</span>
+    &nbsp;&nbsp;&nbsp;
+    <span>Lon: ${unidade.longitude_gms || '-'}</span>
   `;
 
   document.getElementById('detalhesUnidade').innerHTML = texto;
