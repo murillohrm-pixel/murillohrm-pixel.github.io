@@ -108,7 +108,7 @@ td {
 }
 
 .resumo-tabela {
-  margin-top: 15px;
+  margin-bottom: 10px; /* antes era margin-top */
   padding: 10px;
   background: #dfe6e9;
   border-radius: 8px;
@@ -160,6 +160,9 @@ td {
       <button onclick="mudarModo('residuos', this)">Resíduos</button>
     </div>
 
+    <!-- RESUMO -->
+    <div id="resumoTabela" class="resumo-tabela"></div>
+
     <!-- TABELA -->
     <table>
       <thead>
@@ -174,8 +177,6 @@ td {
       </thead>
       <tbody id="tabela"></tbody>
     </table>
-
-    <div id="resumoTabela" class="resumo-tabela"></div>
 
   </div>
 
