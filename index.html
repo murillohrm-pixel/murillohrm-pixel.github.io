@@ -76,6 +76,24 @@ td {
   font-size: 10px;
   color: #222;
 }
+.botoes {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.botoes button {
+  padding: 8px 12px;
+  border: none;
+  background: #2c3e50;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.botoes button:hover {
+  background: #34495e;
+}
 </style>
 </head>
 
@@ -112,6 +130,15 @@ td {
 
   <!-- DIREITA -->
   <div class="direita">
+
+    <!-- BOTÕES -->
+    <div class="botoes">
+      <button onclick="mudarModo('manutencao')">Manutenção</button>
+      <button onclick="mudarModo('obras')">Obras</button>
+      <button onclick="mudarModo('residuos')">Resíduos</button>
+    </div>
+
+    <!-- TABELA -->
     <table>
       <thead>
         <tr>
@@ -124,6 +151,7 @@ td {
       </thead>
       <tbody id="tabela"></tbody>
     </table>
+
   </div>
 
 </div>
@@ -138,6 +166,7 @@ let unidadeSelecionada = "";
 let marcadorSelecionado = null;
 let marcadores = {};
 let limitesMapa = [];
+let modoAtual = 'manutencao';
 
 // 🔥 CARREGAR DADOS
 Promise.all([
@@ -236,7 +265,16 @@ document.getElementById('anoSelect').addEventListener('change', filtrar);
 function filtrar() {
   const ano = document.getElementById('anoSelect').value;
 
-  let lista = manutencoes;
+  let lista = [];
+
+  // 👉 ESCOLHE A BASE DE DADOS
+  if (modoAtual === 'manutencao') {
+    lista = manutencoes;
+  }
+
+  // FUTURO:
+  // if (modoAtual === 'obras') lista = obras;
+  // if (modoAtual === 'residuos') lista = residuos;
 
   if (unidadeSelecionada) {
     lista = lista.filter(d => d.unidade === unidadeSelecionada);
@@ -339,13 +377,6 @@ function iniciarMapa() {
       offset: [3, 0],
       opacity: 0.8
     });
-
-    marker.bindPopup(`
-      <b>${u.unidade}</b><br><br>
-      <button onclick="abrirManutencao('${u.unidade}')">
-        Manutenção
-      </button>
-    `);
   });
 
   if (limitesMapa.length > 0) {
@@ -353,6 +384,11 @@ function iniciarMapa() {
   } else {
     mapa.setView([-20.5, -54.5], 7);
   }
+}
+
+function mudarModo(modo) {
+  modoAtual = modo;
+  filtrar();
 }
 
 // 🔹 CLIQUE NO MAPA
