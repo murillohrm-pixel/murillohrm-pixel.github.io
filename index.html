@@ -422,7 +422,7 @@ function iniciarMapa() {
 
     limitesMapa.push([lat, lng]);
 
-    const municipio = extrairMunicipio(u.unidade);
+    const municipio = u.municipio;
 
     marker.bindTooltip(municipio, {
       permanent: true,
@@ -441,11 +441,15 @@ function iniciarMapa() {
   }
 
   atualizarResumoMapa();
+
+  document.getElementById('detalhesUnidade').innerHTML = '';
 }
 
 function mudarModo(modo, botaoClicado) {
 
   modoAtual = modo;
+
+  document.getElementById('detalhesUnidade').innerHTML = '';
 
   // botão ativo
   document.querySelectorAll('.botoes button')
@@ -601,13 +605,22 @@ function mostrarDetalhesUnidade(unidadeNome) {
   const texto = `
     <b>Endereço:</b> ${unidade.rua || '-'}, ${unidade.numero || '-'}<br>
     <b>Bairro:</b> ${unidade.bairro || '-'}<br>
-    <b>Tipo de prédio:</b> ${unidade.predio || '-'}<br>
+    <b>Tipo de prédio:</b> ${formatarPredio(unidade.predio)}
     <b>Coordenadas (GMS):</b><br>
     Lat: ${unidade.latitude_gms || '-'}<br>
     Lon: ${unidade.longitude_gms || '-'}
   `;
 
   document.getElementById('detalhesUnidade').innerHTML = texto;
+}
+
+function formatarPredio(tipo) {
+  if (!tipo) return '-';
+
+  if (tipo.toLowerCase().includes('alug')) return 'Prédio Alugado';
+  if (tipo.toLowerCase().includes('próprio') || tipo.toLowerCase().includes('proprio')) return 'Prédio Próprio';
+
+  return tipo;
 }
 </script>
 
