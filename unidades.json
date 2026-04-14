@@ -356,7 +356,7 @@
     "longitude_gms": "-54°9′46,80″",
     "rua": "Avenida Francisco Alves da Silva",
     "numero": "1",
-    "bairro": NaN,
+    "bairro": "",
     "predio": "Fórum"
   },
   {
@@ -741,7 +741,7 @@
     "rua": "Rua 3 de julho",
     "numero": "90",
     "bairro": "Centro",
-    "predio": NaN
+    "predio": ""
   },
   {
     "unidade": "DEFENSORIA DE TERENOS - FÓRUM",
