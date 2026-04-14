@@ -94,6 +94,10 @@ td {
 .botoes button:hover {
   background: #34495e;
 }
+
+.botoes button.ativo {
+  background: #2980b9;
+}
 </style>
 </head>
 
@@ -133,9 +137,9 @@ td {
 
     <!-- BOTÕES -->
     <div class="botoes">
-      <button onclick="mudarModo('manutencao')">Manutenção</button>
-      <button onclick="mudarModo('obras')">Obras</button>
-      <button onclick="mudarModo('residuos')">Resíduos</button>
+      <button class="ativo" onclick="mudarModo('manutencao', this)">Manutenção</button>
+      <button onclick="mudarModo('obras', this)">Obras</button>
+      <button onclick="mudarModo('residuos', this)">Resíduos</button>
     </div>
 
     <!-- TABELA -->
@@ -386,8 +390,17 @@ function iniciarMapa() {
   }
 }
 
-function mudarModo(modo) {
+function mudarModo(modo, botaoClicado) {
+
   modoAtual = modo;
+
+  // remover ativo de todos
+  document.querySelectorAll('.botoes button')
+    .forEach(btn => btn.classList.remove('ativo'));
+
+  // ativar o clicado
+  botaoClicado.classList.add('ativo');
+
   filtrar();
 }
 
