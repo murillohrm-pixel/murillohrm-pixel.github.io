@@ -467,7 +467,7 @@ function atualizarResumoMapa() {
 
 function atualizarResumoTabela(lista) {
 
-  // 📊 TOTAL DE MANUTENÇÕES
+  // 📊 TOTAL
   const total = lista.length;
 
   // 📅 DIAS DE MANUTENÇÃO (datas únicas)
@@ -476,30 +476,42 @@ function atualizarResumoTabela(lista) {
   );
   const totalDias = diasUnicos.size;
 
-  // 📆 ÚLTIMA MANUTENÇÃO
+  // 📆 CONVERTER DATAS
   const datasValidas = lista
     .map(item => converterData(item.data, item.ano_origem))
-    .filter(d => !isNaN(d));
+    .filter(d => d instanceof Date && !isNaN(d));
 
-  let diasSemManutencao = "-";
+  let diasSemManutencao = '-';
+  let dataMaisAntiga = '-';
+  let dataMaisRecente = '-';
 
   if (datasValidas.length > 0) {
-    const ultima = new Date(Math.max(...datasValidas));
 
+    // ordenar datas
+    datasValidas.sort((a, b) => a - b);
+
+    const maisAntiga = datasValidas[0];
+    const maisRecente = datasValidas[datasValidas.length - 1];
+
+    // formatar datas
+    dataMaisAntiga = formatarDataBR(maisAntiga);
+    dataMaisRecente = formatarDataBR(maisRecente);
+
+    // calcular dias sem manutenção
     const hoje = new Date();
 
-    const diff = Math.floor(
-      (hoje - ultima) / (1000 * 60 * 60 * 24)
+    diasSemManutencao = Math.floor(
+      (hoje - maisRecente) / (1000 * 60 * 60 * 24)
     );
-
-    diasSemManutencao = diff;
   }
 
   // 🧾 TEXTO FINAL
   const texto = `
     <b>Total de manutenções:</b> ${total} <br>
     <b>Dias de manutenção:</b> ${totalDias} <br>
-    <b>Dias sem manutenção:</b> ${diasSemManutencao}
+    <b>Dias sem manutenção:</b> ${diasSemManutencao} <br>
+    <b>Data de manutenção mais antiga:</b> ${dataMaisAntiga} <br>
+    <b>Data de manutenção mais atual:</b> ${dataMaisRecente}
   `;
 
   document.getElementById('resumoTabela').innerHTML = texto;
@@ -524,6 +536,16 @@ function converterData(dataStr, anoStr) {
   if (isNaN(dia) || mes === undefined) return null;
 
   return new Date(ano, mes, dia);
+}
+
+function formatarDataBR(data) {
+  if (!(data instanceof Date) || isNaN(data)) return '-';
+
+  const dia = String(data.getDate()).padStart(2, '0');
+  const mes = String(data.getMonth() + 1).padStart(2, '0');
+  const ano = data.getFullYear();
+
+  return `${dia}-${mes}-${ano}`;
 }
 </script>
 
