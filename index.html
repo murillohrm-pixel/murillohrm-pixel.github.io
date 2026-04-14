@@ -307,7 +307,7 @@ function iniciarMapa() {
 
   mapa = L.map('map');
 
-  limitesMapa = [];;
+  limitesMapa = [];
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap'
@@ -315,10 +315,10 @@ function iniciarMapa() {
 
   unidades.forEach(u => {
 
-    const lat = Number(u.latitude);
-    const lng = Number(u.longitude);
+    const lat = parseFloat(u.latitude);
+    const lng = parseFloat(u.longitude);
 
-    if (!lat || !lng) return;
+    if (isNaN(lat) || isNaN(lng)) return;
 
     const marker = L.marker([lat, lng], { icon: iconeNormal }).addTo(mapa);
 
@@ -349,8 +349,8 @@ function iniciarMapa() {
   });
 
   if (limitesMapa.length > 0) {
-  mapa.fitBounds(limitesMapa, { padding: [50, 50] });
-  }
+    mapa.fitBounds(limitesMapa, { padding: [50, 50] });
+  } else {
     mapa.setView([-20.5, -54.5], 7);
   }
 }
