@@ -373,6 +373,10 @@ document.getElementById('anoSelect').addEventListener('change', filtrar);
 function filtrar() {
 
   if (modoAtual !== 'manutencao') return;
+  
+  if (modoMulti) {
+    document.getElementById('detalhesUnidade').innerHTML = '';
+  }
 
   const ano = document.getElementById('anoSelect').value;
 
@@ -435,6 +439,8 @@ const iconeSelecionado = L.icon({
 
 function selecionarUnidade(unidade, lat, lng, marker) {
 
+  if (modoMulti) return; // segurança extra
+
   // 🔄 resetar marcador anterior
   if (marcadorSelecionado) {
     marcadorSelecionado.setIcon(iconeNormal);
@@ -444,14 +450,15 @@ function selecionarUnidade(unidade, lat, lng, marker) {
   marcadorSelecionado = marker;
   marker.setIcon(iconeSelecionado);
 
-  // 📋 atualizar select
-  unidadeSelecionada = unidade;
+  // 📋 sincroniza select
   document.getElementById('unidadeSelect').value = unidade;
 
-  // 🗺️ zoom no ponto
-  mapa.setView([lat, lng], 15);
+  unidadeSelecionada = unidade;
 
   // 📊 atualizar tabela (manutenção)
+
+  mapa.setView([lat, lng], 15);
+
   filtrar();
 
   // 📍 mostrar detalhes abaixo do mapa
@@ -481,7 +488,8 @@ function iniciarMapa() {
     marcadores[u.unidade] = marker;
 
     marker.on('click', () => {
-      selecionarUnidade(u.unidade, lat, lng, marker);
+      if (modoMulti) return;
+        selecionarUnidade(u.unidade, lat, lng, marker);
     });
 
     limitesMapa.push([lat, lng]);
@@ -716,6 +724,10 @@ function toggleMulti(botao) {
 
     municipioSelect.size = 5;
     unidadeSelect.size = 5;
+
+    // 🔴 limpa detalhes
+    document.getElementById('detalhesUnidade').innerHTML = '';
+
   } else {
     municipioSelect.removeAttribute('multiple');
     unidadeSelect.removeAttribute('multiple');
