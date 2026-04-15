@@ -138,8 +138,15 @@ td {
     <div class="filtros">
 
       <div>
+        <label>Município</label>
+        <select id="municipioSelect">
+          <option value="">Todos</option>
+        </select>
+      </div>
+
+      <div>
         <label>Unidade</label>
-        <select id="unidadeSelect">
+        <select id="unidadeSelect" multiple size="5">
           <option value="">Todas</option>
         </select>
       </div>
@@ -209,6 +216,8 @@ td {
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
 <script>
+let unidadesSelecionadas = [];
+let municipioSelecionado = "";
 let manutencoes = [];
 let unidades = [];
 let mapa;
@@ -251,6 +260,20 @@ function extrairAno(texto) {
 
 // 🔹 FILTROS
 function carregarFiltros() {
+
+  const municipioSelect = document.getElementById('municipioSelect');
+
+  const municipiosUnicos = [...new Set(
+    unidades.map(u => u.municipio)
+  )];
+
+  municipiosUnicos.forEach(m => {
+    const opt = document.createElement('option');
+    opt.value = m;
+    opt.textContent = m;
+    municipioSelect.appendChild(opt);
+  });
+
   const unidadeSelect = document.getElementById('unidadeSelect');
   const anoSelect = document.getElementById('anoSelect');
 
@@ -277,6 +300,29 @@ function carregarFiltros() {
 }
 
 // 🔹 EVENTOS
+
+document.getElementById('municipioSelect').addEventListener('change', () => {
+
+  municipioSelecionado = document.getElementById('municipioSelect').value;
+
+  atualizarUnidadesPorMunicipio();
+  zoomMunicipio();
+
+  filtrar();
+});
+
+document.getElementById('unidadeSelect').addEventListener('change', () => {
+
+  const select = document.getElementById('unidadeSelect');
+
+  unidadesSelecionadas = Array.from(select.selectedOptions)
+    .map(opt => opt.value);
+
+  zoomUnidadesSelecionadas();
+
+  filtrar();
+});
+
 document.getElementById('unidadeSelect').addEventListener('change', () => {
 
   unidadeSelecionada = document.getElementById('unidadeSelect').value;
@@ -324,8 +370,10 @@ function filtrar() {
 
   let lista = manutencoes;
 
-  if (unidadeSelecionada) {
-    lista = lista.filter(d => d.unidade === unidadeSelecionada);
+  if (unidadesSelecionadas.length > 0) {
+    lista = lista.filter(d => 
+      unidadesSelecionadas.includes(d.unidade)
+    );
   }
 
   if (ano) {
@@ -622,6 +670,58 @@ function formatarPredio(tipo) {
   if (tipo.toLowerCase().includes('próprio') || tipo.toLowerCase().includes('proprio')) return 'Prédio Próprio';
 
   return tipo;
+}
+
+function atualizarUnidadesPorMunicipio() {
+
+  const unidadeSelect = document.getElementById('unidadeSelect');
+  unidadeSelect.innerHTML = '';
+
+  let lista = unidades;
+
+  if (municipioSelecionado) {
+    lista = lista.filter(u => u.municipio === municipioSelecionado);
+  }
+
+  lista.forEach(u => {
+    const opt = document.createElement('option');
+    opt.value = u.unidade;
+    opt.textContent = u.unidade;
+    unidadeSelect.appendChild(opt);
+  });
+
+  unidadesSelecionadas = [];
+}
+
+function zoomMunicipio() {
+
+  if (!municipioSelecionado) {
+    if (limitesMapa.length > 0) {
+      mapa.fitBounds(limitesMapa, { padding: [50, 50] });
+    }
+    return;
+  }
+
+  const pontos = unidades
+    .filter(u => u.municipio === municipioSelecionado)
+    .map(u => [parseFloat(u.latitude), parseFloat(u.longitude)]);
+
+  if (pontos.length > 0) {
+    mapa.fitBounds(pontos, { padding: [50, 50] });
+  }
+}
+
+function zoomUnidadesSelecionadas() {
+
+  if (unidadesSelecionadas.length === 0) return;
+
+  const pontos = unidades
+    .filter(u => unidadesSelecionadas.includes(u.unidade))
+    .map(u => [parseFloat(u.latitude), parseFloat(u.longitude)]);
+
+  if (pontos.length > 0) {
+    mapa.fitBounds(pontos, { padding: [50, 50] });
+  }
 }
 </script>
 
