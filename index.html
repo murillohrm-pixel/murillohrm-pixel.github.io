@@ -250,7 +250,6 @@ th, td {
 
 <script>
 let unidadesSelecionadas = [];
-let municipioSelecionado = "";
 let manutencoes = [];
 let unidades = [];
 let mapa;
@@ -262,7 +261,7 @@ let modoAtual = 'manutencao';
 let mapaMunicipios = {};
 let modoMulti = false;
 let municipiosSelecionados = [];
-let unidadesSelecionadas = [];
+unidadeSelect.selectedIndex = -1;
 
 // 🔥 CARREGAR DADOS
 Promise.all([
@@ -367,42 +366,6 @@ document.getElementById('unidadeSelect').addEventListener('change', () => {
 
   zoomUnidadesSelecionadas();
   filtrar();
-});
-
-document.getElementById('unidadeSelect').addEventListener('change', () => {
-
-  unidadeSelecionada = document.getElementById('unidadeSelect').value;
-
-  // 👉 SE FOR "TODAS"
-  if (!unidadeSelecionada) {
-
-    // 🔄 limpar marcador selecionado
-    if (marcadorSelecionado) {
-      marcadorSelecionado.setIcon(iconeNormal);
-      marcadorSelecionado = null;
-    }
-
-    // 🧹 limpar painel de detalhes
-    document.getElementById('detalhesUnidade').innerHTML = '';
-
-    // 🌍 zoom geral
-    if (limitesMapa.length > 0) {
-      mapa.fitBounds(limitesMapa, { padding: [50, 50] });
-    }
-
-    filtrar();
-    return;
-  }
-
-  // 👉 SE FOR UMA UNIDADE
-  const marker = marcadores[unidadeSelecionada];
-
-  if (marker) {
-    const latlng = marker.getLatLng();
-    selecionarUnidade(unidadeSelecionada, latlng.lat, latlng.lng, marker);
-  } else {
-    filtrar();
-  }
 });
 
 document.getElementById('anoSelect').addEventListener('change', filtrar);
@@ -726,45 +689,6 @@ function formatarPredio(tipo) {
   return tipo;
 }
 
-function atualizarUnidadesPorMunicipio() {
-
-  const unidadeSelect = document.getElementById('unidadeSelect');
-  unidadeSelect.innerHTML = '';
-
-  let lista = unidades;
-
-  if (municipioSelecionado) {
-    lista = lista.filter(u => u.municipio === municipioSelecionado);
-  }
-
-  lista.forEach(u => {
-    const opt = document.createElement('option');
-    opt.value = u.unidade;
-    opt.textContent = u.unidade;
-    unidadeSelect.appendChild(opt);
-  });
-
-  unidadesSelecionadas = [];
-}
-
-function zoomMunicipio() {
-
-  if (!municipioSelecionado) {
-    if (limitesMapa.length > 0) {
-      mapa.fitBounds(limitesMapa, { padding: [50, 50] });
-    }
-    return;
-  }
-
-  const pontos = unidades
-    .filter(u => u.municipio === municipioSelecionado)
-    .map(u => [parseFloat(u.latitude), parseFloat(u.longitude)]);
-
-  if (pontos.length > 0) {
-    mapa.fitBounds(pontos, { padding: [50, 50] });
-  }
-}
-
 function zoomUnidadesSelecionadas() {
 
   if (unidadesSelecionadas.length === 0) return;
@@ -848,13 +772,12 @@ function zoomMunicipios() {
 
 function atualizarResumoSelecao() {
 
-  const municipios = new Set(
-    unidadesSelecionadas.map(u => mapaMunicipios[u])
-  );
+  const totalMunicipios = municipiosSelecionados.length;
+  const totalUnidades = unidadesSelecionadas.length;
 
   const texto = `
-    <b>${municipios.size}</b> município(s) selecionado(s) <br>
-    <b>${unidadesSelecionadas.length}</b> unidade(s) selecionada(s)
+    <b>${totalMunicipios}</b> município(s) selecionado(s) <br>
+    <b>${totalUnidades}</b> unidade(s) selecionada(s)
   `;
 
   document.getElementById('resumoMapa').innerHTML = texto;
