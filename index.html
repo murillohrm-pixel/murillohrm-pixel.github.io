@@ -123,6 +123,32 @@ td {
   border-radius: 6px;
   font-size: 14px;
 }
+
+.botoes-modo {
+  margin-bottom: 10px;
+}
+
+#btnMulti {
+  padding: 8px 12px;
+  border: none;
+  background: #7f8c8d;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#btnMulti.ativo {
+  background: #27ae60;
+}
+
+/* 🔽 tabela menor */
+table {
+  font-size: 12px;
+}
+
+th, td {
+  padding: 6px;
+}
 </style>
 </head>
 
@@ -135,6 +161,12 @@ td {
   <!-- ESQUERDA -->
   <div class="esquerda">
 
+    <div class="botoes-modo">
+      <button id="btnMulti" onclick="toggleMulti(this)">
+        Escolher mais de um
+      </button>
+    </div>
+
     <div class="filtros">
 
       <div>
@@ -146,7 +178,7 @@ td {
 
       <div>
         <label>Unidade</label>
-        <select id="unidadeSelect" multiple size="5">
+        <select id="unidadeSelect">
           <option value="">Todas</option>
         </select>
       </div>
@@ -187,6 +219,7 @@ td {
         <thead>
           <tr>
             <th>Município</th>
+            <th>Unidade</th>
             <th>Data</th>
             <th>Andar</th>
             <th>Sala</th>
@@ -227,6 +260,9 @@ let marcadores = {};
 let limitesMapa = [];
 let modoAtual = 'manutencao';
 let mapaMunicipios = {};
+let modoMulti = false;
+let municipiosSelecionados = [];
+let unidadesSelecionadas = [];
 
 // 🔥 CARREGAR DADOS
 Promise.all([
@@ -303,10 +339,17 @@ function carregarFiltros() {
 
 document.getElementById('municipioSelect').addEventListener('change', () => {
 
-  municipioSelecionado = document.getElementById('municipioSelect').value;
+  const select = document.getElementById('municipioSelect');
+
+  if (modoMulti) {
+    municipiosSelecionados = Array.from(select.selectedOptions)
+      .map(opt => opt.value);
+  } else {
+    municipiosSelecionados = select.value ? [select.value] : [];
+  }
 
   atualizarUnidadesPorMunicipio();
-  zoomMunicipio();
+  zoomMunicipios();
 
   filtrar();
 });
@@ -315,11 +358,14 @@ document.getElementById('unidadeSelect').addEventListener('change', () => {
 
   const select = document.getElementById('unidadeSelect');
 
-  unidadesSelecionadas = Array.from(select.selectedOptions)
-    .map(opt => opt.value);
+  if (modoMulti) {
+    unidadesSelecionadas = Array.from(select.selectedOptions)
+      .map(opt => opt.value);
+  } else {
+    unidadesSelecionadas = select.value ? [select.value] : [];
+  }
 
   zoomUnidadesSelecionadas();
-
   filtrar();
 });
 
@@ -370,8 +416,14 @@ function filtrar() {
 
   let lista = manutencoes;
 
+  if (municipiosSelecionados.length > 0) {
+    lista = lista.filter(d =>
+      municipiosSelecionados.includes(mapaMunicipios[d.unidade])
+    );
+  }
+
   if (unidadesSelecionadas.length > 0) {
-    lista = lista.filter(d => 
+    lista = lista.filter(d =>
       unidadesSelecionadas.includes(d.unidade)
     );
   }
@@ -382,6 +434,7 @@ function filtrar() {
 
   renderTabela(lista);
   atualizarResumoTabela(lista);
+  atualizarResumoSelecao();
 }
 
 // 🔹 TABELA
@@ -393,6 +446,7 @@ function renderTabela(lista) {
     tabela.innerHTML += `
       <tr>
         <td>${mapaMunicipios[item.unidade] || '-'}</td>
+        <td>${item.unidade || '-'}</td>
         <td>${item.data || '-'}</td>
         <td>${item.andar || '-'}</td>
         <td>${item.sala || '-'}</td>
@@ -722,6 +776,88 @@ function zoomUnidadesSelecionadas() {
   if (pontos.length > 0) {
     mapa.fitBounds(pontos, { padding: [50, 50] });
   }
+}
+
+function toggleMulti(botao) {
+
+  modoMulti = !modoMulti;
+
+  botao.classList.toggle('ativo');
+
+  const municipioSelect = document.getElementById('municipioSelect');
+  const unidadeSelect = document.getElementById('unidadeSelect');
+
+  if (modoMulti) {
+    municipioSelect.setAttribute('multiple', true);
+    unidadeSelect.setAttribute('multiple', true);
+
+    municipioSelect.size = 5;
+    unidadeSelect.size = 5;
+  } else {
+    municipioSelect.removeAttribute('multiple');
+    unidadeSelect.removeAttribute('multiple');
+
+    municipioSelect.size = 1;
+    unidadeSelect.size = 1;
+
+    municipiosSelecionados = [];
+    unidadesSelecionadas = [];
+  }
+
+  filtrar();
+}
+
+function atualizarUnidadesPorMunicipio() {
+
+  const unidadeSelect = document.getElementById('unidadeSelect');
+  unidadeSelect.innerHTML = '';
+
+  let lista = unidades;
+
+  if (municipiosSelecionados.length > 0) {
+    lista = lista.filter(u => 
+      municipiosSelecionados.includes(u.municipio)
+    );
+  }
+
+  lista.forEach(u => {
+    const opt = document.createElement('option');
+    opt.value = u.unidade;
+    opt.textContent = u.unidade;
+    unidadeSelect.appendChild(opt);
+  });
+
+  unidadesSelecionadas = [];
+}
+
+function zoomMunicipios() {
+
+  if (municipiosSelecionados.length === 0) {
+    mapa.fitBounds(limitesMapa, { padding: [50, 50] });
+    return;
+  }
+
+  const pontos = unidades
+    .filter(u => municipiosSelecionados.includes(u.municipio))
+    .map(u => [parseFloat(u.latitude), parseFloat(u.longitude)]);
+
+  if (pontos.length > 0) {
+    mapa.fitBounds(pontos, { padding: [50, 50] });
+  }
+}
+
+function atualizarResumoSelecao() {
+
+  const municipios = new Set(
+    unidadesSelecionadas.map(u => mapaMunicipios[u])
+  );
+
+  const texto = `
+    <b>${municipios.size}</b> município(s) selecionado(s) <br>
+    <b>${unidadesSelecionadas.length}</b> unidade(s) selecionada(s)
+  `;
+
+  document.getElementById('resumoMapa').innerHTML = texto;
 }
 </script>
 
