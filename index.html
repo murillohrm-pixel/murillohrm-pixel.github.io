@@ -359,8 +359,26 @@ document.getElementById('unidadeSelect').addEventListener('change', () => {
   if (modoMulti) {
     unidadesSelecionadas = Array.from(select.selectedOptions)
       .map(opt => opt.value);
+
+    // 🔴 modo multi → não mostra detalhes
+    document.getElementById('detalhesUnidade').innerHTML = '';
+
   } else {
-    unidadesSelecionadas = select.value ? [select.value] : [];
+    const unidade = select.value;
+
+    unidadesSelecionadas = unidade ? [unidade] : [];
+
+    if (unidade) {
+      const marker = marcadores[unidade];
+
+      if (marker) {
+        const latlng = marker.getLatLng();
+
+        selecionarUnidade(unidade, latlng.lat, latlng.lng, marker);
+      } else {
+        mostrarDetalhesUnidade(unidade);
+      }
+    }
   }
 
   zoomUnidadesSelecionadas();
