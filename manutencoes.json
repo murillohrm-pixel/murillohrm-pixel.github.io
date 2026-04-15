@@ -1,6 +1,156 @@
 [
   {
     "unidade": "SEDE DO PARQUE DOS PODERES",
+    "data": "7-jan",
+    "hora_inicio": "15:00",
+    "hora_fim": "16:00",
+    "andar": "1º Andar",
+    "sala": "STI",
+    "descricao": "troca da evaporadora do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "SEDE DO PARQUE DOS PODERES",
+    "data": "20-jan",
+    "hora_inicio": "13:25",
+    "hora_fim": "13:52",
+    "andar": "1º Andar",
+    "sala": "sala SGA",
+    "descricao": "troca de lâmpada",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "SEDE DO PARQUE DOS PODERES",
+    "data": "20-jan",
+    "hora_inicio": "13:25",
+    "hora_fim": "13:52",
+    "andar": "1º Andar",
+    "sala": "sala dr. Mateus",
+    "descricao": "troca de lâmpada",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "SEDE DO PARQUE DOS PODERES",
+    "data": "20-jan",
+    "hora_inicio": "13:25",
+    "hora_fim": "13:52",
+    "andar": "1º Andar",
+    "sala": "assessoria gabinete",
+    "descricao": "troca de lâmpada",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "SEDE DO PARQUE DOS PODERES",
+    "data": "14-fev",
+    "hora_inicio": "13:15",
+    "hora_fim": "14:00",
+    "andar": "1º Andar",
+    "sala": "sala dr. Gustavo",
+    "descricao": "troca de lâmpada",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "SEDE DO PARQUE DOS PODERES",
+    "data": "14-fev",
+    "hora_inicio": "13:15",
+    "hora_fim": "14:00",
+    "andar": "1º Andar",
+    "sala": "sala da corregedoria",
+    "descricao": "troca de lâmpada",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "SEDE DO PARQUE DOS PODERES",
+    "data": "14-fev",
+    "hora_inicio": "13:15",
+    "hora_fim": "14:00",
+    "andar": "1º Andar",
+    "sala": "sala da dra. Renata",
+    "descricao": "troca de lâmpada",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "SEDE DO PARQUE DOS PODERES",
+    "data": "14-fev",
+    "hora_inicio": "13:15",
+    "hora_fim": "14:00",
+    "andar": "1º Andar",
+    "sala": "corredor",
+    "descricao": "troca de lâmpada",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "SEDE DO PARQUE DOS PODERES",
+    "data": "14-fev",
+    "hora_inicio": "13:15",
+    "hora_fim": "14:00",
+    "andar": "1º Andar",
+    "sala": "coordenadora de licitação",
+    "descricao": "troca de lâmpada",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "SEDE DO PARQUE DOS PODERES",
+    "data": "14-fev",
+    "hora_inicio": "13:15",
+    "hora_fim": "14:00",
+    "andar": "1º Andar",
+    "sala": "sala do auditório",
+    "descricao": "troca de lâmpada",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "SEDE DO PARQUE DOS PODERES",
+    "data": "7-mar",
+    "hora_inicio": "16:00",
+    "hora_fim": "16:28",
+    "andar": "1º Andar",
+    "sala": "banheiro rh",
+    "descricao": "aperto do parafuso da caixa acopladora",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "SEDE DO PARQUE DOS PODERES",
+    "data": "7-mar",
+    "hora_inicio": "16:00",
+    "hora_fim": "16:28",
+    "andar": "1º Andar",
+    "sala": "banheiro masculino",
+    "descricao": "troca do botão de acionamento da caixa acoplada",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "SEDE DO PARQUE DOS PODERES",
+    "data": "7-mar",
+    "hora_inicio": "16:00",
+    "hora_fim": "16:28",
+    "andar": "1º Andar",
+    "sala": "banheiro feminino",
+    "descricao": "regulação do nível da baia ed alimentação",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "SEDE DO PARQUE DOS PODERES",
+    "data": "7-mar",
+    "hora_inicio": "16:00",
+    "hora_fim": "16:28",
+    "andar": "",
+    "sala": "",
+    "descricao": "troca do drive da lâmpada",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "SEDE DO PARQUE DOS PODERES",
+    "data": "1-abr",
+    "hora_inicio": "13:40",
+    "hora_fim": "14:50",
+    "andar": "1º Andar",
+    "sala": "escada",
+    "descricao": "instalação de luminárias na escadaria de acesso aos gabinetes",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "SEDE DO PARQUE DOS PODERES",
     "data": "29-abr",
     "hora_inicio": "12:40",
     "hora_fim": "13:48",
@@ -126,6 +276,246 @@
     "hora_fim": "",
     "andar": "1º Andar",
     "sala": "corretor",
+    "descricao": "troca de lâmpada",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "20-jan",
+    "hora_inicio": "13:55",
+    "hora_fim": "14:02",
+    "andar": "",
+    "sala": "sala dra. Cacilda",
+    "descricao": "troca de lâmpada",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "5-fev",
+    "hora_inicio": "13:30",
+    "hora_fim": "14:12",
+    "andar": "",
+    "sala": "",
+    "descricao": "cadastro do controle remoto",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "6-fev",
+    "hora_inicio": "15:40",
+    "hora_fim": "16:15",
+    "andar": "1º Andar",
+    "sala": "corredor",
+    "descricao": "troca de lâmpada",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "6-fev",
+    "hora_inicio": "15:40",
+    "hora_fim": "16:15",
+    "andar": "1º Andar",
+    "sala": "sala do dr. Almir",
+    "descricao": "troca de lâmpada",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "6-fev",
+    "hora_inicio": "15:40",
+    "hora_fim": "16:15",
+    "andar": "1º Andar",
+    "sala": "escada",
+    "descricao": "troca de lâmpada",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "11-fev",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala da recepção",
+    "descricao": "troca de lâmpadas",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "11-fev",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala dra. Cristiane",
+    "descricao": "troca de lâmpada",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "14-fev",
+    "hora_inicio": "15:35",
+    "hora_fim": "15:55",
+    "andar": "1º Andar",
+    "sala": "banheiro masculino",
+    "descricao": "troca de torneira",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "19-fev",
+    "hora_inicio": "13:34",
+    "hora_fim": "14:48",
+    "andar": "3º Andar",
+    "sala": "sala do auditório",
+    "descricao": "troca de lâmpada",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "19-fev",
+    "hora_inicio": "13:34",
+    "hora_fim": "14:48",
+    "andar": "3º Andar",
+    "sala": "banheiro PCD",
+    "descricao": "troca de torneira",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "19-fev",
+    "hora_inicio": "13:34",
+    "hora_fim": "14:48",
+    "andar": "3º Andar",
+    "sala": "banheiro masculino",
+    "descricao": "troca de torneira e sifão",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "19-fev",
+    "hora_inicio": "13:34",
+    "hora_fim": "14:48",
+    "andar": "3º Andar",
+    "sala": "sala do hall",
+    "descricao": "troca de torneira e sifão",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "25-fev",
+    "hora_inicio": "13:15",
+    "hora_fim": "14:04",
+    "andar": "Terreo",
+    "sala": "estacionamento",
+    "descricao": "reparo dos buracos no forro de gesso",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "14-mar",
+    "hora_inicio": "14:30",
+    "hora_fim": "15:10",
+    "andar": "Terreo",
+    "sala": "sala 101",
+    "descricao": "troca de 2 lâmpadas de 24W",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "14-mar",
+    "hora_inicio": "14:30",
+    "hora_fim": "15:10",
+    "andar": "Terreo",
+    "sala": "cartorio",
+    "descricao": "troca de 1 lâmpada de 18W",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "2-abr",
+    "hora_inicio": "13:45",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "hall",
+    "descricao": "troca de lâmpada",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "2-abr",
+    "hora_inicio": "13:45",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "estacionamento",
+    "descricao": "lixou e passou tinta no teto",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "2-abr",
+    "hora_inicio": "13:45",
+    "hora_fim": "",
+    "andar": "Subsolo",
+    "sala": "estacionamento",
+    "descricao": "Remoção do ninho de pombo",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "2-abr",
+    "hora_inicio": "13:45",
+    "hora_fim": "",
+    "andar": "3º Andar",
+    "sala": "sala do auditório",
+    "descricao": "troca de lâmpadas",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "2-abr",
+    "hora_inicio": "13:45",
+    "hora_fim": "",
+    "andar": "2º Andar",
+    "sala": "CPD",
+    "descricao": "troca de lâmpadas",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "2-abr",
+    "hora_inicio": "13:45",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "CPD",
+    "descricao": "troca de lâmpadas",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "2-abr",
+    "hora_inicio": "13:45",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "sala 101",
+    "descricao": "troca de lâmpadas dicroica",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "2-abr",
+    "hora_inicio": "13:45",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 5",
+    "descricao": "troca de lâmpada",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "2-abr",
+    "hora_inicio": "13:45",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 6",
     "descricao": "troca de lâmpada",
     "ano_origem": "OS Registros Realizados - 2025"
   },
@@ -477,6 +867,216 @@
     "andar": "Externo",
     "sala": "",
     "descricao": "vedação das torneiras",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - AFONSO PENA - NUDEM/NUDECA",
+    "data": "8-jan",
+    "hora_inicio": "14:16",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala dr. Eugenio",
+    "descricao": "refeita emenda dos fios do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - AFONSO PENA - NUDEM/NUDECA",
+    "data": "8-jan",
+    "hora_inicio": "14:16",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 2",
+    "descricao": "instalação de quadros na parede",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - AFONSO PENA - NUDEM/NUDECA",
+    "data": "8-jan",
+    "hora_inicio": "14:16",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala dr. Eugenio",
+    "descricao": "conserto da cadeira",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - AFONSO PENA - NUDEM/NUDECA",
+    "data": "20-jan",
+    "hora_inicio": "14:08",
+    "hora_fim": "14:40",
+    "andar": "",
+    "sala": "",
+    "descricao": "limpeza periódica das calhas da unidade",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - AFONSO PENA - NUDEM/NUDECA",
+    "data": "21-jan",
+    "hora_inicio": "13:03",
+    "hora_fim": "13:15",
+    "andar": "Terreo",
+    "sala": "banheiro feminino",
+    "descricao": "troca de luminária de embutir",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - AFONSO PENA - NUDEM/NUDECA",
+    "data": "21-jan",
+    "hora_inicio": "13:03",
+    "hora_fim": "13:15",
+    "andar": "1º Andar",
+    "sala": "corredor",
+    "descricao": "troca de luminária",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - AFONSO PENA - NUDEM/NUDECA",
+    "data": "27-jan",
+    "hora_inicio": "14:50",
+    "hora_fim": "15:00",
+    "andar": "Terreo",
+    "sala": "sala 21",
+    "descricao": "troca de interruptor",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - AFONSO PENA - NUDEM/NUDECA",
+    "data": "27-jan",
+    "hora_inicio": "14:50",
+    "hora_fim": "15:00",
+    "andar": "Terreo",
+    "sala": "sala 7",
+    "descricao": "conserto da maçãneta",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - AFONSO PENA - NUDEM/NUDECA",
+    "data": "27-jan",
+    "hora_inicio": "14:50",
+    "hora_fim": "15:00",
+    "andar": "Terreo",
+    "sala": "sala 1",
+    "descricao": "troca do capacitor do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - AFONSO PENA - NUDEM/NUDECA",
+    "data": "25-mar",
+    "hora_inicio": "14:31",
+    "hora_fim": "15:01",
+    "andar": "Terreo",
+    "sala": "sala 6",
+    "descricao": "troca de lâmpada",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - AFONSO PENA - NUDEM/NUDECA",
+    "data": "25-mar",
+    "hora_inicio": "14:31",
+    "hora_fim": "15:01",
+    "andar": "Terreo",
+    "sala": "sala 6",
+    "descricao": "substituição do cabo PP do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - AFONSO PENA - NUDEM/NUDECA",
+    "data": "25-mar",
+    "hora_inicio": "14:31",
+    "hora_fim": "15:01",
+    "andar": "Terreo",
+    "sala": "banheiro masculino",
+    "descricao": "troca da carrapeta da torneira",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - AFONSO PENA - NUDEM/NUDECA",
+    "data": "25-mar",
+    "hora_inicio": "14:31",
+    "hora_fim": "15:01",
+    "andar": "Terreo",
+    "sala": "banheiro masculino",
+    "descricao": "troca da grelha",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - AFONSO PENA - NUDEM/NUDECA",
+    "data": "25-mar",
+    "hora_inicio": "14:31",
+    "hora_fim": "15:01",
+    "andar": "Terreo",
+    "sala": "banheiro feminino",
+    "descricao": "troca de grelha",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - AFONSO PENA - NUDEM/NUDECA",
+    "data": "25-mar",
+    "hora_inicio": "14:31",
+    "hora_fim": "15:01",
+    "andar": "Terreo",
+    "sala": "trocador",
+    "descricao": "troca da grelha",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - AFONSO PENA - NUDEM/NUDECA",
+    "data": "25-mar",
+    "hora_inicio": "14:31",
+    "hora_fim": "15:01",
+    "andar": "Subsolo",
+    "sala": "banheiro feminino",
+    "descricao": "troca da grelha",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - AFONSO PENA - NUDEM/NUDECA",
+    "data": "25-mar",
+    "hora_inicio": "14:31",
+    "hora_fim": "15:01",
+    "andar": "Subsolo",
+    "sala": "banheiro",
+    "descricao": "troca da grelha",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - AFONSO PENA - NUDEM/NUDECA",
+    "data": "26-mar",
+    "hora_inicio": "13:45",
+    "hora_fim": "14:35",
+    "andar": "1º Andar",
+    "sala": "sala 10",
+    "descricao": "reparo no cabeamento do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - AFONSO PENA - NUDEM/NUDECA",
+    "data": "31-mar",
+    "hora_inicio": "13:40",
+    "hora_fim": "14:10",
+    "andar": "Terreo",
+    "sala": "sala 5",
+    "descricao": "reparo no cabeamento do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - AFONSO PENA - NUDEM/NUDECA",
+    "data": "3-abr",
+    "hora_inicio": "13:20",
+    "hora_fim": "14:24",
+    "andar": "Terreo",
+    "sala": "sala 10",
+    "descricao": "configuração do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - AFONSO PENA - NUDEM/NUDECA",
+    "data": "3-abr",
+    "hora_inicio": "13:20",
+    "hora_fim": "14:24",
+    "andar": "1º Andar",
+    "sala": "sala 14",
+    "descricao": "problema na conexão do cabo de alimentação e configuração do controle do ar condicionado",
     "ano_origem": "OS Registros Realizados - 2025"
   },
   {
@@ -921,6 +1521,96 @@
   },
   {
     "unidade": "DEFENSORIA DE CAMPO GRANDE - BARÃO DE MELGAÇO - NAS/NUSPEN",
+    "data": "11-fev",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Subsolo",
+    "sala": "",
+    "descricao": "reconfiguração do sistema de alarme de incêndio",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BARÃO DE MELGAÇO - NAS/NUSPEN",
+    "data": "14-fev",
+    "hora_inicio": "14:40",
+    "hora_fim": "14:57",
+    "andar": "Terreo",
+    "sala": "sala 1",
+    "descricao": "instalação de mais 2 parafusos no suporte do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BARÃO DE MELGAÇO - NAS/NUSPEN",
+    "data": "7-mar",
+    "hora_inicio": "13:36",
+    "hora_fim": "15:00",
+    "andar": "Terreo",
+    "sala": "sala 6",
+    "descricao": "substituição do tubo de dreno do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BARÃO DE MELGAÇO - NAS/NUSPEN",
+    "data": "7-mar",
+    "hora_inicio": "13:36",
+    "hora_fim": "15:00",
+    "andar": "Terreo",
+    "sala": "banheiro masculino",
+    "descricao": "aplicação de silicone nos cantos banheiro dos servidores",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BARÃO DE MELGAÇO - NAS/NUSPEN",
+    "data": "7-mar",
+    "hora_inicio": "13:36",
+    "hora_fim": "15:00",
+    "andar": "Terreo",
+    "sala": "sala 1",
+    "descricao": "dreno dobrado como solução paliativa para vazemento de ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BARÃO DE MELGAÇO - NAS/NUSPEN",
+    "data": "10-mar",
+    "hora_inicio": "15:00",
+    "hora_fim": "15:50",
+    "andar": "Subsolo",
+    "sala": "",
+    "descricao": "tubulação pluvial com vazamento na curva 45°",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BARÃO DE MELGAÇO - NAS/NUSPEN",
+    "data": "10-mar",
+    "hora_inicio": "15:00",
+    "hora_fim": "15:50",
+    "andar": "1º Andar",
+    "sala": "banheiro feminino",
+    "descricao": "regulação da válvula de descarga",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BARÃO DE MELGAÇO - NAS/NUSPEN",
+    "data": "10-mar",
+    "hora_inicio": "15:00",
+    "hora_fim": "15:50",
+    "andar": "1º Andar",
+    "sala": "banheiro feminino",
+    "descricao": "troca da tampa do vaso",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BARÃO DE MELGAÇO - NAS/NUSPEN",
+    "data": "13-mar",
+    "hora_inicio": "15:15",
+    "hora_fim": "16:35",
+    "andar": "Subsolo",
+    "sala": "garagem",
+    "descricao": "troca de lâmpada",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BARÃO DE MELGAÇO - NAS/NUSPEN",
     "data": "15-abr",
     "hora_inicio": "17:10",
     "hora_fim": "18:41",
@@ -1171,6 +1861,236 @@
   },
   {
     "unidade": "DEFENSORIA DE CAMPO GRANDE - BELMAR FIDALGO - NUFAM",
+    "data": "10-jan",
+    "hora_inicio": "16:40",
+    "hora_fim": "17:35",
+    "andar": "2º Andar",
+    "sala": "sala da recepção",
+    "descricao": "recarga de fluido refrigerante do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BELMAR FIDALGO - NUFAM",
+    "data": "10-jan",
+    "hora_inicio": "16:40",
+    "hora_fim": "17:35",
+    "andar": "2º Andar",
+    "sala": "sala 201",
+    "descricao": "encontrada necessidade de recarga de fluido refrigerante do ar condicionado devido respingo",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BELMAR FIDALGO - NUFAM",
+    "data": "10-jan",
+    "hora_inicio": "16:40",
+    "hora_fim": "17:35",
+    "andar": "3º Andar",
+    "sala": "CPD",
+    "descricao": "serpentina congelada e recolocado para descongelar",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BELMAR FIDALGO - NUFAM",
+    "data": "10-jan",
+    "hora_inicio": "16:40",
+    "hora_fim": "17:35",
+    "andar": "3º Andar",
+    "sala": "sala da recepção",
+    "descricao": "recarga de fluido refrigerante do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BELMAR FIDALGO - NUFAM",
+    "data": "20-jan",
+    "hora_inicio": "15:36",
+    "hora_fim": "16:00",
+    "andar": "5º Andar",
+    "sala": "",
+    "descricao": "troca de disjuntor do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BELMAR FIDALGO - NUFAM",
+    "data": "20-jan",
+    "hora_inicio": "15:36",
+    "hora_fim": "16:00",
+    "andar": "",
+    "sala": "",
+    "descricao": "limpeza periódica da laje da cobertura",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BELMAR FIDALGO - NUFAM",
+    "data": "11-fev",
+    "hora_inicio": "13:30",
+    "hora_fim": "14:16",
+    "andar": "3º Andar",
+    "sala": "sala dr. Daniel",
+    "descricao": "substituição do controle remoto do ar",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BELMAR FIDALGO - NUFAM",
+    "data": "11-fev",
+    "hora_inicio": "13:30",
+    "hora_fim": "14:16",
+    "andar": "3º Andar",
+    "sala": "CPD",
+    "descricao": "verificação da pressão do ar",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BELMAR FIDALGO - NUFAM",
+    "data": "25-fev",
+    "hora_inicio": "14:55",
+    "hora_fim": "15:40",
+    "andar": "2º Andar",
+    "sala": "corredor",
+    "descricao": "troca de lâmpada",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BELMAR FIDALGO - NUFAM",
+    "data": "25-fev",
+    "hora_inicio": "14:55",
+    "hora_fim": "15:40",
+    "andar": "2º Andar",
+    "sala": "sala 207",
+    "descricao": "dreno entupido do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BELMAR FIDALGO - NUFAM",
+    "data": "25-fev",
+    "hora_inicio": "14:55",
+    "hora_fim": "15:40",
+    "andar": "2º Andar",
+    "sala": "sala da recepção",
+    "descricao": "persiana instalada",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BELMAR FIDALGO - NUFAM",
+    "data": "25-fev",
+    "hora_inicio": "14:55",
+    "hora_fim": "15:40",
+    "andar": "Subsolo",
+    "sala": "copa",
+    "descricao": "troca do filtro",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BELMAR FIDALGO - NUFAM",
+    "data": "25-fev",
+    "hora_inicio": "14:55",
+    "hora_fim": "15:40",
+    "andar": "Subsolo",
+    "sala": "banheiro feminino",
+    "descricao": "troca de maçãneta",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BELMAR FIDALGO - NUFAM",
+    "data": "6-mar",
+    "hora_inicio": "16:24",
+    "hora_fim": "17:05",
+    "andar": "2º Andar",
+    "sala": "sala 205",
+    "descricao": "troca de capacitor do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BELMAR FIDALGO - NUFAM",
+    "data": "11-mar",
+    "hora_inicio": "15:33",
+    "hora_fim": "16:13",
+    "andar": "4º Andar",
+    "sala": "banheiro masculino",
+    "descricao": "troca de tampa do vaso",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BELMAR FIDALGO - NUFAM",
+    "data": "11-mar",
+    "hora_inicio": "15:33",
+    "hora_fim": "16:13",
+    "andar": "4º Andar",
+    "sala": "banheiro feminino",
+    "descricao": "troca de tampa do vaso",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BELMAR FIDALGO - NUFAM",
+    "data": "11-mar",
+    "hora_inicio": "15:33",
+    "hora_fim": "16:13",
+    "andar": "1º Andar",
+    "sala": "banheiro feminino",
+    "descricao": "troca da tampa do vaso banheiro dos servidores",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BELMAR FIDALGO - NUFAM",
+    "data": "11-mar",
+    "hora_inicio": "15:33",
+    "hora_fim": "16:13",
+    "andar": "2º Andar",
+    "sala": "",
+    "descricao": "aperto no quadro de energia e limpeza do parafuso do disjuntor",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BELMAR FIDALGO - NUFAM",
+    "data": "21-mar",
+    "hora_inicio": "13:30",
+    "hora_fim": "14:01",
+    "andar": "5º Andar",
+    "sala": "sala da recepção",
+    "descricao": "medição da corrente em 17A em vista de desarmamento de disjuntor 25A",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BELMAR FIDALGO - NUFAM",
+    "data": "21-mar",
+    "hora_inicio": "13:30",
+    "hora_fim": "14:01",
+    "andar": "Terreo",
+    "sala": "escada",
+    "descricao": "solda de alumínio do corrimão quebrou",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BELMAR FIDALGO - NUFAM",
+    "data": "21-mar",
+    "hora_inicio": "13:30",
+    "hora_fim": "14:01",
+    "andar": "Térreo",
+    "sala": "elevador",
+    "descricao": "foi constatado as marcas de águas",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BELMAR FIDALGO - NUFAM",
+    "data": "21-mar",
+    "hora_inicio": "13:30",
+    "hora_fim": "14:01",
+    "andar": "4º Andar",
+    "sala": "sala 401",
+    "descricao": "recarga de gás do ar condicionado R410A",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BELMAR FIDALGO - NUFAM",
+    "data": "8-abr",
+    "hora_inicio": "15:50",
+    "hora_fim": "16:16",
+    "andar": "4º Andar",
+    "sala": "sala 401",
+    "descricao": "reparo no ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BELMAR FIDALGO - NUFAM",
     "data": "12-jun",
     "hora_inicio": "",
     "hora_fim": "",
@@ -1387,6 +2307,176 @@
     "andar": "2º Andar",
     "sala": "sala 204",
     "descricao": "reparo no dreno do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CENTRO/AMC - NUCCON/NUFAMD",
+    "data": "13-jan",
+    "hora_inicio": "12:40",
+    "hora_fim": "13:50",
+    "andar": "Terreo",
+    "sala": "banheiro feminino",
+    "descricao": "troca de tampa do vaso",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CENTRO/AMC - NUCCON/NUFAMD",
+    "data": "13-jan",
+    "hora_inicio": "12:40",
+    "hora_fim": "13:50",
+    "andar": "Terreo",
+    "sala": "banheiro feminino",
+    "descricao": "troca de lâmpadas",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CENTRO/AMC - NUCCON/NUFAMD",
+    "data": "13-jan",
+    "hora_inicio": "12:40",
+    "hora_fim": "13:50",
+    "andar": "Terreo",
+    "sala": "banheiro masculino",
+    "descricao": "troca de tampa do vaso",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CENTRO/AMC - NUCCON/NUFAMD",
+    "data": "13-jan",
+    "hora_inicio": "12:40",
+    "hora_fim": "13:50",
+    "andar": "Subsolo",
+    "sala": "banheiro",
+    "descricao": "troca de tampa do vaso do estacionamento",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CENTRO/AMC - NUCCON/NUFAMD",
+    "data": "13-jan",
+    "hora_inicio": "12:40",
+    "hora_fim": "13:50",
+    "andar": "Terreo",
+    "sala": "sala 32",
+    "descricao": "troca de lâmpada",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CENTRO/AMC - NUCCON/NUFAMD",
+    "data": "13-jan",
+    "hora_inicio": "12:40",
+    "hora_fim": "13:50",
+    "andar": "Terreo",
+    "sala": "sala dr. Fábio",
+    "descricao": "conserto de maçãneta",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CENTRO/AMC - NUCCON/NUFAMD",
+    "data": "13-jan",
+    "hora_inicio": "12:40",
+    "hora_fim": "13:50",
+    "andar": "Terreo",
+    "sala": "sala dr. Fábio",
+    "descricao": "fixação da capa do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CENTRO/AMC - NUCCON/NUFAMD",
+    "data": "5-fev",
+    "hora_inicio": "14:35",
+    "hora_fim": "15:35",
+    "andar": "Terreo",
+    "sala": "cartorio",
+    "descricao": "desobstrução do dreno do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CENTRO/AMC - NUCCON/NUFAMD",
+    "data": "5-fev",
+    "hora_inicio": "14:35",
+    "hora_fim": "15:35",
+    "andar": "Terreo",
+    "sala": "sala 8",
+    "descricao": "constatação de serpentina congelada do ar mas orientado a esperar descongelar para religamento",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CENTRO/AMC - NUCCON/NUFAMD",
+    "data": "5-fev",
+    "hora_inicio": "14:35",
+    "hora_fim": "15:35",
+    "andar": "Terreo",
+    "sala": "sala 3",
+    "descricao": "troca de lâmpada tubular",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CENTRO/AMC - NUCCON/NUFAMD",
+    "data": "5-fev",
+    "hora_inicio": "14:35",
+    "hora_fim": "15:35",
+    "andar": "Terreo",
+    "sala": "copa",
+    "descricao": "troca de lâmpada tubular",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CENTRO/AMC - NUCCON/NUFAMD",
+    "data": "5-fev",
+    "hora_inicio": "14:35",
+    "hora_fim": "15:35",
+    "andar": "Terreo",
+    "sala": "banheiro",
+    "descricao": "troca de lâmpadas banheiro dos assistidos",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CENTRO/AMC - NUCCON/NUFAMD",
+    "data": "5-fev",
+    "hora_inicio": "14:35",
+    "hora_fim": "15:35",
+    "andar": "Terreo",
+    "sala": "banheiro",
+    "descricao": "troca de tampa de vaso e lâmpada no banheiro dos defensores",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CENTRO/AMC - NUCCON/NUFAMD",
+    "data": "12-mar",
+    "hora_inicio": "12:36",
+    "hora_fim": "12:56",
+    "andar": "Subsolo",
+    "sala": "sala da guatos",
+    "descricao": "troca de torneira",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CENTRO/AMC - NUCCON/NUFAMD",
+    "data": "12-mar",
+    "hora_inicio": "12:36",
+    "hora_fim": "12:56",
+    "andar": "Terreo",
+    "sala": "sala 25",
+    "descricao": "troca de lâmpada",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CENTRO/AMC - NUCCON/NUFAMD",
+    "data": "12-mar",
+    "hora_inicio": "12:36",
+    "hora_fim": "12:56",
+    "andar": "Terreo",
+    "sala": "sala 18",
+    "descricao": "ar condicionado serpentina congelada",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CENTRO/AMC - NUCCON/NUFAMD",
+    "data": "25-mar",
+    "hora_inicio": "13:52",
+    "hora_fim": "14:15",
+    "andar": "Subsolo",
+    "sala": "banheiro",
+    "descricao": "conserto do botão de acionamento que pulava para fora",
     "ano_origem": "OS Registros Realizados - 2025"
   },
   {
@@ -1771,6 +2861,96 @@
   },
   {
     "unidade": "DEFENSORIA DE CAMPO GRANDE - FÓRUM - NUCRIM",
+    "data": "9-jan",
+    "hora_inicio": "12:35",
+    "hora_fim": "15:50",
+    "andar": "",
+    "sala": "",
+    "descricao": "refeita todas as conexões do compressor do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - FÓRUM - NUCRIM",
+    "data": "9-jan",
+    "hora_inicio": "12:35",
+    "hora_fim": "15:50",
+    "andar": "",
+    "sala": "",
+    "descricao": "recarga de gás fluido refrigerante do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - FÓRUM - NUCRIM",
+    "data": "20-jan",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "",
+    "sala": "",
+    "descricao": "limpeza de calhas",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - FÓRUM - NUCRIM",
+    "data": "5-fev",
+    "hora_inicio": "15:50",
+    "hora_fim": "16:00",
+    "andar": "Terreo",
+    "sala": "",
+    "descricao": "torneira foi apertada e parou de pingar",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - FÓRUM - NUCRIM",
+    "data": "6-fev",
+    "hora_inicio": "12:20",
+    "hora_fim": "",
+    "andar": "Subsolo",
+    "sala": "estacionamento",
+    "descricao": "troca de lâmpadas",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - FÓRUM - NUCRIM",
+    "data": "6-fev",
+    "hora_inicio": "12:20",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala dr. Helton",
+    "descricao": "fixou o braço da cadeira",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - FÓRUM - NUCRIM",
+    "data": "14-fev",
+    "hora_inicio": "15:12",
+    "hora_fim": "15:31",
+    "andar": "Externo",
+    "sala": "laje da guarita",
+    "descricao": "desobstrução do dreno do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - FÓRUM - NUCRIM",
+    "data": "13-mar",
+    "hora_inicio": "14:13",
+    "hora_fim": "14:54",
+    "andar": "Terreo",
+    "sala": "sala 20",
+    "descricao": "substituição da lâmpada led",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - FÓRUM - NUCRIM",
+    "data": "13-mar",
+    "hora_inicio": "14:13",
+    "hora_fim": "14:54",
+    "andar": "1º Andar",
+    "sala": "sala da recepção",
+    "descricao": "substituição da lâmpada LED",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - FÓRUM - NUCRIM",
     "data": "22-abr",
     "hora_inicio": "15:20",
     "hora_fim": "16:15",
@@ -1807,6 +2987,16 @@
     "andar": "Terreo",
     "sala": "",
     "descricao": "consetor da porta de entrada",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - PRÁTICO GENERAL OSÓRIO",
+    "data": "10-jan",
+    "hora_inicio": "15:15",
+    "hora_fim": "15:30",
+    "andar": "",
+    "sala": "",
+    "descricao": "troca de lâmpadas",
     "ano_origem": "OS Registros Realizados - 2025"
   },
   {
@@ -2067,6 +3257,16 @@
     "andar": "Terreo",
     "sala": "sala da recepção",
     "descricao": "instalação de bebedouro",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE BANDEIRANTES - FÓRUM",
+    "data": "7-fev",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "",
+    "descricao": "religação de 3 ar condicionado que estavam guardados no almoxarifado do TJ",
     "ano_origem": "OS Registros Realizados - 2025"
   },
   {
@@ -2741,6 +3941,176 @@
   },
   {
     "unidade": "DEFENSORIA DE DOURADOS - CIVEL I",
+    "data": "5-fev",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "CPD",
+    "descricao": "substituição do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CIVEL I",
+    "data": "5-fev",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala da recepção",
+    "descricao": "limpeza e lavagem do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CIVEL I",
+    "data": "5-fev",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala dra. Gabriela",
+    "descricao": "limpeza e lavagem do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CIVEL I",
+    "data": "5-fev",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala dra. Paula",
+    "descricao": "limpeza e lavagem do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CIVEL I",
+    "data": "8-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 1",
+    "descricao": "limpeza de ar condicionado Midea 12mil BTU",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CIVEL I",
+    "data": "8-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 2",
+    "descricao": "limpeza de ar condicionado Trane 18mil BTU",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CIVEL I",
+    "data": "8-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 3",
+    "descricao": "limpeza de ar condicionado Elgin 18mil BTU",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CIVEL I",
+    "data": "8-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 4",
+    "descricao": "limpeza de ar condicionado Trane 18mil BTU",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CIVEL I",
+    "data": "8-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 5",
+    "descricao": "limpeza de ar condicionado Eletrolux 12mil BTU",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CIVEL I",
+    "data": "8-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 6",
+    "descricao": "limpeza de ar condicionado Trane 18mil BTU",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CIVEL I",
+    "data": "8-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 7",
+    "descricao": "limpeza de ar condicionado Elgin 24mil BTU",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CIVEL I",
+    "data": "8-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 8",
+    "descricao": "limpeza de ar condicionado Elgin 24mil BTU",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CIVEL I",
+    "data": "8-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 9",
+    "descricao": "limpeza de ar condicionado Eletrolux 12mil BTU",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CIVEL I",
+    "data": "8-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 10",
+    "descricao": "limpeza de ar condicionado Agratto 24mil BTU",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CIVEL I",
+    "data": "8-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "CPD",
+    "descricao": "reinstalaçõ de ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CIVEL I",
+    "data": "8-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala da recepção",
+    "descricao": "troca de lâmpadas",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CIVEL I",
+    "data": "8-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "CPD",
+    "descricao": "substituição de ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CIVEL I",
     "data": "30-jul",
     "hora_inicio": "",
     "hora_fim": "",
@@ -2767,6 +4137,306 @@
     "andar": "Terreo",
     "sala": "",
     "descricao": "manutenção do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CÍVEL II",
+    "data": "5-fev",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "CPD",
+    "descricao": "substituição da hélice de ventilação do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CÍVEL II",
+    "data": "5-fev",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala dr. Astolfo",
+    "descricao": "limpeza e lavagem do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CÍVEL II",
+    "data": "5-fev",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala da assistencia social",
+    "descricao": "limpeza e lavagem do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CÍVEL II",
+    "data": "5-fev",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "sala 7",
+    "descricao": "limpeza e lavagem do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CÍVEL II",
+    "data": "5-fev",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "",
+    "sala": "",
+    "descricao": "troca de lâmpadas",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CÍVEL II",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "sala 15",
+    "descricao": "limpeza de ar condicionado Elgin 18mil BTU",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CÍVEL II",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "sala 16",
+    "descricao": "limpeza de ar condicionado Trane 24mil BTU",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CÍVEL II",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala da recepção",
+    "descricao": "limpeza dos filtros Elgin 36mil",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CÍVEL II",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala da recepção",
+    "descricao": "limpeza dos filtros Elgin 36mil",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CÍVEL II",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala da recepção",
+    "descricao": "limpeza dos filtros Elgin 36mil",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CÍVEL II",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 1",
+    "descricao": "troca do reator da lâmpada",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CÍVEL II",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "sala 14",
+    "descricao": "troca do reator da lâmpada",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CÍVEL II",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "sala 16",
+    "descricao": "troca do reator da lâmpada",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CÍVEL II",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala da recepção",
+    "descricao": "troca do reator da lâmpada",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CÍVEL II",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Externo",
+    "sala": "escada",
+    "descricao": "troca do reator da lâmpada",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CÍVEL II",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala da recepção",
+    "descricao": "instalaçaõ do bebedouro",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CÍVEL II",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 1",
+    "descricao": "limpeza de ar condicionado Elgin 18mil BTU",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CÍVEL II",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 2",
+    "descricao": "limpeza de ar condicionado Elgin 18mil BTU",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CÍVEL II",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 3",
+    "descricao": "limpeza de ar condicionado Elgin 18mil BTU",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CÍVEL II",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 4",
+    "descricao": "limpeza de ar condicionado Elgin 18mil BTU",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CÍVEL II",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 5",
+    "descricao": "limpeza de ar condicionado Elgin 18mil BTU",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CÍVEL II",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "sala 6",
+    "descricao": "limpeza de ar condicionado Elgin 18mil BTU",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CÍVEL II",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "sala 7",
+    "descricao": "limpeza de ar condicionado Elgin 18mil BTU",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CÍVEL II",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "sala 8",
+    "descricao": "limpeza de ar condicionado Elgin 18mil BTU",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CÍVEL II",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "sala 9",
+    "descricao": "limpeza de ar condicionado Elgin 18mil BTU",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CÍVEL II",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "sala 10",
+    "descricao": "limpeza de ar condicionado Elgin 18mil BTU",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CÍVEL II",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "sala 11",
+    "descricao": "limpeza de ar condicionado Elgin 18mil BTU",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CÍVEL II",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "sala 12",
+    "descricao": "limpeza de ar condicionado Elgin 18mil BTU",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CÍVEL II",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "sala 13",
+    "descricao": "limpeza de ar condicionado Elgin 18mil BTU",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CÍVEL II",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "sala 14",
+    "descricao": "limpeza de ar condicionado Elgin 24mil BTU",
     "ano_origem": "OS Registros Realizados - 2025"
   },
   {
@@ -2807,6 +4477,236 @@
     "andar": "Terreo",
     "sala": "sala da recepção",
     "descricao": "manutenção do ar condicionado da recepção",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CRIMINAL",
+    "data": "4-fev",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "CPD",
+    "descricao": "recarga de gás e troca de capacitor",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CRIMINAL",
+    "data": "4-fev",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala da recepção",
+    "descricao": "ajustes no dreno do ar condicionado e na turbina",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CRIMINAL",
+    "data": "4-fev",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "estacionamento",
+    "descricao": "troca de lâmpadas",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CRIMINAL",
+    "data": "4-fev",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "sala 9",
+    "descricao": "conserto da maçaneta do banheiro",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CRIMINAL",
+    "data": "7-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 1",
+    "descricao": "limpeza de ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CRIMINAL",
+    "data": "7-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 2",
+    "descricao": "limpeza de ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CRIMINAL",
+    "data": "7-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 3",
+    "descricao": "limpeza de ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CRIMINAL",
+    "data": "7-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 4",
+    "descricao": "limpeza de ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CRIMINAL",
+    "data": "7-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 5",
+    "descricao": "limpeza de ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CRIMINAL",
+    "data": "7-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 6",
+    "descricao": "limpeza de ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CRIMINAL",
+    "data": "7-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "copa",
+    "descricao": "limpeza de ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CRIMINAL",
+    "data": "7-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "sala 6",
+    "descricao": "limpeza de ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CRIMINAL",
+    "data": "7-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "sala 7",
+    "descricao": "limpeza de ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CRIMINAL",
+    "data": "7-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "sala 8",
+    "descricao": "limpeza de ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CRIMINAL",
+    "data": "7-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "sala 9",
+    "descricao": "limpeza de ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CRIMINAL",
+    "data": "7-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "sala 10",
+    "descricao": "limpeza de ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CRIMINAL",
+    "data": "7-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "sala 11",
+    "descricao": "limpeza de ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CRIMINAL",
+    "data": "7-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "sala 7",
+    "descricao": "troca de reator",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CRIMINAL",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala da recepção",
+    "descricao": "troca de lâmpada led18W",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CRIMINAL",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 2",
+    "descricao": "troca de lâmpada 36W",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CRIMINAL",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "sala 8",
+    "descricao": "troca de reator",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CRIMINAL",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "sala 10",
+    "descricao": "troca de reatores",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CRIMINAL",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala da recepção",
+    "descricao": "instalação do bebedouro",
     "ano_origem": "OS Registros Realizados - 2025"
   },
   {
@@ -2877,6 +4777,26 @@
     "andar": "Terreo",
     "sala": "copa",
     "descricao": "manutenção de ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - POUPATEMPO",
+    "data": "10-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 1",
+    "descricao": "limpeza de ar condicionado 24mil BTUS",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - POUPATEMPO",
+    "data": "10-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 3",
+    "descricao": "Limpeza de ar condicionado 18mil BTUS",
     "ano_origem": "OS Registros Realizados - 2025"
   },
   {
@@ -3687,6 +5607,36 @@
     "andar": "Terreo",
     "sala": "sala 1",
     "descricao": "higienização e lavagem de ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE PONTA PORÃ - VILA LUIZ CORVO",
+    "data": "6-fev",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "",
+    "descricao": "instalação de um ar condicionado de 36mil BTUS",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE PONTA PORÃ - VILA LUIZ CORVO",
+    "data": "6-fev",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "",
+    "descricao": "troca de Lâmpadas bulbo",
+    "ano_origem": "OS Registros Realizados - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE PONTA PORÃ - VILA LUIZ CORVO",
+    "data": "6-fev",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "",
+    "descricao": "troca de lâmpadas tubular",
     "ano_origem": "OS Registros Realizados - 2025"
   },
   {
