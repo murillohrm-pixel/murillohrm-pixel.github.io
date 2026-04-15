@@ -261,7 +261,6 @@ let modoAtual = 'manutencao';
 let mapaMunicipios = {};
 let modoMulti = false;
 let municipiosSelecionados = [];
-unidadeSelect.selectedIndex = -1;
 
 // 🔥 CARREGAR DADOS
 Promise.all([
@@ -752,6 +751,8 @@ function atualizarUnidadesPorMunicipio() {
   });
 
   unidadesSelecionadas = [];
+
+  unidadeSelect.selectedIndex = -1;
 }
 
 function zoomMunicipios() {
