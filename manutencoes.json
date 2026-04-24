@@ -6071,6 +6071,186 @@
   },
   {
     "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "6-fev",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala da recepção",
+    "descricao": "andaime para troca de lâmpada",
+    "ano_origem": "OS Registros Pendencias - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BELMAR FIDALGO - NUFAM",
+    "data": "12-jun",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "cartorio",
+    "descricao": "instalação de uma porta blindex",
+    "ano_origem": "OS Registros Pendencias - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BELMAR FIDALGO - NUFAM",
+    "data": "8-ago",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "3º Andar",
+    "sala": "sala 306",
+    "descricao": "verificar pressão fluido refrigerante",
+    "ano_origem": "OS Registros Pendencias - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CENTRO/AMC - NUCCON/NUFAMD",
+    "data": "25-mar",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "banheiro masculino",
+    "descricao": "troca de fechadura SOBRAL",
+    "ano_origem": "OS Registros Pendencias - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CENTRO/AMC - NUCCON/NUFAMD",
+    "data": "19-nov",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala do refeitorio",
+    "descricao": "aferir gás do ar condicionado",
+    "ano_origem": "OS Registros Pendencias - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CENTRO/AMC - NUCCON/NUFAMD",
+    "data": "19-nov",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala da recepção",
+    "descricao": "readequar a fiação",
+    "ano_origem": "OS Registros Pendencias - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CENTRO/AMC - NUCCON/NUFAMD",
+    "data": "15-dez",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "estacionamento",
+    "sala": "banheiro",
+    "descricao": "troca da caixa acoplada",
+    "ano_origem": "OS Registros Pendencias - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CENTRO/AMC - NUCCON/NUFAMD",
+    "data": "15-dez",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "externo",
+    "sala": "",
+    "descricao": "substituição de lâmpadas",
+    "ano_origem": "OS Registros Pendencias - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - FÓRUM - NUCRIM",
+    "data": "13-mar",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "hall da escada",
+    "descricao": "necessita de escada grande",
+    "ano_origem": "OS Registros Pendencias - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CRIMINAL",
+    "data": "31-jul",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 8",
+    "descricao": "substituição da fechadura",
+    "ano_origem": "OS Registros Pendencias - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CRIMINAL",
+    "data": "31-jul",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 12",
+    "descricao": "substituição da fechadura",
+    "ano_origem": "OS Registros Pendencias - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE PARANAÍBA - YPÊ BRANCO",
+    "data": "23-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala da recepção",
+    "descricao": "precisa-se de andaime para troca de lâmpada",
+    "ano_origem": "OS Registros Pendencias - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE PARANAÍBA - YPÊ BRANCO",
+    "data": "23-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala da recepção",
+    "descricao": "nível do fluído R410 do ar 57000 está baixo",
+    "ano_origem": "OS Registros Pendencias - 2025"
+  },
+  {
+    "unidade": "DEFENSORIA DE PARANAÍBA - YPÊ BRANCO",
+    "data": "23-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 9",
+    "descricao": "hélice da condensadora está quebrado no ar 12mil BTU",
+    "ano_origem": "OS Registros Pendencias - 2025"
+  },
+  {
+    "unidade": "SEDE DO PARQUE DOS PODERES",
+    "data": "23-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Externo",
+    "sala": "garagem",
+    "descricao": "substituição do interruptor",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "SEDE DO PARQUE DOS PODERES",
+    "data": "23-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "banheiro PCD",
+    "descricao": "isolamento de sanitário com defeito",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "SEDE DO PARQUE DOS PODERES",
+    "data": "23-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala da guatós",
+    "descricao": "higienização do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "SEDE DO PARQUE DOS PODERES",
+    "data": "23-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "corredor",
+    "descricao": "reparo da tomada",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
     "data": "9-jan",
     "hora_inicio": "14:50",
     "hora_fim": "15:50",
@@ -6176,6 +6356,116 @@
     "hora_fim": "",
     "andar": "Terreo",
     "sala": "sala 2",
+    "descricao": "substituição de lâmpada",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º andar",
+    "sala": "sala dra. Jane",
+    "descricao": "troca de 1 lâmpada",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "",
+    "sala": "escadaria",
+    "descricao": "troca de 3 lâmpadas",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "terreo",
+    "sala": "copa",
+    "descricao": "limpeza do ar",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "térreo",
+    "sala": "sala 5",
+    "descricao": "reparo no dreno do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º andar",
+    "sala": "sala 115",
+    "descricao": "reparo no ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "9-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "sala 112",
+    "descricao": "desentupimento do banheiro",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "23-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Externo",
+    "sala": "estacionamento",
+    "descricao": "configuração da cancela de entrada",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "23-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Externo",
+    "sala": "",
+    "descricao": "retirada da placa na frente da unidade",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "23-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 7",
+    "descricao": "reparo no dreno do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "23-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "2º Andar",
+    "sala": "sala 203",
+    "descricao": "recolocação de lâmpada",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "23-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "escadaria",
     "descricao": "substituição de lâmpada",
     "ano_origem": "OS Registros Realizados - 2026"
   },
@@ -6327,6 +6617,36 @@
     "andar": "todos",
     "sala": "todas",
     "descricao": "manutenção da fiação do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - AFONSO PENA - NUDEM/NUDECA",
+    "data": "8-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 1",
+    "descricao": "troca de lâmpadas",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - AFONSO PENA - NUDEM/NUDECA",
+    "data": "8-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "copa",
+    "descricao": "troca do filtro da torneira",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - AFONSO PENA - NUDEM/NUDECA",
+    "data": "10-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 1",
+    "descricao": "substituição de capacitor e linha de cobre do ar condicionado",
     "ano_origem": "OS Registros Realizados - 2026"
   },
   {
@@ -6500,6 +6820,86 @@
     "ano_origem": "OS Registros Realizados - 2026"
   },
   {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CENTRO/AMC - NUCCON/NUFAMD",
+    "data": "17-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "",
+    "sala": "",
+    "descricao": "troca de torneiras",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CENTRO/AMC - NUCCON/NUFAMD",
+    "data": "17-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 14",
+    "descricao": "reparo no ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CENTRO/AMC - NUCCON/NUFAMD",
+    "data": "17-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 16",
+    "descricao": "reparo no ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CENTRO/AMC - NUCCON/NUFAMD",
+    "data": "17-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 17",
+    "descricao": "substituição de lâmpadas",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CENTRO/AMC - NUCCON/NUFAMD",
+    "data": "17-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala da recepção",
+    "descricao": "desobstrução do dreno do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CENTRO/AMC - NUCCON/NUFAMD",
+    "data": "17-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 32",
+    "descricao": "reparo na porta",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CENTRO/AMC - NUCCON/NUFAMD",
+    "data": "17-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "banheiro",
+    "descricao": "substituição de tampa de vaso sanitário",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CENTRO/AMC - NUCCON/NUFAMD",
+    "data": "17-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "CPD",
+    "descricao": "reparo no cabeamento do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
     "unidade": "DEFENSORIA DE CAMPO GRANDE - FÓRUM - NUCRIM",
     "data": "5-fev",
     "hora_inicio": "",
@@ -6527,6 +6927,46 @@
     "andar": "Terreo",
     "sala": "sala da recepção",
     "descricao": "configuração da controladora do ar central",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - FÓRUM - NUCRIM",
+    "data": "17-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Externo",
+    "sala": "estacionamento",
+    "descricao": "substituição de lâmpadas",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - FÓRUM - NUCRIM",
+    "data": "17-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 7",
+    "descricao": "substituição de barreira de proteção do acrílico",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - FÓRUM - NUCRIM",
+    "data": "17-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 8",
+    "descricao": "substituição de barreira de proteção do acrílico",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - FÓRUM - NUCRIM",
+    "data": "17-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala 26",
+    "descricao": "substituição de lâmpada",
     "ano_origem": "OS Registros Realizados - 2026"
   },
   {
@@ -6607,6 +7047,26 @@
     "andar": "Terreo",
     "sala": "todas",
     "descricao": "higienização e limpeza dos ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE ANAURILÂNDIA - FÓRUM",
+    "data": "14-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala do gabinete",
+    "descricao": "higienização do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE ANAURILÂNDIA - FÓRUM",
+    "data": "14-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala da recepção",
+    "descricao": "higienização do ar condicionado",
     "ano_origem": "OS Registros Realizados - 2026"
   },
   {
@@ -6727,6 +7187,116 @@
     "andar": "Terreo",
     "sala": "sala 2",
     "descricao": "higienização do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE BATAGUASSU - CENTRO",
+    "data": "14-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "",
+    "sala": "",
+    "descricao": "limpeza e lavagem de ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE BATAGUASSU - CENTRO",
+    "data": "14-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "",
+    "sala": "",
+    "descricao": "instalação de ar condicionado de 18mil BTUS",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE BATAGUASSU - CENTRO",
+    "data": "14-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala da recepção",
+    "descricao": "conserto da porta",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE BATAGUASSU - CENTRO",
+    "data": "14-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "cozinha",
+    "descricao": "troca da torneira e filtro",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE BATAGUASSU - CENTRO",
+    "data": "14-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala de depósito",
+    "descricao": "troca de telhas",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE BATAGUASSU - CENTRO",
+    "data": "14-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala de atendimento",
+    "descricao": "conserto de tomada",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE BATAGUASSU - CENTRO",
+    "data": "14-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala de atendimento",
+    "descricao": "instalação de cadeira",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE BATAGUASSU - CENTRO",
+    "data": "14-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "",
+    "sala": "",
+    "descricao": "troca de lâmpadas",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE BATAGUASSU - CENTRO",
+    "data": "14-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "",
+    "sala": "",
+    "descricao": "conserto de armário",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE BATAGUASSU - CENTRO",
+    "data": "14-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "sala da recepção",
+    "descricao": "conserto do interfone",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE BATAYPORÃ - FÓRUM",
+    "data": "16-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "",
+    "sala": "",
+    "descricao": "limpeza e lavagem de todos os ar condicionado",
     "ano_origem": "OS Registros Realizados - 2026"
   },
   {
@@ -7000,6 +7570,46 @@
     "ano_origem": "OS Registros Realizados - 2026"
   },
   {
+    "unidade": "DEFENSORIA DE NOVA ANDRADINA - CENTRO",
+    "data": "16-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "",
+    "sala": "",
+    "descricao": "instalação de dois ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE NOVA ANDRADINA - CENTRO",
+    "data": "16-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "banheiro",
+    "descricao": "troca do sifão",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE NOVA ANDRADINA - CENTRO",
+    "data": "16-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "",
+    "sala": "",
+    "descricao": "limpeza e lavagem de todos os ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE NOVA ANDRADINA - CENTRO",
+    "data": "16-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "",
+    "sala": "",
+    "descricao": "conserto do vazamento de dreno de dois ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
     "unidade": "DEFENSORIA DE PARANAÍBA - YPÊ BRANCO",
     "data": "20-jan",
     "hora_inicio": "",
@@ -7168,5 +7778,15 @@
     "sala": "todas",
     "descricao": "substituição das mangueiras das pias do banheiro",
     "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BELMAR FIDALGO - NUFAM",
+    "data": "12-jan",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º andar",
+    "sala": "sala da recepção",
+    "descricao": "substituir ar condicionado",
+    "ano_origem": "OS Registros Pendencias - 2026"
   }
 ]
