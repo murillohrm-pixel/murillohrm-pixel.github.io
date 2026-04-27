@@ -7788,5 +7788,45 @@
     "sala": "sala da recepção",
     "descricao": "substituir ar condicionado",
     "ano_origem": "OS Registros Pendencias - 2026"
-  }
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CRIMINAL",
+    "data": "24-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "Sala da recepção",
+    "descricao": "instalação de dois ar condicionado de 36mil BTUs",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CRIMINAL",
+    "data": "24-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "Sala 10",
+    "descricao": "troca de lâmpadas",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE DOURADOS - CRIMINAL",
+    "data": "24-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "CPD",
+    "descricao": "verificação do ar condicionado - ok",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE RIO BRILHANTE - FÓRUM",
+    "data": "22-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "Sala da recepção",
+    "descricao": "instalação de ar condicionado de 30mil BTUs",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
 ]
