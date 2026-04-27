@@ -7829,4 +7829,24 @@
     "descricao": "instalação de ar condicionado de 30mil BTUs",
     "ano_origem": "OS Registros Realizados - 2026"
   },
+  {
+    "unidade": "SEDE DO PARQUE DOS PODERES",
+    "data": "27-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "sala da TI",
+    "descricao": "conserto do ar condicionado com problema no filtro",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "SEDE DO PARQUE DOS PODERES",
+    "data": "27-abr",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "CPD",
+    "descricao": "recarga do gás do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
 ]
