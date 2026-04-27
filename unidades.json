@@ -9,7 +9,7 @@
     "rua": "Avenida Desembargador José Nunes da Cunha",
     "numero": "",
     "bairro": "Parque dos Poderes",
-    "predio": "Próprio"
+    "predio": "Cedido"
   },
   {
     "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
@@ -626,13 +626,13 @@
   {
     "unidade": "DEFENSORIA DE PONTA PORÃ - VILA LUIZ CORVO",
     "municipio": "Ponta Porã",
-    "latitude": -22.527328,
-    "longitude": -55.715922,
-    "latitude_gms": "-22°31′38,38″",
-    "longitude_gms": "-55°42′57,32″",
-    "rua": "Avenida Presidente Vargas",
-    "numero": "1850",
-    "bairro": "Vila Luiz Curvo",
+    "latitude": -22.521975,
+    "longitude": -55.721804,
+    "latitude_gms": "-22°31′19,11″",
+    "longitude_gms": "-55°43′18,49″",
+    "rua": "Rua Alameda dos Ervais",
+    "numero": "132",
+    "bairro": "Jardim Ipanema",
     "predio": "Próprio"
   },
   {
@@ -741,7 +741,7 @@
     "rua": "Rua 3 de julho",
     "numero": "90",
     "bairro": "Centro",
-    "predio": ""
+    "predio": "Fórum"
   },
   {
     "unidade": "DEFENSORIA DE TERENOS - FÓRUM",
@@ -825,7 +825,7 @@
     "rua": "Rua Brasilia, Lote A, Quadra 2",
     "numero": "",
     "bairro": "Jardim Ima",
-    "predio": "Próprio"
+    "predio": "Casa da Mulher Brasileira"
   },
   {
     "unidade": "DEFENSORIA DE CAMPO GRANDE - PRÉDIO DO ALMOXARIFADO",
