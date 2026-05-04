@@ -515,6 +515,8 @@ function iniciarMapa(topojsonData) {
 
   // 🎨 desenhar municípios (AGORA USANDO OS CAMPOS DO QGIS)
   L.geoJSON(geo, {
+    
+    pane: 'overlayPane', // 👈 ADICIONE ESTA LINHA
 
     style: function(feature) {
 
@@ -550,6 +552,12 @@ function iniciarMapa(topojsonData) {
     marcadores[u.unidade] = marker;
 
     marker.bindTooltip(u.municipio);
+
+    marker.on('click', () => {
+      if (modoMulti) return;
+
+      selecionarUnidade(u.unidade, lat, lng, marker);
+    });
 
     limitesMapa.push([lat, lng]);
 
