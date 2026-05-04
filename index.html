@@ -168,8 +168,8 @@ th, td {
     </div>
 
     <div class="botoes-modo">
-      <button onclick="toggleCores()">
-        Ativar / Desativar cores
+      <button onclick="toggleLayerMunicipios(this)">
+        Ocultar regiões
       </button>
     </div>
 
@@ -270,8 +270,8 @@ let modoAtual = 'manutencao';
 let mapaMunicipios = {};
 let modoMulti = false;
 let municipiosSelecionados = [];
-let mostrarCores = true;
 let camadaMunicipios;
+let layerAtivo = true;
 
 // 🔥 CARREGAR DADOS
 Promise.all([
@@ -533,9 +533,7 @@ function iniciarMapa(topojsonData) {
       return {
         color: "#555",
         weight: 1,
-        fillColor: mostrarCores
-          ? (feature.properties.cor || "#cccccc")
-          : "#eeeeee",
+        fillColor: feature.properties.cor || "#cccccc",
         fillOpacity: 0.6
       };
     },
@@ -577,20 +575,17 @@ function iniciarMapa(topojsonData) {
   mapa.fitBounds(limitesMapa, { padding: [50, 50] });
 }
 
-function toggleCores() {
+function toggleLayerMunicipios(botao) {
 
-  mostrarCores = !mostrarCores;
+  if (layerAtivo) {
+    mapa.removeLayer(camadaMunicipios);
+    botao.textContent = "Mostrar regiões";
+  } else {
+    mapa.addLayer(camadaMunicipios);
+    botao.textContent = "Ocultar regiões";
+  }
 
-  camadaMunicipios.setStyle(function(feature) {
-    return {
-      color: "#555",
-      weight: 1,
-      fillColor: mostrarCores
-        ? (feature.properties.cor || "#cccccc")
-        : "#eeeeee",
-      fillOpacity: 0.6
-    };
-  });
+  layerAtivo = !layerAtivo;
 }
 
 function mudarModo(modo, botaoClicado) {
