@@ -505,7 +505,6 @@ function iniciarMapa(topojsonData) {
   }).addTo(mapa);
 
   // 🔥 converter topojson → geojson
-  const nomeObjeto = Object.keys(topojsonData.objects)[0];
 
   const geo = topojson.feature(
     topojsonData,
@@ -524,7 +523,7 @@ function iniciarMapa(topojsonData) {
       return {
         color: "#555",
         weight: 1,
-        fillColor: feature.properties.cor || "#cccccc",
+        fillColor: "red",
         fillOpacity: 0.6
       };
     },
