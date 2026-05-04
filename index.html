@@ -99,6 +99,10 @@ td {
   background: #2980b9;
 }
 
+<button onclick="toggleCores()">
+  Ativar / Desativar cores
+</button>
+
 .resumo-mapa {
   margin-top: 10px;
   padding: 10px;
@@ -264,6 +268,8 @@ let modoAtual = 'manutencao';
 let mapaMunicipios = {};
 let modoMulti = false;
 let municipiosSelecionados = [];
+let mostrarCores = true;
+let camadaMunicipios;
 
 // 🔥 CARREGAR DADOS
 Promise.all([
@@ -514,7 +520,7 @@ function iniciarMapa(topojsonData) {
   console.log("GEOJSON GERADO:", geo);
 
   // 🎨 desenhar municípios (AGORA USANDO OS CAMPOS DO QGIS)
-  L.geoJSON(geo, {
+  camadaMunicipios = L.geoJSON(geo, {
     
     pane: 'overlayPane', // 👈 ADICIONE ESTA LINHA
 
@@ -525,7 +531,9 @@ function iniciarMapa(topojsonData) {
       return {
         color: "#555",
         weight: 1,
-        fillColor: feature.properties.cor || feature.cor || "#cccccc",
+        fillColor: mostrarCores
+          ? (feature.properties.cor || "#cccccc")
+          : "#eeeeee",
         fillOpacity: 0.6
       };
     },
@@ -565,6 +573,22 @@ function iniciarMapa(topojsonData) {
   });
 
   mapa.fitBounds(limitesMapa, { padding: [50, 50] });
+}
+
+function toggleCores() {
+
+  mostrarCores = !mostrarCores;
+
+  camadaMunicipios.setStyle(function(feature) {
+    return {
+      color: "#555",
+      weight: 1,
+      fillColor: mostrarCores
+        ? (feature.properties.cor || "#cccccc")
+        : "#eeeeee",
+      fillOpacity: 0.6
+    };
+  });
 }
 
 function mudarModo(modo, botaoClicado) {
