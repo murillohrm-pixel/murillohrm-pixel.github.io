@@ -252,22 +252,6 @@ th, td {
 
 <script>
 
-const coresRegionais = {
-  "1ª Regional de Campo Grande": "#1f77b4",
-  "2ª Regional de Corumbá": "#2ca02c",
-  "3ª Regional de Coxim": "#ff7f0e",
-  "4ª Regional de Dourados": "#d62728",
-  "5ª Regional de Jardim": "#9467bd",
-  "6ª Regional de Nova Andradina": "#8c564b",
-  "7ª Regional de Paranaíba": "#e377c2",
-  "8ª Regional de Ponta Porã": "#7f7f7f",
-  "9ª Regional de Naviraí": "#bcbd22",
-  "10ª Regional de Três Lagoas": "#17becf",
-  "11ª Regional de Aquidauana": "#ff9896",
-  "12ª Regional de Chapadão do Sul": "#98df8a",
-  "13ª Regional de Maracaju": "#aec7e8"
-};
-
 let unidadesSelecionadas = [];
 let manutencoes = [];
 let unidades = [];
@@ -285,14 +269,12 @@ let municipiosSelecionados = [];
 Promise.all([
   fetch('manutencoes.json').then(r => r.json()),
   fetch('unidades.json').then(r => r.json()),
-  fetch('municipios_ms.json').then(r => r.json()) // topojson
+  fetch('municipios_ms.topojson').then(r => r.json())
 ])
 .then(([m, u, topo]) => {
 
   manutencoes = m;
   unidades = u;
-
-  montarMapaMunicipioRegional();
 
   carregarFiltros();
   iniciarMapa(topo);
@@ -465,18 +447,6 @@ function renderTabela(lista) {
   });
 }
 
-let mapaMunicipioRegional = {};
-
-function montarMapaMunicipioRegional() {
-  unidades.forEach(u => {
-    if (u.municipio && u.Regionais) {
-      const nome = normalizar(u.municipio);
-      console.log("MAPEANDO:", u.municipio, "→", nome);
-      mapaMunicipioRegional[normalizar(u.municipio)] = u.Regionais;
-    }
-  });
-}
-
 // 🔥 MAPA
 
 const iconeNormal = L.icon({
@@ -522,14 +492,13 @@ function selecionarUnidade(unidade, lat, lng, marker) {
 function iniciarMapa(topojsonData) {
 
   mapa = L.map('map');
-
   limitesMapa = [];
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap'
   }).addTo(mapa);
 
-  // 🔥 CONVERTER TOPOJSON → GEOJSON
+  // 🔥 converter topojson → geojson
   const nomeObjeto = Object.keys(topojsonData.objects)[0];
 
   const geo = topojson.feature(
@@ -537,44 +506,28 @@ function iniciarMapa(topojsonData) {
     topojsonData.objects[nomeObjeto]
   );
 
-  // 🔥 DESENHAR MUNICÍPIOS (UMA VEZ SÓ)
+  // 🎨 desenhar municípios (AGORA USANDO OS CAMPOS DO QGIS)
   L.geoJSON(geo, {
 
     style: function(feature) {
-
-      const nomeOriginal = feature.properties.name;
-      
-      const nome = normalizar(feature.properties.name);
-
-      console.log("GEOJSON:", nomeOriginal, "→", nome);
-
-      const regional = mapaMunicipioRegional[nome];
-
-      console.log("REGIONAL ENCONTRADA:", regional);
-
       return {
         color: "#555",
         weight: 1,
-        fillColor: coresRegionais[regional] || "#cccccc",
-        fillOpacity: 0.5
+        fillColor: feature.properties.cor || "#cccccc",
+        fillOpacity: 0.6
       };
     },
 
     onEachFeature: function(feature, layer) {
-
-      const nome = normalizar(feature.properties.name);
-
-      const regional = mapaMunicipioRegional[nome] || "Sem regional";
-
       layer.bindTooltip(`
         <b>${feature.properties.name}</b><br>
-        ${regional}
+        ${feature.properties.Regional || 'Sem regional'}
       `);
     }
 
   }).addTo(mapa);
 
-  // 🔵 MARCADORES (AGORA CORRETO)
+  // 📍 marcadores continuam iguais
   unidades.forEach(u => {
 
     const lat = parseFloat(u.latitude);
@@ -582,30 +535,18 @@ function iniciarMapa(topojsonData) {
 
     if (isNaN(lat) || isNaN(lng)) return;
 
-    const marker = L.marker([lat, lng], { icon: iconeNormal }).addTo(mapa);
+    const marker = L.marker([lat, lng]).addTo(mapa);
 
     marcadores[u.unidade] = marker;
 
-    marker.on('click', () => {
-      if (modoMulti) return;
-      selecionarUnidade(u.unidade, lat, lng, marker);
-    });
+    marker.bindTooltip(u.municipio);
 
     limitesMapa.push([lat, lng]);
-
-    marker.bindTooltip(u.municipio, {
-      permanent: true,
-      direction: 'right',
-      offset: [3, 0],
-      opacity: 0.8
-    });
 
     mapaMunicipios[u.unidade] = u.municipio;
   });
 
   mapa.fitBounds(limitesMapa, { padding: [50, 50] });
-
-  atualizarResumoMapa();
 }
 
 function mudarModo(modo, botaoClicado) {
@@ -638,22 +579,6 @@ function mudarModo(modo, botaoClicado) {
   if (modo === 'residuos') {
     document.getElementById('painel-residuos').style.display = 'block';
   }
-}
-
-function normalizar(txt) {
-  return txt
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "") // remove acento
-    .replace(/ç/g, "c")
-    .replace(/ã/g, "a")
-    .replace(/õ/g, "o")
-    .replace(/á|à|â|ä/g, "a")
-    .replace(/é|è|ê|ë/g, "e")
-    .replace(/í|ì|î|ï/g, "i")
-    .replace(/ó|ò|ô|ö/g, "o")
-    .replace(/ú|ù|û|ü/g, "u")
-    .trim();
 }
 
 // 🔹 CLIQUE NO MAPA
