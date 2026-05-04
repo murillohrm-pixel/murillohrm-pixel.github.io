@@ -491,6 +491,12 @@ function selecionarUnidade(unidade, lat, lng, marker) {
 
 function iniciarMapa(topojsonData) {
 
+  console.log("TOPOJSON:", topojsonData);
+  console.log("OBJETOS:", topojsonData.objects);
+
+  const nomeObjeto = Object.keys(topojsonData.objects)[0];
+  console.log("NOME DO OBJETO:", nomeObjeto);
+
   mapa = L.map('map');
   limitesMapa = [];
 
@@ -506,10 +512,15 @@ function iniciarMapa(topojsonData) {
     topojsonData.objects[nomeObjeto]
   );
 
+  console.log("GEOJSON GERADO:", geo);
+
   // 🎨 desenhar municípios (AGORA USANDO OS CAMPOS DO QGIS)
   L.geoJSON(geo, {
 
     style: function(feature) {
+
+      console.log("PROPERTIES:", feature.properties);
+
       return {
         color: "#555",
         weight: 1,
