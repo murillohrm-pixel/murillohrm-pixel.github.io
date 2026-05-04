@@ -469,7 +469,7 @@ let mapaMunicipioRegional = {};
 function montarMapaMunicipioRegional() {
   unidades.forEach(u => {
     if (u.municipio && u.Regionais) {
-      mapaMunicipioRegional[u.municipio.toLowerCase()] = u.Regionais;
+      mapaMunicipioRegional[normalizar(u.municipio)] = u.Regionais;
     }
   });
 }
@@ -539,9 +539,15 @@ function iniciarMapa(topojsonData) {
 
     style: function(feature) {
 
-      const nome = feature.properties.name.toLowerCase();
+      const nomeOriginal = feature.properties.name;
+      
+      const nome = normalizar(feature.properties.name);
+
+      console.log("GEOJSON:", nomeOriginal, "→", nome);
 
       const regional = mapaMunicipioRegional[nome];
+
+      console.log("REGIONAL ENCONTRADA:", regional);
 
       return {
         color: "#555",
@@ -553,7 +559,7 @@ function iniciarMapa(topojsonData) {
 
     onEachFeature: function(feature, layer) {
 
-      const nome = feature.properties.name.toLowerCase();
+      const nome = normalizar(feature.properties.name);
 
       const regional = mapaMunicipioRegional[nome] || "Sem regional";
 
@@ -629,6 +635,14 @@ function mudarModo(modo, botaoClicado) {
   if (modo === 'residuos') {
     document.getElementById('painel-residuos').style.display = 'block';
   }
+}
+
+function normalizar(txt) {
+  return txt
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .trim();
 }
 
 // 🔹 CLIQUE NO MAPA
