@@ -523,7 +523,7 @@ function iniciarMapa(topojsonData) {
       return {
         color: "#555",
         weight: 1,
-        fillColor: "red",
+        fillColor: feature.properties.cor || feature.cor || "#cccccc",
         fillOpacity: 0.6
       };
     },
