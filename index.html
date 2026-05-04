@@ -523,6 +523,38 @@ function iniciarMapa(geojson) {
     attribution: '© OpenStreetMap'
   }).addTo(mapa);
 
+  // 🔥 GEOJSON (UMA VEZ SÓ)
+  L.geoJSON(geojson, {
+    style: function(feature) {
+
+      const nome = feature.properties.name.toLowerCase();
+
+      const regional = mapaMunicipioRegional[nome];
+
+      const cor = coresRegionais[regional] || "#cccccc";
+
+      return {
+        color: "#555",
+        weight: 1,
+        fillColor: cor,
+        fillOpacity: 0.5
+      };
+    },
+
+    onEachFeature: function(feature, layer) {
+
+      const nome = feature.properties.name.toLowerCase();
+      const regional = mapaMunicipioRegional[nome] || "Sem regional";
+
+      layer.bindTooltip(`
+        <b>${feature.properties.name}</b><br>
+        ${regional}
+      `);
+    }
+
+  }).addTo(mapa);
+
+  // 🔵 AGORA SIM: MARCADORES
   unidades.forEach(u => {
 
     const lat = parseFloat(u.latitude);
@@ -532,49 +564,16 @@ function iniciarMapa(geojson) {
 
     const marker = L.marker([lat, lng], { icon: iconeNormal }).addTo(mapa);
 
-    L.geoJSON(geojson, {
-      style: function(feature) {
-
-        const nome = feature.properties.name;
-
-        const regional = mapaMunicipioRegional[nome];
-
-        const cor = coresRegionais[regional] || "#cccccc";
-
-        return {
-          color: "#555",
-          weight: 1,
-          fillColor: cor,
-          fillOpacity: 0.5
-        };
-      },
-
-      onEachFeature: function(feature, layer) {
-
-        const nome = feature.properties.name;
-        const regional = mapaMunicipioRegional[nome] || "Sem regional";
-
-        layer.bindTooltip(`
-          <b>${nome}</b><br>
-          ${regional}
-        `);
-       }
-
-    }).addTo(mapa);
-
-    // salvar referência
     marcadores[u.unidade] = marker;
 
     marker.on('click', () => {
       if (modoMulti) return;
-        selecionarUnidade(u.unidade, lat, lng, marker);
+      selecionarUnidade(u.unidade, lat, lng, marker);
     });
 
     limitesMapa.push([lat, lng]);
 
-    const municipio = u.municipio;
-
-    marker.bindTooltip(municipio, {
+    marker.bindTooltip(u.municipio, {
       permanent: true,
       direction: 'right',
       offset: [3, 0],
@@ -591,8 +590,6 @@ function iniciarMapa(geojson) {
   }
 
   atualizarResumoMapa();
-
-  document.getElementById('detalhesUnidade').innerHTML = '';
 }
 
 function mudarModo(modo, botaoClicado) {
