@@ -299,6 +299,7 @@ Promise.all([
 });
 
 // 🔹 EXTRAI MUNICÍPIO
+
 function extrairMunicipio(nome) {
   const partes = nome.split("DE ");
 
@@ -469,6 +470,8 @@ let mapaMunicipioRegional = {};
 function montarMapaMunicipioRegional() {
   unidades.forEach(u => {
     if (u.municipio && u.Regionais) {
+      const nome = normalizar(u.municipio);
+      console.log("MAPEANDO:", u.municipio, "→", nome);
       mapaMunicipioRegional[normalizar(u.municipio)] = u.Regionais;
     }
   });
@@ -641,7 +644,15 @@ function normalizar(txt) {
   return txt
     .toLowerCase()
     .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[\u0300-\u036f]/g, "") // remove acento
+    .replace(/ç/g, "c")
+    .replace(/ã/g, "a")
+    .replace(/õ/g, "o")
+    .replace(/á|à|â|ä/g, "a")
+    .replace(/é|è|ê|ë/g, "e")
+    .replace(/í|ì|î|ï/g, "i")
+    .replace(/ó|ò|ô|ö/g, "o")
+    .replace(/ú|ù|û|ü/g, "u")
     .trim();
 }
 
