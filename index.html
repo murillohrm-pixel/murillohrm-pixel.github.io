@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
@@ -8,41 +7,249 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
 
 <style>
-body { font-family: Arial; margin: 20px; background: #f4f6f8; }
-h2 { text-align: center; }
+body {
+  font-family: Arial;
+  margin: 20px;
+  background: #f4f6f8;
+}
 
-.container { display: flex; gap: 20px; }
+h2 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
 .esquerda { width: 50%; }
 .direita { width: 50%; }
 
-#map { height: 500px; background: #ddd; border-radius: 10px; }
+/* FILTROS */
+.filtros {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
 
-table { width: 100%; border-collapse: collapse; background: white; font-size: 12px; }
-th { background: #2c3e50; color: white; padding: 6px; }
-td { padding: 6px; border-bottom: 1px solid #ddd; }
+.filtros div {
+  display: flex;
+  flex-direction: column;
+}
 
+select {
+  padding: 8px;
+}
+
+/* MAPA */
+#map {
+  height: 500px;
+  background: #ddd;
+  border-radius: 10px;
+}
+
+/* TABELA */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+th {
+  background: #2c3e50;
+  color: white;
+  padding: 10px;
+}
+
+td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* TOOLTIP */
 .leaflet-tooltip {
-  background: rgba(255,255,255,0.7);
+  background: rgba(255, 255, 255, 0.7);
   border: none;
+  box-shadow: none;
+  border-radius: 4px;
+  padding: 2px 4px;
   font-size: 10px;
+  color: #222;
+}
+.botoes {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.botoes button {
+  padding: 8px 12px;
+  border: none;
+  background: #2c3e50;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.botoes button:hover {
+  background: #34495e;
+}
+
+.botoes button.ativo {
+  background: #2980b9;
+}
+
+.resumo-mapa {
+  margin-top: 10px;
+  padding: 10px;
+  background: #ecf0f1;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.resumo-tabela {
+  margin-bottom: 10px; /* antes era margin-top */
+  padding: 10px;
+  background: #dfe6e9;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.detalhes-unidade {
+  margin-top: 10px;
+  padding: 10px;
+  background: #fdfdfd;
+  border-left: 4px solid #2c3e50;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.botoes-modo {
+  margin-bottom: 10px;
+}
+
+#btnMulti {
+  padding: 8px 12px;
+  border: none;
+  background: #7f8c8d;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#btnMulti.ativo {
+  background: #27ae60;
+}
+
+/* 🔽 tabela menor */
+table {
+  font-size: 12px;
+}
+
+th, td {
+  padding: 6px;
 }
 </style>
-
 </head>
 
 <body>
 
 <h2>Manutenções por Unidade</h2>
 
-<div id="map"></div>
+<div class="container">
+
+  <!-- ESQUERDA -->
+  <div class="esquerda">
+
+    <div class="botoes-modo">
+      <button id="btnMulti" onclick="toggleMulti(this)">
+        Escolher mais de um
+      </button>
+    </div>
+
+    <div class="filtros">
+
+      <div>
+        <label>Município</label>
+        <select id="municipioSelect">
+          <option value="">Todos</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Unidade</label>
+        <select id="unidadeSelect">
+          <option value="">Todas</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Ano</label>
+        <select id="anoSelect">
+          <option value="">Todos</option>
+        </select>
+      </div>
+
+    </div>
+
+    <div id="map"></div>
+
+    <div id="detalhesUnidade" class="detalhes-unidade"></div>
+
+    <div id="resumoMapa" class="resumo-mapa"></div>
+
+  </div>
+
+  <!-- DIREITA -->
+  <div class="direita">
+
+    <!-- BOTÕES -->
+    <div class="botoes">
+      <button class="ativo" onclick="mudarModo('manutencao', this)">Manutenção</button>
+      <button onclick="mudarModo('obras', this)">Obras</button>
+      <button onclick="mudarModo('residuos', this)">Resíduos</button>
+    </div>
+
+    <!-- 🔧 MANUTENÇÃO -->
+    <div id="painel-manutencao">
+
+      <div id="resumoTabela" class="resumo-tabela"></div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Município</th>
+            <th>Unidade</th>
+            <th>Data</th>
+            <th>Andar</th>
+            <th>Sala</th>
+            <th>Descrição</th>
+            <th>Ano</th>
+          </tr>
+        </thead>
+        <tbody id="tabela"></tbody>
+      </table>
+
+    </div>
+
+    <!-- 🏗️ OBRAS -->
+    <div id="painel-obras" style="display:none;">
+      <p>Em breve: painel de obras</p>
+    </div>
+
+    <!-- ♻️ RESÍDUOS -->
+    <div id="painel-residuos" style="display:none;">
+      <p>Em breve: painel de resíduos</p>
+    </div>
+
+  </div>
+
+</div>
 
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
-<script src="https://unpkg.com/topojson-client@3"></script>
-
 <script>
 
-// 🎨 CORES
 const coresRegionais = {
   "1ª Regional de Campo Grande": "#1f77b4",
   "2ª Regional de Corumbá": "#2ca02c",
@@ -59,25 +266,204 @@ const coresRegionais = {
   "13ª Regional de Maracaju": "#aec7e8"
 };
 
+let unidadesSelecionadas = [];
+let manutencoes = [];
 let unidades = [];
-let mapaMunicipioRegional = {};
 let mapa;
+let unidadeSelecionada = "";
+let marcadorSelecionado = null;
+let marcadores = {};
+let limitesMapa = [];
+let modoAtual = 'manutencao';
+let mapaMunicipios = {};
+let modoMulti = false;
+let municipiosSelecionados = [];
 
 // 🔥 CARREGAR DADOS
 Promise.all([
+  fetch('manutencoes.json').then(r => r.json()),
   fetch('unidades.json').then(r => r.json()),
-  fetch('municipios_ms.topojson').then(r => r.json())
+  fetch('municipios_ms.json').then(r => r.json()) // topojson
 ])
-.then(([u, topo]) => {
+.then(([m, u, topo]) => {
 
+  manutencoes = m;
   unidades = u;
 
   montarMapaMunicipioRegional();
 
+  carregarFiltros();
   iniciarMapa(topo);
 });
 
-// 🧠 MAPA MUNICÍPIO → REGIONAL
+// 🔹 EXTRAI MUNICÍPIO
+function extrairMunicipio(nome) {
+  const partes = nome.split("DE ");
+
+  if (partes.length > 1) {
+    return partes[1].split(" -")[0];
+  }
+
+  return nome;
+}
+
+// 🔹 EXTRAI ANO
+function extrairAno(texto) {
+  const match = texto.match(/\d{4}/);
+  return match ? match[0] : "";
+}
+
+// 🔹 FILTROS
+function carregarFiltros() {
+
+  const municipioSelect = document.getElementById('municipioSelect');
+
+  const municipiosUnicos = [...new Set(
+    unidades.map(u => u.municipio)
+  )];
+
+  municipiosUnicos.forEach(m => {
+    const opt = document.createElement('option');
+    opt.value = m;
+    opt.textContent = m;
+    municipioSelect.appendChild(opt);
+  });
+
+  const unidadeSelect = document.getElementById('unidadeSelect');
+  const anoSelect = document.getElementById('anoSelect');
+
+  const unidadesUnicas = [...new Set(manutencoes.map(d => d.unidade))];
+
+  const anos = [...new Set(
+    manutencoes.map(d => extrairAno(d.ano_origem))
+  )];
+
+  unidadesUnicas.forEach(u => {
+    const opt = document.createElement('option');
+    opt.value = u;
+    opt.textContent = u;
+    unidadeSelect.appendChild(opt);
+  });
+
+  anos.forEach(a => {
+    if (!a) return;
+    const opt = document.createElement('option');
+    opt.value = a;
+    opt.textContent = a;
+    anoSelect.appendChild(opt);
+  });
+}
+
+// 🔹 EVENTOS
+
+document.getElementById('municipioSelect').addEventListener('change', () => {
+
+  const select = document.getElementById('municipioSelect');
+
+  if (modoMulti) {
+    municipiosSelecionados = Array.from(select.selectedOptions)
+      .map(opt => opt.value);
+  } else {
+    municipiosSelecionados = select.value ? [select.value] : [];
+  }
+
+  atualizarUnidadesPorMunicipio();
+  zoomMunicipios();
+
+  filtrar();
+});
+
+document.getElementById('unidadeSelect').addEventListener('change', () => {
+
+  const select = document.getElementById('unidadeSelect');
+
+  if (modoMulti) {
+    unidadesSelecionadas = Array.from(select.selectedOptions)
+      .map(opt => opt.value);
+
+    // 🔴 modo multi → não mostra detalhes
+    document.getElementById('detalhesUnidade').innerHTML = '';
+
+  } else {
+    const unidade = select.value;
+
+    unidadesSelecionadas = unidade ? [unidade] : [];
+
+    if (unidade) {
+      const marker = marcadores[unidade];
+
+      if (marker) {
+        const latlng = marker.getLatLng();
+
+        selecionarUnidade(unidade, latlng.lat, latlng.lng, marker);
+      } else {
+        mostrarDetalhesUnidade(unidade);
+      }
+    }
+  }
+
+  zoomUnidadesSelecionadas();
+  filtrar();
+});
+
+document.getElementById('anoSelect').addEventListener('change', filtrar);
+
+// 🔹 FILTRAR
+function filtrar() {
+
+  if (modoAtual !== 'manutencao') return;
+
+  if (modoMulti) {
+    document.getElementById('detalhesUnidade').innerHTML = '';
+  }
+
+  const ano = document.getElementById('anoSelect').value;
+
+  let lista = manutencoes;
+
+  if (municipiosSelecionados.length > 0) {
+    lista = lista.filter(d =>
+      municipiosSelecionados.includes(mapaMunicipios[d.unidade])
+    );
+  }
+
+  if (unidadesSelecionadas.length > 0) {
+    lista = lista.filter(d =>
+      unidadesSelecionadas.includes(d.unidade)
+    );
+  }
+
+  if (ano) {
+    lista = lista.filter(d => extrairAno(d.ano_origem) === ano);
+  }
+
+  renderTabela(lista);
+  atualizarResumoTabela(lista);
+  atualizarResumoSelecao();
+}
+
+// 🔹 TABELA
+function renderTabela(lista) {
+  const tabela = document.getElementById('tabela');
+  tabela.innerHTML = '';
+
+  lista.forEach(item => {
+    tabela.innerHTML += `
+      <tr>
+        <td>${mapaMunicipios[item.unidade] || '-'}</td>
+        <td>${item.unidade || '-'}</td>
+        <td>${item.data || '-'}</td>
+        <td>${item.andar || '-'}</td>
+        <td>${item.sala || '-'}</td>
+        <td>${item.descricao || '-'}</td>
+        <td>${extrairAno(item.ano_origem)}</td>
+      </tr>
+    `;
+  });
+}
+
+let mapaMunicipioRegional = {};
+
 function montarMapaMunicipioRegional() {
   unidades.forEach(u => {
     if (u.municipio && u.Regionais) {
@@ -86,51 +472,98 @@ function montarMapaMunicipioRegional() {
   });
 }
 
-// 🗺️ MAPA
+// 🔥 MAPA
+
+const iconeNormal = L.icon({
+  iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41]
+});
+
+const iconeSelecionado = L.icon({
+  iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41]
+});
+
+function selecionarUnidade(unidade, lat, lng, marker) {
+
+  if (modoMulti) return; // segurança extra
+
+  // 🔄 resetar marcador anterior
+  if (marcadorSelecionado) {
+    marcadorSelecionado.setIcon(iconeNormal);
+  }
+
+  // 🎯 definir novo selecionado
+  marcadorSelecionado = marker;
+  marker.setIcon(iconeSelecionado);
+
+  // 📋 sincroniza select
+  document.getElementById('unidadeSelect').value = unidade;
+
+  unidadeSelecionada = unidade;
+
+  // 📊 atualizar tabela (manutenção)
+
+  mapa.setView([lat, lng], 15);
+
+  filtrar();
+
+  // 📍 mostrar detalhes abaixo do mapa
+  mostrarDetalhesUnidade(unidade);
+}
+
 function iniciarMapa(topojsonData) {
 
-  mapa = L.map('map').setView([-20.5, -54.5], 6);
+  mapa = L.map('map');
+
+  limitesMapa = [];
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap'
   }).addTo(mapa);
 
   // 🔥 CONVERTER TOPOJSON → GEOJSON
+  const nomeObjeto = Object.keys(topojsonData.objects)[0];
+
   const geo = topojson.feature(
     topojsonData,
-    topojsonData.objects[Object.keys(topojsonData.objects)[0]]
+    topojsonData.objects[nomeObjeto]
   );
 
-  // 🎨 DESENHAR MUNICÍPIOS
+  // 🔥 DESENHAR MUNICÍPIOS (UMA VEZ SÓ)
   L.geoJSON(geo, {
 
     style: function(feature) {
 
       const nome = feature.properties.name.toLowerCase();
+
       const regional = mapaMunicipioRegional[nome];
 
       return {
         color: "#555",
         weight: 1,
-        fillColor: coresRegionais[regional] || "#ccc",
+        fillColor: coresRegionais[regional] || "#cccccc",
         fillOpacity: 0.5
       };
     },
 
     onEachFeature: function(feature, layer) {
 
-      const nome = feature.properties.name;
-      const regional = mapaMunicipioRegional[nome.toLowerCase()] || "Sem regional";
+      const nome = feature.properties.name.toLowerCase();
+
+      const regional = mapaMunicipioRegional[nome] || "Sem regional";
 
       layer.bindTooltip(`
-        <b>${nome}</b><br>
+        <b>${feature.properties.name}</b><br>
         ${regional}
       `);
     }
 
   }).addTo(mapa);
 
-  // 📍 MARCADORES DAS UNIDADES
+  // 🔵 MARCADORES (AGORA CORRETO)
   unidades.forEach(u => {
 
     const lat = parseFloat(u.latitude);
@@ -138,13 +571,314 @@ function iniciarMapa(topojsonData) {
 
     if (isNaN(lat) || isNaN(lng)) return;
 
-    L.marker([lat, lng])
-      .addTo(mapa)
-      .bindTooltip(u.municipio);
+    const marker = L.marker([lat, lng], { icon: iconeNormal }).addTo(mapa);
+
+    marcadores[u.unidade] = marker;
+
+    marker.on('click', () => {
+      if (modoMulti) return;
+      selecionarUnidade(u.unidade, lat, lng, marker);
+    });
+
+    limitesMapa.push([lat, lng]);
+
+    marker.bindTooltip(u.municipio, {
+      permanent: true,
+      direction: 'right',
+      offset: [3, 0],
+      opacity: 0.8
+    });
+
+    mapaMunicipios[u.unidade] = u.municipio;
   });
+
+  mapa.fitBounds(limitesMapa, { padding: [50, 50] });
+
+  atualizarResumoMapa();
 }
 
+function mudarModo(modo, botaoClicado) {
+
+  modoAtual = modo;
+
+  document.getElementById('detalhesUnidade').innerHTML = '';
+
+  // botão ativo
+  document.querySelectorAll('.botoes button')
+    .forEach(btn => btn.classList.remove('ativo'));
+
+  botaoClicado.classList.add('ativo');
+
+  // esconder todos os painéis
+  document.getElementById('painel-manutencao').style.display = 'none';
+  document.getElementById('painel-obras').style.display = 'none';
+  document.getElementById('painel-residuos').style.display = 'none';
+
+  // mostrar o painel correto
+  if (modo === 'manutencao') {
+    document.getElementById('painel-manutencao').style.display = 'block';
+    filtrar();
+  }
+
+  if (modo === 'obras') {
+    document.getElementById('painel-obras').style.display = 'block';
+  }
+
+  if (modo === 'residuos') {
+    document.getElementById('painel-residuos').style.display = 'block';
+  }
+}
+
+// 🔹 CLIQUE NO MAPA
+function abrirManutencao(unidade) {
+  unidadeSelecionada = unidade;
+  document.getElementById('unidadeSelect').value = unidade;
+  filtrar();
+}
+
+function atualizarResumoMapa() {
+
+  // número de unidades (pontos)
+  const numeroUnidades = limitesMapa.length;
+
+  // municípios únicos
+  const municipios = new Set(
+    unidades.map(u => u.municipio)
+  );
+
+  const numeroMunicipios = municipios.size;
+
+  // data atual
+  const hoje = new Date();
+  const dataFormatada = hoje.toLocaleDateString('pt-BR');
+
+  // montar texto
+  const texto = `
+    A Defensoria possui <b>${numeroUnidades}</b> unidades 
+    presentes em <b>${numeroMunicipios}</b> municípios 
+    até a data de <b>${dataFormatada}</b>.
+  `;
+
+  document.getElementById('resumoMapa').innerHTML = texto;
+}
+
+function atualizarResumoTabela(lista) {
+
+  // 📊 TOTAL
+  const total = lista.length;
+
+  // 📅 DIAS DE MANUTENÇÃO (datas únicas)
+  const diasUnicos = new Set(
+    lista.map(item => item.data).filter(Boolean)
+  );
+  const totalDias = diasUnicos.size;
+
+  // 📆 CONVERTER DATAS
+  const datasValidas = lista
+    .map(item => converterData(item.data, item.ano_origem))
+    .filter(d => d instanceof Date && !isNaN(d));
+
+  let diasSemManutencao = '-';
+  let dataMaisAntiga = '-';
+  let dataMaisRecente = '-';
+
+  if (datasValidas.length > 0) {
+
+    // ordenar datas
+    datasValidas.sort((a, b) => a - b);
+
+    const maisAntiga = datasValidas[0];
+    const maisRecente = datasValidas[datasValidas.length - 1];
+
+    // formatar datas
+    dataMaisAntiga = formatarDataBR(maisAntiga);
+    dataMaisRecente = formatarDataBR(maisRecente);
+
+    // calcular dias sem manutenção
+    const hoje = new Date();
+
+    diasSemManutencao = Math.floor(
+      (hoje - maisRecente) / (1000 * 60 * 60 * 24)
+    );
+  }
+
+  // 🧾 TEXTO FINAL
+  const texto = `
+    <b>Total de manutenções:</b> ${total} <br>
+    <b>Dias de manutenção:</b> ${totalDias} <br>
+    <b>Dias sem manutenção:</b> ${diasSemManutencao} <br>
+    <b>Data de manutenção mais antiga:</b> ${dataMaisAntiga} <br>
+    <b>Data de manutenção mais atual:</b> ${dataMaisRecente}
+  `;
+
+  document.getElementById('resumoTabela').innerHTML = texto;
+}
+
+function converterData(dataStr, anoStr) {
+  if (!dataStr) return null;
+
+  const meses = {
+    jan: 0, fev: 1, mar: 2, abr: 3, mai: 4, jun: 5,
+    jul: 6, ago: 7, set: 8, out: 9, nov: 10, dez: 11
+  };
+
+  const partes = dataStr.toLowerCase().split('-');
+  if (partes.length !== 2) return null;
+
+  const dia = parseInt(partes[0]);
+  const mes = meses[partes[1]];
+
+  const ano = extrairAno(anoStr) || new Date().getFullYear();
+
+  if (isNaN(dia) || mes === undefined) return null;
+
+  return new Date(ano, mes, dia);
+}
+
+function formatarDataBR(data) {
+  if (!(data instanceof Date) || isNaN(data)) return '-';
+
+  const dia = String(data.getDate()).padStart(2, '0');
+  const mes = String(data.getMonth() + 1).padStart(2, '0');
+  const ano = data.getFullYear();
+
+  return `${dia}-${mes}-${ano}`;
+}
+
+function mostrarDetalhesUnidade(unidadeNome) {
+
+  const unidade = unidades.find(u => u.unidade === unidadeNome);
+
+  if (!unidade) {
+    document.getElementById('detalhesUnidade').innerHTML = '';
+    return;
+  }
+
+  const texto = `
+    <b>Regional:</b> ${unidade.Regionais || '-'}<br>
+    <b>Coordenador:</b> ${unidade.Coordenador || '-'}<br><br>
+
+    <b>Endereço:</b> ${unidade.rua || '-'}, ${unidade.numero || '-'}<br>
+    <b>Bairro:</b> ${unidade.bairro || '-'}<br>
+    <b>Tipo de prédio:</b> ${formatarPredio(unidade.predio)}<br>
+
+    <b>Coordenadas (GMS):</b><br>
+    <span>Lat: ${unidade.latitude_gms || '-'}</span>
+    &nbsp;&nbsp;&nbsp;
+    <span>Lon: ${unidade.longitude_gms || '-'}</span>
+  `;
+
+  document.getElementById('detalhesUnidade').innerHTML = texto;
+}
+
+function formatarPredio(tipo) {
+  if (!tipo) return '-';
+
+  if (tipo.toLowerCase().includes('alug')) return 'Prédio Alugado';
+  if (tipo.toLowerCase().includes('próprio') || tipo.toLowerCase().includes('proprio')) return 'Prédio Próprio';
+
+  return tipo;
+}
+
+function zoomUnidadesSelecionadas() {
+
+  if (unidadesSelecionadas.length === 0) return;
+
+  const pontos = unidades
+    .filter(u => unidadesSelecionadas.includes(u.unidade))
+    .map(u => [parseFloat(u.latitude), parseFloat(u.longitude)]);
+
+  if (pontos.length > 0) {
+    mapa.fitBounds(pontos, { padding: [50, 50] });
+  }
+}
+
+function toggleMulti(botao) {
+
+  modoMulti = !modoMulti;
+
+  botao.classList.toggle('ativo');
+
+  const municipioSelect = document.getElementById('municipioSelect');
+  const unidadeSelect = document.getElementById('unidadeSelect');
+
+  if (modoMulti) {
+    municipioSelect.setAttribute('multiple', true);
+    unidadeSelect.setAttribute('multiple', true);
+
+    municipioSelect.size = 5;
+    unidadeSelect.size = 5;
+
+    // 🔴 limpa detalhes
+    document.getElementById('detalhesUnidade').innerHTML = '';
+
+  } else {
+    municipioSelect.removeAttribute('multiple');
+    unidadeSelect.removeAttribute('multiple');
+
+    municipioSelect.size = 1;
+    unidadeSelect.size = 1;
+
+    municipiosSelecionados = [];
+    unidadesSelecionadas = [];
+  }
+
+  filtrar();
+}
+
+function atualizarUnidadesPorMunicipio() {
+
+  const unidadeSelect = document.getElementById('unidadeSelect');
+  unidadeSelect.innerHTML = '';
+
+  let lista = unidades;
+
+  if (municipiosSelecionados.length > 0) {
+    lista = lista.filter(u => 
+      municipiosSelecionados.includes(u.municipio)
+    );
+  }
+
+  lista.forEach(u => {
+    const opt = document.createElement('option');
+    opt.value = u.unidade;
+    opt.textContent = u.unidade;
+    unidadeSelect.appendChild(opt);
+  });
+
+  unidadesSelecionadas = [];
+
+  unidadeSelect.selectedIndex = -1;
+}
+
+function zoomMunicipios() {
+
+  if (municipiosSelecionados.length === 0) {
+    mapa.fitBounds(limitesMapa, { padding: [50, 50] });
+    return;
+  }
+
+  const pontos = unidades
+    .filter(u => municipiosSelecionados.includes(u.municipio))
+    .map(u => [parseFloat(u.latitude), parseFloat(u.longitude)]);
+
+  if (pontos.length > 0) {
+    mapa.fitBounds(pontos, { padding: [50, 50] });
+  }
+}
+
+function atualizarResumoSelecao() {
+
+  const totalMunicipios = municipiosSelecionados.length;
+  const totalUnidades = unidadesSelecionadas.length;
+
+  const texto = `
+    <b>${totalMunicipios}</b> município(s) selecionado(s) <br>
+    <b>${totalUnidades}</b> unidade(s) selecionada(s)
+  `;
+
+  document.getElementById('resumoMapa').innerHTML = texto;
+}
 </script>
 
 </body>
-</html>
