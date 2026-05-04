@@ -249,6 +249,23 @@ th, td {
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
 <script>
+
+const coresRegionais = {
+  "1ª Regional de Campo Grande": "#1f77b4",
+  "2ª Regional de Corumbá": "#2ca02c",
+  "3ª Regional de Coxim": "#ff7f0e",
+  "4ª Regional de Dourados": "#d62728",
+  "5ª Regional de Jardim": "#9467bd",
+  "6ª Regional de Nova Andradina": "#8c564b",
+  "7ª Regional de Paranaíba": "#e377c2",
+  "8ª Regional de Ponta Porã": "#7f7f7f",
+  "9ª Regional de Naviraí": "#bcbd22",
+  "10ª Regional de Três Lagoas": "#17becf",
+  "11ª Regional de Aquidauana": "#ff9896",
+  "12ª Regional de Chapadão do Sul": "#98df8a",
+  "13ª Regional de Maracaju": "#aec7e8"
+};
+
 let unidadesSelecionadas = [];
 let manutencoes = [];
 let unidades = [];
@@ -265,14 +282,17 @@ let municipiosSelecionados = [];
 // 🔥 CARREGAR DADOS
 Promise.all([
   fetch('manutencoes.json').then(r => r.json()),
-  fetch('unidades.json').then(r => r.json())
+  fetch('unidades.json').then(r => r.json()),
+  fetch('municipios_ms.geojson').then(r => r.json())
 ])
-.then(([m, u]) => {
+.then(([m, u, geo]) => {
   manutencoes = m;
   unidades = u;
 
+  montarMapaMunicipioRegional();
+
   carregarFiltros();
-  iniciarMapa();
+  iniciarMapa(geo);
 });
 
 // 🔹 EXTRAI MUNICÍPIO
@@ -441,6 +461,16 @@ function renderTabela(lista) {
   });
 }
 
+let mapaMunicipioRegional = {};
+
+function montarMapaMunicipioRegional() {
+  unidades.forEach(u => {
+    if (u.municipio && u.Regionais) {
+      mapaMunicipioRegional[u.municipio.toLowerCase()] = u.Regionais;
+    }
+  });
+}
+
 // 🔥 MAPA
 
 const iconeNormal = L.icon({
@@ -483,7 +513,7 @@ function selecionarUnidade(unidade, lat, lng, marker) {
   mostrarDetalhesUnidade(unidade);
 }
 
-function iniciarMapa() {
+function iniciarMapa(geojson) {
 
   mapa = L.map('map');
 
@@ -501,6 +531,36 @@ function iniciarMapa() {
     if (isNaN(lat) || isNaN(lng)) return;
 
     const marker = L.marker([lat, lng], { icon: iconeNormal }).addTo(mapa);
+
+    L.geoJSON(geojson, {
+      style: function(feature) {
+
+        const nome = feature.properties.name;
+
+        const regional = mapaMunicipioRegional[nome];
+
+        const cor = coresRegionais[regional] || "#cccccc";
+
+        return {
+          color: "#555",
+          weight: 1,
+          fillColor: cor,
+          fillOpacity: 0.5
+        };
+      },
+
+      onEachFeature: function(feature, layer) {
+
+        const nome = feature.properties.name;
+        const regional = mapaMunicipioRegional[nome] || "Sem regional";
+
+        layer.bindTooltip(`
+          <b>${nome}</b><br>
+          ${regional}
+        `);
+       }
+
+    }).addTo(mapa);
 
     // salvar referência
     marcadores[u.unidade] = marker;
@@ -693,14 +753,18 @@ function mostrarDetalhesUnidade(unidadeNome) {
   }
 
   const texto = `
-    <b>Endereço:</b> ${unidade.rua || '-'}, ${unidade.numero || '-'}<br>
-    <b>Bairro:</b> ${unidade.bairro || '-'}<br>
-    <b>Tipo de prédio:</b> ${formatarPredio(unidade.predio)}<br>
-    <b>Coordenadas (GMS):</b><br>
-    <span>Lat: ${unidade.latitude_gms || '-'}</span>
-    &nbsp;&nbsp;&nbsp;
-    <span>Lon: ${unidade.longitude_gms || '-'}</span>
-  `;
+  <b>Regional:</b> ${unidade.Regionais || '-'}<br>
+  <b>Coordenador:</b> ${unidade.Coordenador || '-'}<br><br>
+
+  <b>Endereço:</b> ${unidade.rua || '-'}, ${unidade.numero || '-'}<br>
+  <b>Bairro:</b> ${unidade.bairro || '-'}<br>
+  <b>Tipo de prédio:</b> ${formatarPredio(unidade.predio)}<br>
+
+  <b>Coordenadas (GMS):</b><br>
+  <span>Lat: ${unidade.latitude_gms || '-'}</span>
+  &nbsp;&nbsp;&nbsp;
+  <span>Lon: ${unidade.longitude_gms || '-'}</span>
+`;
 
   document.getElementById('detalhesUnidade').innerHTML = texto;
 }
