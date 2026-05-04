@@ -487,6 +487,8 @@ function selecionarUnidade(unidade, lat, lng, marker) {
 
   unidadeSelecionada = unidade;
 
+  unidadesSelecionadas = [unidade];
+
   // 📊 atualizar tabela (manutenção)
 
   mapa.setView([lat, lng], 15);
