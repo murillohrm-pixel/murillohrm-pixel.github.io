@@ -8008,5 +8008,145 @@
     "sala": "Sala 405",
     "descricao": "Desentupimento do dreno do ar condicionado",
     "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE COXIM",
+    "data": "06-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Térreo",
+    "sala": "todas",
+    "descricao": "higienização dos ares condicionados",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE COXIM",
+    "data": "06-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Térreo",
+    "sala": "sala da recepção",
+    "descricao": "desobstrução de dreno do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE COXIM",
+    "data": "06-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Térreo",
+    "sala": "sala da recepção",
+    "descricao": "carga de gás do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE COXIM",
+    "data": "06-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Térreo",
+    "sala": "banheiro PCD",
+    "descricao": "reparo na porta do banheiro",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE COXIM",
+    "data": "06-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Térreo",
+    "sala": "sala 1",
+    "descricao": "vedação dos vidros",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE COXIM",
+    "data": "06-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Térreo",
+    "sala": "sala 3",
+    "descricao": "vedação dos vidros",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE COXIM",
+    "data": "06-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Térreo",
+    "sala": "Cozinha",
+    "descricao": "substituição da torneira",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE COXIM",
+    "data": "06-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Térreo",
+    "sala": "Sala da recepção",
+    "descricao": "instalação de porta copos",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE COXIM",
+    "data": "06-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Térreo",
+    "sala": "",
+    "descricao": "Reparo em cadeiras",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE RIO VERDE DE MATO GROSSO - FÓRUM",
+    "data": "04-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Térreo",
+    "sala": "todas",
+    "descricao": "Higienização dos ares condicionados",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE SÃO GABRIEL DO OESTE - FÓRUM",
+    "data": "04-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Térreo",
+    "sala": "todas",
+    "descricao": "Higienização dos ares condicionados",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE SÃO GABRIEL DO OESTE - FÓRUM",
+    "data": "04-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Térreo",
+    "sala": "sala 2",
+    "descricao": "Instalação de canaleta de tomada",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE SÃO GABRIEL DO OESTE - FÓRUM",
+    "data": "04-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Térreo",
+    "sala": "sala da recepção",
+    "descricao": "Reparo de ponto lógico no forro",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE BANDEIRANTES - FÓRUM",
+    "data": "07-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Térreo",
+    "sala": "sala da recepção",
+    "descricao": "Desobstrução do dreno do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2026"
   }
 ]
