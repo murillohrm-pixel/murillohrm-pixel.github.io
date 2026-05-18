@@ -8148,5 +8148,115 @@
     "sala": "sala da recepção",
     "descricao": "Desobstrução do dreno do ar condicionado",
     "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CASA DA MULHER BRASILEIRA",
+    "data": "14-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Térreo",
+    "sala": "sala da dra. Camila",
+    "descricao": "Recarga de gás do Ar Condicionado",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "SEDE DO PARQUE DOS PODERES",
+    "data": "15-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "",
+    "sala": "",
+    "descricao": "Substituição de lâmpadas",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "18-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "",
+    "sala": "Copa",
+    "descricao": "limpeza do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "18-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "",
+    "sala": "Copa",
+    "descricao": "desentupimento do dreno do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "18-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "sala da Dra. Vera",
+    "descricao": "troca de lâmpadas",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "18-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "sala do Dr. Elias",
+    "descricao": "troca de lâmpadas",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "18-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "sala do Dr. Oziel",
+    "descricao": "troca de lâmpadas",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "18-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "Corredor",
+    "descricao": "troca de lâmpadas",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "18-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "2º Andar",
+    "sala": "Sala do Dr. Almir",
+    "descricao": "troca de lâmpadas",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "18-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "2º Andar",
+    "sala": "Corredor",
+    "descricao": "troca de lâmpadas",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "18-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Térrep",
+    "sala": "Sala da Dra. Renata",
+    "descricao": "troca de lâmpadas",
+    "ano_origem": "OS Registros Realizados - 2026"
   }
 ]
