@@ -8328,5 +8328,65 @@
     "sala": "",
     "descricao": "higienizações dos ar condicionado",
     "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - PRÁTICO GUAICURUS",
+    "data": "25-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "Sala de audiência",
+    "descricao": "carga de gás",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - PRÁTICO GUAICURUS",
+    "data": "25-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "Sala de atendimento",
+    "descricao": "carga de gás",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BELMAR FIDALGO - NUFAM",
+    "data": "26-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "2º Andar",
+    "sala": "Corredor",
+    "descricao": "Substituição de lâmpadas",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - BELMAR FIDALGO - NUFAM",
+    "data": "26-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "2º Andar",
+    "sala": "",
+    "descricao": "Reparo no dreno do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CASA DA MULHER BRASILEIRA",
+    "data": "26-mai",
+    "hora_inicio": "16:30",
+    "hora_fim": "17:30",
+    "andar": "Terreo",
+    "sala": "Sala da psicóloga",
+    "descricao": "Carga de gás R410a",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CASA DA MULHER BRASILEIRA",
+    "data": "26-mai",
+    "hora_inicio": "16:30",
+    "hora_fim": "17:30",
+    "andar": "Terreo",
+    "sala": "Sala da Assessora Rebeca",
+    "descricao": "Carga de gás R32",
+    "ano_origem": "OS Registros Realizados - 2026"
   }
 ]
