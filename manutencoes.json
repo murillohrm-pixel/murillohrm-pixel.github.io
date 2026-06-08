@@ -8388,5 +8388,155 @@
     "sala": "Sala da Assessora Rebeca",
     "descricao": "Carga de gás R32",
     "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE FÁTIMA DO SUL - FÓRUM",
+    "data": "01-jun",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "",
+    "descricao": "higienização dos ar condicionados",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE FÁTIMA DO SUL - FÓRUM",
+    "data": "01-jun",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "",
+    "descricao": "substituição de lâmpadas",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE GLÓRIA DE DOURADOS - FÓRUM",
+    "data": "01-jun",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "",
+    "descricao": "higienização dos ar condicionados",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE AMAMBAI - CENTRO",
+    "data": "25-mai",
+    "hora_inicio": "12:00",
+    "hora_fim": "15:00",
+    "andar": "Terreo",
+    "sala": "",
+    "descricao": "limpeza e higienização dos ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE AMAMBAI - CENTRO",
+    "data": "25-mai",
+    "hora_inicio": "12:00",
+    "hora_fim": "15:00",
+    "andar": "Terreo",
+    "sala": "",
+    "descricao": "troca de sifão",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE AMAMBAI - CENTRO",
+    "data": "25-mai",
+    "hora_inicio": "12:00",
+    "hora_fim": "15:00",
+    "andar": "Terreo",
+    "sala": "",
+    "descricao": "troca de lâmpadas",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE AMAMBAI - CENTRO",
+    "data": "25-mai",
+    "hora_inicio": "12:00",
+    "hora_fim": "15:00",
+    "andar": "Terreo",
+    "sala": "",
+    "descricao": "adequação da iluminação da garagem",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE BELA VISTA - FÓRUM",
+    "data": "26-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "",
+    "descricao": "limpeza e higienização de todos ar condicionados",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE BELA VISTA - FÓRUM",
+    "data": "26-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "",
+    "descricao": "manutenção de todos ar condicionados",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE BELA VISTA - FÓRUM",
+    "data": "26-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "",
+    "descricao": "troca de lâmpadas",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE BELA VISTA - FÓRUM",
+    "data": "26-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "",
+    "descricao": "recarga de gás do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE BELA VISTA - FÓRUM",
+    "data": "26-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "",
+    "descricao": "limpeza da placa do controle remoto",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE PONTA PORÃ - VILA LUIZ CORVO",
+    "data": "27-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "",
+    "descricao": "Condensadoras dos Ar Condicionado suspendidos",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE PONTA PORÃ - VILA LUIZ CORVO",
+    "data": "27-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "",
+    "descricao": "Poda dos galhos das árvores",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE PONTA PORÃ - VILA LUIZ CORVO",
+    "data": "27-mai",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Terreo",
+    "sala": "",
+    "descricao": "Aplicação de silicone na bandeja dos bebedouros",
+    "ano_origem": "OS Registros Realizados - 2026"
   }
 ]
