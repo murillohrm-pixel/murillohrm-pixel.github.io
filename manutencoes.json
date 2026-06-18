@@ -8538,5 +8538,65 @@
     "sala": "",
     "descricao": "Aplicação de silicone na bandeja dos bebedouros",
     "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "12-jun",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "2º Andar",
+    "sala": "Sala 207",
+    "descricao": "Reparo da Persiana",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "12-jun",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "",
+    "sala": "",
+    "descricao": "Recarga de gás do ar condicionado",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - 2 INSTANCIA - ESCOLA SUPERIOR DA DEFENSORIA PÚBLICA",
+    "data": "12-jun",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "1º Andar",
+    "sala": "Escadaria",
+    "descricao": "Susbtituição de lâmpadas",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },  
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CASA DA MULHER BRASILEIRA",
+    "data": "18-jun",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Térreo",
+    "sala": "",
+    "descricao": "Limpeza das paredes",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CASA DA MULHER BRASILEIRA",
+    "data": "18-jun",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Térreo",
+    "sala": "",
+    "descricao": "Reparo da Persiana",
+    "ano_origem": "OS Registros Realizados - 2026"
+  },
+  {
+    "unidade": "DEFENSORIA DE CAMPO GRANDE - CASA DA MULHER BRASILEIRA",
+    "data": "18-jun",
+    "hora_inicio": "",
+    "hora_fim": "",
+    "andar": "Térreo",
+    "sala": "",
+    "descricao": "Vedação com silicone nas janelas",
+    "ano_origem": "OS Registros Realizados - 2026"
   }
 ]
